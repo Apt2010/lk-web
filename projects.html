@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>LK Constraction | Best Construction Company  – ₹1899/sq.ft</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Site Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <i class="fa fa-phone" aria-hidden="true"></i>
+ Call us: <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp; ₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built Across 
+</div>
+ <style>
+  
+
+    /* Main container matching the original design intent */
+    .section {
+      max-width: 1400px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 2rem;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+      padding: 2rem 2rem 2.5rem;
+      transition: all 0.2s;
+    }
+
+    /* Header styling */
+    .section-header {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      color: #2d8a06;
+      background: #e6f5df;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #0f172a;
+    }
+
+    .section-title span {
+      color: #2d8a06;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* tabs styling */
+    .tabs-wrap {
+      margin: 1.8rem 0 1.5rem;
+      border-bottom: 2px solid #e9edf2;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+          margin-bottom: 10px;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 26px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-radius: 40px;
+      color: #5b6e8c;
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tab-count {
+      background: #eef2ff;
+      color: #1e293b;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.2rem 0.65rem;
+      border-radius: 40px;
+      transition: all 0.2s;
+    }
+
+    .tab-btn.active {
+      background: #2d8a06;
+      color: white;
+      /* box-shadow: 0 8px 14px -8px rgba(244, 124, 32, 0.4); */
+    }
+
+    .tab-btn.active .tab-count {
+      background: rgba(255, 255, 255, 0.25);
+      color: white;
+    }
+
+    /* panels */
+    .tab-panel {
+      display: none;
+      animation: fadeIn 0.35s ease forwards;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* cards grid - responsive */
+    .cards-grid, .cards-grid-ongoing {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.8rem;
+      margin: 2rem 0 1.5rem;
+    }
+
+    /* card styling */
+    .card {
+      background: #ffffff;
+      border-radius: 1.5rem;
+      overflow: hidden;
+      box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.02);
+      transition: transform 0.25s ease, box-shadow 0.3s;
+      opacity: 0;
+      transform: translateY(12px);
+      animation: cardReveal 0.45s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards;
+    }
+
+    @keyframes cardReveal {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 36px -12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* badge */
+    .card-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 2;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.35rem 1rem;
+      border-radius: 30px;
+      background: white;
+      color: #1f2937;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      letter-spacing: 0.3px;
+    }
+
+    .badge-completed {
+      background: #10b981;
+      color: white;
+    }
+
+    .badge-ongoing {
+      background: #f97316;
+      color: white;
+    }
+
+    /* image wrapper */
+    .card-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      cursor: pointer;
+      background: #eef2ff;
+    }
+
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .card-img-wrap:hover img {
+      transform: scale(1.05);
+    }
+
+    .zoom-hint {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 0.75rem;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 40px;
+      padding: 0.3rem;
+      backdrop-filter: blur(5px);
+      opacity: 0;
+      transition: opacity 0.2s;
+      pointer-events: none;
+    }
+
+    .card-img-wrap:hover .zoom-hint {
+      opacity: 1;
+    }
+
+    /* placeholder for missing images */
+    .card-img-placeholder {
+      height: 200px;
+      background: #f1f3f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+
+    .placeholder-text {
+      font-weight: 500;
+    }
+
+    /* card body */
+    .card-body {
+      padding: 1.2rem 1.2rem 1.4rem;
+    }
+
+    .card-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #0f172a;
+    }
+
+    .card-location {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      color: #475569;
+      margin-bottom: 1rem;
+    }
+
+    .card-divider {
+      height: 1px;
+      background: #e9edf2;
+      margin: 0.75rem 0;
+    }
+
+    .card-specs {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .spec-row {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      background: #f8fafc;
+      padding: 0.35rem 0.8rem;
+      border-radius: 30px;
+      flex: 1;
+    }
+
+    .spec-icon {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .spec-label {
+      color: #5b6e8c;
+      font-weight: 500;
+    }
+
+    .spec-value {
+      font-weight: 700;
+      color: #1e293b;
+      margin-left: auto;
+    }
+
+    /* ongoing status row */
+    .status-bar {
+      margin-top: 0.75rem;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #fff7ed;
+      padding: 0.5rem 0.75rem;
+      border-radius: 40px;
+      color: #1e6204;
+      font-weight: 500;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #1e6204;
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: 0 0 0 0 #1e6204;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(249,115,22,0.5); }
+      70% { box-shadow: 0 0 0 6px rgba(249,115,22,0); }
+      100% { box-shadow: 0 0 0 0 rgba(249,115,22,0); }
+    }
+
+    .ongoing-pulse {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(0,0,0,0.6);
+      border-radius: 50px;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.6rem;
+      font-weight: bold;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      backdrop-filter: blur(4px);
+    }
+
+    .ongoing-pulse span {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #facc15;
+      border-radius: 50%;
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+
+    /* pagination */
+    .pagination-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      padding-top: 0.5rem;
+    }
+
+    .pg-btn {
+      background: white;
+      border: 1px solid #e2e8f0;
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      color: #334155;
+    }
+
+    .pg-btn.active {
+      background: #1e6204;
+      border-color: #1e6204;
+      color: white;
+    }
+
+    .pg-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    .pg-info {
+      margin-left: 1rem;
+      font-size: 0.85rem;
+      color: #5b6e8c;
+    }
+
+    /* modal for image zoom */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .modal img {
+      max-width: 90%;
+      max-height: 85%;
+      border-radius: 1rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      font-size: 2rem;
+      color: white;
+      font-weight: 300;
+      cursor: pointer;
+    }
+
+    @media (max-width: 720px) {
+      .section {
+        padding: 1.5rem;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+      .tab-btn {
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+      }
+      .cards-grid, .cards-grid-ongoing {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap">
+        <!-- <div class="logo-icon"><i class="fas fa-hard-hat"></i></div>
+        <span class="logo-text">LK<span>Constraction</span></span> -->
+        <img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img">
+        
+      </a>
+      <ul class="nav-menu">
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <button>Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></button>
+          <div class="dd-menu">
+            <div class="dd-grid">
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-home"></i></div>
+                <div><span class="dd-title">Residential Construction</span><span class="dd-desc">Custom villas, G+1 &amp; G+2 homes </span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-drafting-compass"></i></div>
+                <div><span class="dd-title">Architectural Design</span><span class="dd-desc">3D renders, floor plans &amp; vastu layouts</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-couch"></i></div>
+                <div><span class="dd-title">Interior Design</span><span class="dd-desc">Modular kitchen, wardrobes &amp; full interiors</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-tools"></i></div>
+                <div><span class="dd-title">Renovation &amp; Remodelling</span><span class="dd-desc">Extension, structural upgrades &amp; painting</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-solar-panel"></i></div>
+                <div><span class="dd-title">Smart &amp; Eco Homes</span><span class="dd-desc">Solar, rainwater harvesting &amp; green builds</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-file-contract"></i></div>
+                <div><span class="dd-title">Plan Approval &amp; Legal</span><span class="dd-desc">CMDA / DTCP approval &amp; documentation</span></div>
+              </a>
+            </div>
+            <div class="dd-foot">
+              <span>All services · Dedicated engineer · 15-yr warranty</span>
+              <a href="#">All services <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#" class="btn nav-cta">Free Estimate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <a href="about.html"><i class="fas fa-info-circle" style="color:var(--green);width:20px"></i> About Us</a>
+  <button id="mobServToggle"><i class="fas fa-building" style="color:var(--green);width:20px"></i> Services <i class="fas fa-chevron-down" style="margin-left:auto;font-size:.7rem"></i></button>
+  <div class="mob-services" id="mobServList">
+    <a href="#"><i class="fas fa-home"></i> Residential Construction</a>
+    <a href="#"><i class="fas fa-drafting-compass"></i> Architectural Design</a>
+    <a href="#"><i class="fas fa-couch"></i> Interior Design</a>
+    <a href="#"><i class="fas fa-tools"></i> Renovation &amp; Remodelling</a>
+    <a href="#"><i class="fas fa-solar-panel"></i> Smart &amp; Eco Homes</a>
+    <a href="#"><i class="fas fa-file-contract"></i> Plan Approval &amp; Legal</a>
+  </div>
+  <a href="projects.html"><i class="fas fa-images" style="color:var(--green);width:20px"></i> Projects</a>
+  <a href="#"><i class="fas fa-list-ol" style="color:var(--green);width:20px"></i> Blog</a>
+  <a href="contact.html"><i class="fas fa-envelope" style="color:var(--green);width:20px"></i> Contact Us</a>
+  <a href="#" class="mob-cta"><i class="fas fa-paper-plane"></i> Get a Free Estimate</a>
+</div>
+
+
+ <section class="lk">
+  <div class="lkc">
+        <nav class="lkms-nav" aria-label="Breadcrumb navigation">
+      <a href="index.html" class="lkms-link">
+        <span class="lkms-icon">🏠</span> Home
+      </a>
+      
+      <span class="lkms-sep">•</span>
+      <span class="lkms-current">Projects</span>
+    </nav>
+
+    <!-- centered heading & description (unchanged but all classes follow lk-*) -->
+    <h1 class="lk-heading">Our Projects Construction</h1>
+    <p class="lk-desc">
+      Explore our portfolio of thoughtfully designed and expertly built projects, showcasing quality craftsmanship and lasting value.
+    </p>
+    <div class="lk-accent"></div>
+  </div>
+</section>
+<div class="section">
+  <div class="section-header">
+    <span class="section-label">Tamil Nadu · Portfolio</span>
+    <h2 class="section-title">Our Residential<br>Construction Projects <span>in Tamil Nadu</span></h2>
+  </div>
+  <div class="tabs-wrap">
+    <div class="tabs" role="tablist">
+      <button class="tab-btn active" role="tab" data-tab="completed">Completed <span class="tab-count" id="cnt-completed">111</span></button>
+      <button class="tab-btn" role="tab" data-tab="ongoing">Ongoing <span class="tab-count" id="cnt-ongoing">65</span></button>
+    </div>
+  </div>
+  
+  <!-- Completed Panel -->
+  <div class="tab-panel active" id="panel-completed">
+    <div class="cards-grid" id="grid-completed"></div>
+    <div class="pagination-wrap" id="completed-pagination"></div>
+  </div>
+  
+  <!-- Ongoing Panel (without pagination to maintain full list, but we can keep all projects visible as per design; but original had many projects, we'll show all ongoing with pagination too? The design had pagination only for completed, but we'll keep proper pattern: both sections paginated with consistent UX) -->
+  <div class="tab-panel" id="panel-ongoing">
+    <div class="cards-grid-ongoing" id="grid-ongoing"></div>
+    <div class="pagination-wrap" id="ongoing-pagination"></div>
+  </div>
+</div>
+
+
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--green-xl)">
+  <div class="container">
+    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-question-circle"></i> FAQs</span></div>
+    <div class="center" style="margin-bottom:2.5rem">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <div class="faq-q"><span>What is the construction cost per sq ft </span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>LK Constraction offers house construction  starting at ₹1899/sq.ft. The final cost depends on your plot size, number of floors, and finish level. Contact us for a detailed BOQ and free estimate tailored to your requirements.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>How long does it take to build a house</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>A typical residential project takes 12 to 18 months. We provide a written project timeline before work begins with clear milestones so you always know exactly what happens next and when.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you handle complete construction from start to finish?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes. We offer complete turnkey house construction covering soil testing, architectural design, structural work, electrical, plumbing, finishing, and final handover — all under one roof with a dedicated site engineer throughout.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>What areas  do you cover?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>We serve all major localities across Madurai including Anna Nagar, Peraiyur, Chinna Anuppanadi, Paravai, Melur, Othakadai, Palamedu, Alanganallur, Vadipatti, Tirumangalam, Alwarpuram, and surrounding areas.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Is your construction pricing transparent with no hidden costs?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes. We follow a milestone-based payment model with a detailed Bill of Quantities shared before work starts. You know exactly what you are paying for at every stage — no surprise charges, ever.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you assign a dedicated engineer to my project?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes. Every LK Constraction project gets a qualified, full-time site engineer assigned from day one. Your engineer is physically present on your plot every single day — monitoring material quality, workmanship, and progress at every stage.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>What warranty do you offer on house construction?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>LK Constraction provides a 15-year structural warranty on all residential construction projects. All warranty terms are documented in writing before the project begins — nothing is promised verbally.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you build G+1 and G+2 houses </span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes. We build single-floor independent houses, G+1, and G+2 residential homes across Madurai. Each project is structurally designed after soil testing — foundation depth and column sizing are always engineered, never assumed.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band" id="contact">
+  <div class="container">
+    <h2>Ready to Build Your Dream Home<br></h2>
+    <p>Free site visit, detailed BOQ &amp; expert consultation within 24 hours. 180+ families trusted us — we'd love to build yours too.</p>
+    <div class="cta-btns">
+      <a href="tel:+919876543210" class="btn btn-green"><i class="fas fa-phone-alt"></i> Call +91 98765 43210</a>
+      <a href="#estimate" class="btn btn-white"><i class="fas fa-paper-plane"></i> Request Free Estimate</a>
+      <a href="#" class="btn btn-wa" id="waBtn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img"></div>
+        <p style="color: #fff;">Built with integrity, delivered with joy — 180+ happy families across . We build homes that stand the test of time with a 15-year written structural warranty.</p>
+        <div style="margin-top:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-youtube"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ser">
+        <h4>Services</h4>
+        <a href="#">Residential Construction</a>
+        <a href="#">Architectural Design</a>
+        <a href="#">Interior Design</a>
+        <a href="#">Renovation &amp; Remodelling</a>
+        <a href="#">Smart &amp; Eco Homes</a>
+        <a href="#">Plan Approval &amp; Legal</a>
+      </div>
+      <div class="loc"> 
+        <h4>Locations</h4>
+        <a href="#">Anna Nagar</a>
+        <a href="#">Palamedu</a>
+        <a href="#">Othakadai</a>
+        <a href="#">Paravai</a>
+        <a href="#">Peraiyur</a>
+        <a href="#">Vadipatti</a>
+        <a href="#">Vandiyur</a>
+        <a href="#">Sholavandan</a>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <p style="margin-bottom:.8rem"><i class="fa fa-phone" aria-hidden="true"></i>
+ <a href="tel:+919876543210" class="foot-contact" style="text-decoration:none">+91 98765 43210</a></p>
+        <p style="margin-bottom:.8rem"><i class="fa fa-envelope" aria-hidden="true"></i>
+ <a href="mailto:info@lkconstraction.com" class="foot-contact" style="text-decoration:none"> info@lkconstraction.com</a></p>
+        <p style="margin-bottom:1rem"><i class="fa fa-map-pin" aria-hidden="true"></i>
+ , Tamil Nadu, India</p>
+        <a href="#estimate" class="btn btn-greendr" style="font-size:.85rem;padding:10px 20px"><i class="fas fa-paper-plane"></i> Free Estimate</a>
+      </div>
+    </div>
+    <hr class="foot-divider">
+    <div class="foot-bottom">
+      <span>© 2026 LK Constraction — Premium Residential Construction Company </span>
+      <span>₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CALL BTN -->
+<a href="tel:+919876543210" class="sticky-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <div class="modal-ico"><i class="fas fa-check"></i></div>
+    <h3 id="modalTitle">Request Received!</h3>
+    <p id="modalMsg">Our team will call you within 24 hours.</p>
+    <button class="modal-close-btn" id="modalCloseBtn">Got it</button>
+  </div>
+</div>
+<!-- Modal for full image zoom -->
+<div id="imageModal" class="modal">
+  <span class="modal-close">&times;</span>
+  <img id="modalImg" src="" alt="Full view">
+</div>
+
+<!-- Site Scripts -->
+<!-- <script src="assets/js/main.js"></script> -->
+<script>
+  // ---------- DATA from the provided HTML (Completed + Ongoing extracted)
+  // Completed projects (original items)
+  const completedRaw = [
+    { name: "Yuvaraj", location: "Villivakkam, Chennai", builtUp: "2,400 sq ft", plotArea: "1,800 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Yuvaraj-Villivakkam-300x225-1.jpeg", hasImg: true },
+    { name: "Boopesh", location: "Thiruverkadu, Chennai", builtUp: "3,100 sq ft", plotArea: "2,200 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Boopesh-Thiruverkadu-site-edited.jpeg", hasImg: true },
+    { name: "Daniel", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Perungalathur-project-compressed-300x235-1.png", hasImg: true },
+    { name: "Rajadurai", location: "Urapakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Rajadurai-Urapakkam-Site-4-edite-image-300x234-1.jpg", hasImg: true },
+    { name: "Vignesh", location: "Thalumbur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Vignesh-thalambur-site-edited-300x260-1.jpeg", hasImg: true },
+    { name: "Jagadish", location: "Vadaperukkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/KVT-Vadaperumbakkam-compressed-300x209-1.png", hasImg: true },
+    { name: "Mageshwaran", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/11/Mageshwaran-Perunagalathur-cropped-and-edited.jpeg", hasImg: true },
+    { name: "Senthil", location: "Thoraipakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Thoraipakkam-project-12.jpeg", hasImg: true },
+    { name: "Vadivel", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/11/Vadivel-Old-Perungalathur-Project-3-compressed-scaled.jpg", hasImg: true },
+    { name: "Selva", location: "Kundrathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Kundrathur-Project-001.jpeg", hasImg: true },
+    { name: "Vivek", location: "Iyyapathangal, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Vivek-Iyappanthangal-Project-1.webp", hasImg: true },
+    { name: "Sai Nath", location: "Gerugambakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Gerugambakkam.webp", hasImg: true },
+    { name: "Bala", location: "Ambattur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/ambattur-live-image.png", hasImg: true },
+    { name: "Muthumurugan", location: "Kolapakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Muthumurugan-Kolapakkam-1024x768-1.webp", hasImg: true },
+    { name: "Kasi Raja", location: "Virugambakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2022/11/Night-view-Virugambakkam-Project.webp", hasImg: true },
+    { name: "Dinesh", location: "Redhills, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
+    { name: "Vivek", location: "Thalambur, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
+    { name: "Suresh", location: "Noombal, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
+    { name: "Kathiravan", location: "Perungalathur, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
+    { name: "Naveen", location: "Kandigai, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
+  ];
+  
+  // Ongoing data from the provided HTML (first 65+ but we'll keep extracted visible, full list)
+  const ongoingRaw = [
+    { name: "Manoharan", location: "Sholinganallur, Chennai", builtUp: "4,752 sq ft", plotArea: "2,400 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Manoharan-—-Sholinganallur.webp", hasImg: true },
+    { name: "Rajeshwaran", location: "VGN Ambattur, Chennai", builtUp: "2,569 sq ft", plotArea: "1,465 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Rajeshwaran-Ambattur.webp", hasImg: true },
+    { name: "Goutham", location: "Avadi, Chennai", builtUp: "3,284 sq ft", plotArea: "1,992 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Goutham-Avadi.webp", hasImg: true },
+    { name: "Sasi Rekha", location: "Avadi, Chennai", builtUp: "1,461 sq ft", plotArea: "763 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Sasi-Rekha-Avadi.webp", hasImg: true },
+    { name: "Riyaz", location: "Siruseri, Chennai", builtUp: "2,956 sq ft", plotArea: "1,237 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Riyaz.webp", hasImg: true },
+    { name: "Aravinth", location: "K K Nagar, Chennai", builtUp: "2,770 sq ft", plotArea: "880 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Aravindh-KK-Nagar.webp", hasImg: true },
+    { name: "Kumar", location: "Medavakkam, Chennai", builtUp: "2,052 sq ft", plotArea: "1,971 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Kumar-Medavakkam.webp", hasImg: true },
+    { name: "Rajkumar", location: "Ayapakkam, Chennai", builtUp: "2,144 sq ft", plotArea: "971 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Rajkumar-Aynambakkam.webp", hasImg: true },
+    { name: "Mohammed Zeavudeen", location: "Mannargudi, Chennai", builtUp: "3,996 sq ft", plotArea: "2,762 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Mohammed-Zeavudeen-—-Mannargudi.webp", hasImg: true },
+    { name: "Dhashaprakash", location: "Kancheepuram, Chennai", builtUp: "1,327 sq ft", plotArea: "700 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Dhashaprakash-—-Kancheepuram.webp", hasImg: true },
+    { name: "Kanimozhi", location: "Kancheepuram, Chennai", builtUp: "1,298 sq ft", plotArea: "720 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Kanimozhi-—-Kancheepuram.webp", hasImg: true },
+    { name: "Fayaz", location: "Chrompet, Chennai", builtUp: "—", plotArea: "—", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Fayaz-—-Chrompet.webp", hasImg: true },
+    { name: "Karthikeyan", location: "Medavakkam, Chennai", builtUp: "—", plotArea: "—", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Karthikeyan-—-Medavakkam.webp", hasImg: true },
+    { name: "Udhayakumar", location: "ECR, Chennai", builtUp: "—", plotArea: "—", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Udhayakumar-—-Injambakkam.webp", hasImg: true },
+    { name: "Mohanraj", location: "Padappai, Chennai", builtUp: "3,714 sq ft", plotArea: "2,982 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Mohanraj-Padappai.webp", hasImg: true },
+    { name: "Lokesh", location: "Kallikuppam, Chennai", builtUp: "2,184 sq ft", plotArea: "1,200 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Lokesh-Kallikuppam.webp", hasImg: true },
+    { name: "Mohammed Ayoob", location: "Adambakkam, Chennai", builtUp: "2,596 sq ft", plotArea: "846 sq ft", img: null, hasImg: false },
+    { name: "Vasudevan", location: "Maduravoyal, Chennai", builtUp: "2,401 sq ft", plotArea: "1,202 sq ft", img: null, hasImg: false },
+    { name: "Jeyath Sekar", location: "Triplicane, Chennai", builtUp: "4,920 sq ft", plotArea: "2,242 sq ft", img: null, hasImg: false },
+    { name: "Shobarani", location: "Kodambakkam, Chennai", builtUp: "7,079 sq ft", plotArea: "2,418 sq ft", img: null, hasImg: false },
+    { name: "Rajeshwaran", location: "Kundrathur Metro City, Chennai", builtUp: "2,196 sq ft", plotArea: "1,289 sq ft", img: null, hasImg: false },
+    { name: "Udhayakumar", location: "Injambakkam, Chennai", builtUp: "4,227 sq ft", plotArea: "2,648 sq ft", img: null, hasImg: false },
+    { name: "Bhuvenedar", location: "Gerugambakkam, Chennai", builtUp: "2,384 sq ft", plotArea: "1,331 sq ft", img: null, hasImg: false },
+    { name: "Vinothkumar", location: "Gerugambakkam, Chennai", builtUp: "3,309 sq ft", plotArea: "1,200 sq ft", img: null, hasImg: false },
+    { name: "Ganesh", location: "K K Nagar, Chennai", builtUp: "3,845 sq ft", plotArea: "1,190 sq ft", img: null, hasImg: false },
+    { name: "Jayaram", location: "Mylapore, Chennai", builtUp: "3,975 sq ft", plotArea: "1,145 sq ft", img: null, hasImg: false },
+    { name: "Salim", location: "Urapakkam, Chennai", builtUp: "2,001 sq ft", plotArea: "1,890 sq ft", img: null, hasImg: false },
+    { name: "Parthasarathy", location: "Kolathur, Chennai", builtUp: "3,483 sq ft", plotArea: "1,200 sq ft", img: null, hasImg: false },
+    { name: "Murugavel", location: "Kolathur, Chennai", builtUp: "4,038 sq ft", plotArea: "1,581 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Murugavel-Kolathur.webp", hasImg: true },
+    { name: "Rajesh", location: "Thirumullaivoyal, Chennai", builtUp: "1,696 sq ft", plotArea: "1,200 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Rajesh-Thirumulaivoyal.webp", hasImg: true },
+    { name: "Hema", location: "Iyyanpakkam, Chennai", builtUp: "3,645 sq ft", plotArea: "1,338 sq ft", img: null, hasImg: false },
+    { name: "Balaji", location: "Gerugambakkam, Chennai", builtUp: "2,379 sq ft", plotArea: "1,120 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/05/Balaji-Gerugambakkam.webp", hasImg: true },
+    { name: "Maya Chaithanya", location: "Korattur, Chennai", builtUp: "1,739 sq ft", plotArea: "1,272 sq ft", img: null, hasImg: false },
+    { name: "Amutha", location: "Anna Nagar, Chennai", builtUp: "2,952 sq ft", plotArea: "880 sq ft", img: null, hasImg: false },
+    { name: "Bala", location: "Urapakkam, Chennai", builtUp: "1,734 sq ft", plotArea: "1,524 sq ft", img: null, hasImg: false },
+    { name: "Saravanan", location: "Nanmangalam, Chennai", builtUp: "3,041 sq ft", plotArea: "1,188 sq ft", img: null, hasImg: false },
+    { name: "Vignesh", location: "Pallikaranai, Chennai", builtUp: "2,687 sq ft", plotArea: "1,201 sq ft", img: null, hasImg: false },
+    { name: "Sugumaran", location: "Vyasarpadi, Chennai", builtUp: "2,004 sq ft", plotArea: "717 sq ft", img: null, hasImg: false },
+    { name: "Anbarasan", location: "Padur, Chennai", builtUp: "4,132 sq ft", plotArea: "1,866 sq ft", img: null, hasImg: false },
+    { name: "Sivanesan", location: "Pudupakkam, Chennai", builtUp: "2,684 sq ft", plotArea: "1,200 sq ft", img: null, hasImg: false },
+    { name: "Rajeshwari", location: "Thiruverkadu, Chennai", builtUp: "3,021 sq ft", plotArea: "1,995 sq ft", img: null, hasImg: false },
+    { name: "Sahul Hameed", location: "Redhills, Chennai", builtUp: "1,727 sq ft", plotArea: "2,007 sq ft", img: null, hasImg: false }
+  ];
+  
+  // Pagination variables
+  let completedPage = 1;
+  let ongoingPage = 1;
+  const itemsPerPage = 12;
+  
+  function renderCompleted() {
+    const start = (completedPage-1)*itemsPerPage;
+    const pageItems = completedRaw.slice(start, start+itemsPerPage);
+    const container = document.getElementById('grid-completed');
+    container.innerHTML = pageItems.map(item => createCard(item, 'completed')).join('');
+    const totalPages = Math.ceil(completedRaw.length / itemsPerPage);
+    renderPagination('completed-pagination', completedPage, totalPages, 'completed');
+    attachZoomEvents();
+  }
+  
+  function renderOngoing() {
+    const start = (ongoingPage-1)*itemsPerPage;
+    const pageItems = ongoingRaw.slice(start, start+itemsPerPage);
+    const container = document.getElementById('grid-ongoing');
+    container.innerHTML = pageItems.map(item => createCard(item, 'ongoing')).join('');
+    const totalPages = Math.ceil(ongoingRaw.length / itemsPerPage);
+    renderPagination('ongoing-pagination', ongoingPage, totalPages, 'ongoing');
+    attachZoomEvents();
+  }
+  
+  function createCard(project, type) {
+    const hasValidImg = project.hasImg && project.img;
+    const imgHtml = hasValidImg 
+      ? `<div class="card-img-wrap" title="Click to view full image" data-img="${project.img}"><img decoding="async" src="${project.img}" alt="${project.name}" loading="lazy"><div class="zoom-hint"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div></div>`
+      : `<div class="card-img-placeholder"><svg width="42" height="42" viewBox="0 0 64 64" fill="none" stroke="#888"><path d="M8 28L32 8l24 20"/><rect x="14" y="28" width="36" height="28" rx="2"/><rect x="24" y="40" width="10" height="16" rx="1"/><path d="M22 28v-6h8v6"/></svg><span class="placeholder-text">${type === 'completed' ? 'Image Coming Soon' : 'In Progress'}</span></div>`;
+    
+    const ongoingExtra = type === 'ongoing' ? `<div class="ongoing-pulse"><span></span> Ongoing</div><div class="status-bar"><span class="status-dot"></span>Construction On Going</div>` : '';
+    const badgeClass = type === 'completed' ? 'badge-completed' : 'badge-ongoing';
+    const badgeText = type === 'completed' ? 'Completed' : 'Ongoing';
+    
+    return `<div class="card" style="animation-delay: 0s;">
+      <span class="card-badge ${badgeClass}">${badgeText}</span>
+      ${ongoingExtra && type === 'ongoing' ? ongoingExtra : ''}
+      ${imgHtml}
+      <div class="card-body">
+        <h3 class="card-name">${escapeHtml(project.name)}</h3>
+        <div class="card-location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> ${escapeHtml(project.location)}</div>
+        <div class="card-divider"></div>
+        <div class="card-specs">
+          <div class="spec-row"><div class="spec-icon built"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1e6204" stroke-width="2.2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><span class="spec-label">Built Up</span><span class="spec-value">${project.builtUp}</span></div>
+          <div class="spec-row"><div class="spec-icon plot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2.2"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/></svg></div><span class="spec-label">Plot Area</span><span class="spec-value">${project.plotArea}</span></div>
+        </div>
+        ${type === 'ongoing' ? '' : ''}
+      </div>
+    </div>`;
+  }
+  
+  function escapeHtml(str) { return str.replace(/[&<>]/g, function(m){if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;}); }
+  
+  function renderPagination(containerId, current, total, type) {
+    const container = document.getElementById(containerId);
+    if(!container) return;
+    if(total <= 1) { container.innerHTML = ''; return; }
+    let html = `<button class="pg-btn" data-page="prev" ${current===1 ? 'disabled' : ''}>‹</button>`;
+    for(let i=1;i<=total;i++) {
+      html += `<button class="pg-btn ${i===current ? 'active' : ''}" data-page="${i}">${i}</button>`;
+    }
+    html += `<button class="pg-btn" data-page="next" ${current===total ? 'disabled' : ''}>›</button>`;
+    html += `<span class="pg-info">${(current-1)*itemsPerPage+1}–${Math.min(current*itemsPerPage, type==='completed' ? completedRaw.length : ongoingRaw.length)} of ${type==='completed' ? completedRaw.length : ongoingRaw.length}</span>`;
+    container.innerHTML = html;
+    container.querySelectorAll('.pg-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const page = btn.getAttribute('data-page');
+        if(page === 'prev') { if(type==='completed' && completedPage>1) { completedPage--; renderCompleted(); } else if(type==='ongoing' && ongoingPage>1) { ongoingPage--; renderOngoing(); } }
+        else if(page === 'next') { if(type==='completed' && completedPage<total) { completedPage++; renderCompleted(); } else if(type==='ongoing' && ongoingPage<total) { ongoingPage++; renderOngoing(); } }
+        else { const num = parseInt(page); if(!isNaN(num)) { if(type==='completed') { completedPage=num; renderCompleted(); } else { ongoingPage=num; renderOngoing(); } } }
+      });
+    });
+  }
+  
+  function attachZoomEvents() {
+    document.querySelectorAll('.card-img-wrap[data-img]').forEach(wrap => {
+      wrap.removeEventListener('click', zoomHandler);
+      wrap.addEventListener('click', zoomHandler);
+    });
+    function zoomHandler(e) {
+      const imgSrc = this.getAttribute('data-img');
+      if(imgSrc) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImg');
+        modalImg.src = imgSrc;
+        modal.style.display = 'flex';
+      }
+    }
+  }
+  
+  // tab switching
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const tabId = this.getAttribute('data-tab');
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+      if(tabId === 'completed') {
+        document.getElementById('panel-completed').classList.add('active');
+        renderCompleted();
+      } else {
+        document.getElementById('panel-ongoing').classList.add('active');
+        renderOngoing();
+      }
+    });
+  });
+  
+  // modal close
+  const modal = document.getElementById('imageModal');
+  const closeModal = () => { modal.style.display = 'none'; };
+  modal.addEventListener('click', closeModal);
+  document.querySelector('.modal-close').addEventListener('click', closeModal);
+  
+  // initial renders
+  renderCompleted();
+  renderOngoing();
+  document.getElementById('cnt-completed').innerText = completedRaw.length;
+  document.getElementById('cnt-ongoing').innerText = ongoingRaw.length;
+</script>
+</body>
+</html>

@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>LK Constraction | Best Construction Company  – ₹1899/sq.ft</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap 5 CSS (full responsive) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Site Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+ <style>
+       
+
+        /* Light Green Theme Variables */
+        :root {
+            --primary-green: #1e6204;
+            --primary-light: #e6f5df;
+            --primary-soft: #c8e6d9;
+            --accent-green: #2d8a06;
+            --text-dark: #1e2f2b;
+            --text-muted: #5a6e69;
+            --border-light: #d4e6dd;
+        }
+        dl, ol, ul{
+          margin-top: auto;
+        margin-bottom: auto;
+        }
+
+        /* Custom Navbar (light green) */
+        
+        
+        .btn-quote {
+            background: var(--primary-green);
+            color: white;
+            border-radius: 40px;
+            padding: 8px 24px;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .btn-quote:hover {
+            background: var(--accent-green);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .page-header {
+            background: linear-gradient(105deg, #ffffff 0%, #f2faf5 100%);
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 16px auto 0;
+        }
+
+        /* Contact Cards (inspired by hireandbuild) */
+        .contact-card {
+            background: white;
+            border-radius: 28px;
+            padding: 32px 24px;
+            height: 100%;
+            transition: all 0.25s;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 30px -12px rgba(46, 125, 100, 0.1);
+            border-color: var(--primary-soft);
+        }
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--primary-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+        .card-icon i {
+            font-size: 1.8rem;
+            color: var(--primary-green);
+        }
+        .contact-card h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .contact-detail {
+            font-size: 1rem;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .contact-sub {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+        .whatsapp-link {
+            background: #25D36620;
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 40px;
+            text-decoration: none;
+            color: #075e54;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 60px 0 70px;
+            background: #ffffff;
+        }
+        .form-wrapper {
+            background: white;
+            border-radius: 36px;
+            padding: 40px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-light);
+            height: 95%;
+        }
+        .form-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+        .form-sub {
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+        .form-control, .form-select {
+            border: 1.5px solid #e2efe9;
+            border-radius: 16px;
+            padding: 12px 18px;
+            font-size: 0.95rem;
+            transition: 0.2s;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(46, 125, 100, 0.15);
+        }
+        .btn-submit {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: 0.2s;
+            width: 100%;
+        }
+        .btn-submit:hover {
+            background: var(--accent-green);
+            transform: translateY(-2px);
+        }
+
+        /* Map Container Styling */
+        .map-wrapper {
+            background: white;
+            border-radius: 36px;
+            padding: 12px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-light);
+            display: flex;
+            flex-direction: column;
+        }
+        .map-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            padding: 8px 16px 0 16px;
+            margin-bottom: 12px;
+        }
+        .map-container {
+            border-radius: 28px;
+            overflow: hidden;
+            height: 380px;
+            width: 100%;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: brightness(0.98) contrast(1.02);
+        }
+        .address-details {
+            padding: 35px 16px 35px;
+            background: var(--primary-light);
+            border-radius: 24px;
+            margin-top: 16px;
+        }
+        .address-details i {
+            color: var(--primary-green);
+            width: 28px;
+        }
+
+        /* Stats Grid (light green badges) */
+        .stats-grid {
+            background: var(--primary-light);
+            border-radius: 48px;
+            padding: 40px 20px;
+            margin: 30px 0 50px;
+            grid-template-columns: repeat(1, 1fr);
+        }
+       
+        .stat-item {
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--primary-green);
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a2e28;
+            color: #cfe6df;
+            padding: 48px 0 24px;
+            margin-top: 40px;
+        }
+        .footer a {
+            color: #cfe6df;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            .form-wrapper {
+                padding: 28px;
+            }
+            .contact-card {
+                margin-bottom: 20px;
+            }
+            .map-container {
+                height: 280px;
+            }
+            .stats-grid .row {
+                gap: 28px;
+            }
+        }
+        .success-message {
+            background: #dff0e9;
+            border-left: 4px solid var(--primary-green);
+            padding: 14px;
+            border-radius: 16px;
+            margin-top: 18px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <i class="fa fa-phone" aria-hidden="true"></i>
+ Call us: <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp; ₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built Across 
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap">
+        <!-- <div class="logo-icon"><i class="fas fa-hard-hat"></i></div>
+        <span class="logo-text">LK<span>Constraction</span></span> -->
+        <img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img">
+        
+      </a>
+      <ul class="nav-menu">
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li>
+          <button>Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></button>
+          <div class="dd-menu">
+            <div class="dd-grid">
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-home"></i></div>
+                <div><span class="dd-title">Residential Construction</span><span class="dd-desc">Custom villas, G+1 &amp; G+2 homes </span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-drafting-compass"></i></div>
+                <div><span class="dd-title">Architectural Design</span><span class="dd-desc">3D renders, floor plans &amp; vastu layouts</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-couch"></i></div>
+                <div><span class="dd-title">Interior Design</span><span class="dd-desc">Modular kitchen, wardrobes &amp; full interiors</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-tools"></i></div>
+                <div><span class="dd-title">Renovation &amp; Remodelling</span><span class="dd-desc">Extension, structural upgrades &amp; painting</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-solar-panel"></i></div>
+                <div><span class="dd-title">Smart &amp; Eco Homes</span><span class="dd-desc">Solar, rainwater harvesting &amp; green builds</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-file-contract"></i></div>
+                <div><span class="dd-title">Plan Approval &amp; Legal</span><span class="dd-desc">CMDA / DTCP approval &amp; documentation</span></div>
+              </a>
+            </div>
+            <div class="dd-foot">
+              <span>All services · Dedicated engineer · 15-yr warranty</span>
+              <a href="#">All services <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#" class="btn nav-cta">Free Estimate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <a href="about.html"><i class="fas fa-info-circle" style="color:var(--green);width:20px"></i> About Us</a>
+  <button id="mobServToggle"><i class="fas fa-building" style="color:var(--green);width:20px"></i> Services <i class="fas fa-chevron-down" style="margin-left:auto;font-size:.7rem"></i></button>
+  <div class="mob-services" id="mobServList">
+    <a href="#"><i class="fas fa-home"></i> Residential Construction</a>
+    <a href="#"><i class="fas fa-drafting-compass"></i> Architectural Design</a>
+    <a href="#"><i class="fas fa-couch"></i> Interior Design</a>
+    <a href="#"><i class="fas fa-tools"></i> Renovation &amp; Remodelling</a>
+    <a href="#"><i class="fas fa-solar-panel"></i> Smart &amp; Eco Homes</a>
+    <a href="#"><i class="fas fa-file-contract"></i> Plan Approval &amp; Legal</a>
+  </div>
+  <a href="projects.html"><i class="fas fa-images" style="color:var(--green);width:20px"></i> Projects</a>
+  <a href="#"><i class="fas fa-blog" style="color:var(--green);width:20px"></i> Blog</a>
+  <a href="#"><i class="fas fa-envelope" style="color:var(--green);width:20px"></i> Contact Us</a>
+  <a href="#" class="mob-cta"><i class="fas fa-paper-plane"></i> Get a Free Estimate</a>
+</div>
+<section class="lk">
+  <div class="lkc">
+        <nav class="lkms-nav" aria-label="Breadcrumb navigation">
+      <a href="index.html" class="lkms-link">
+        <span class="lkms-icon">🏠</span> Home
+      </a>
+      
+      <span class="lkms-sep">•</span>
+      <span class="lkms-current">Contact Us</span>
+    </nav>
+
+    <!-- centered heading & description (unchanged but all classes follow lk-*) -->
+    <h1 class="lk-heading">Contact Us</h1>
+    <p class="lk-desc">
+      Get in touch with our team to discuss your project requirements and turn your vision into reality.
+    </p>
+    <div class="lk-accent"></div>
+  </div>
+</section>
+<!-- Hero / Page Title -->
+<section class="page-header">
+    <div class="container">
+        <h1>Let's Build Your Dream Together</h1>
+        <p>Contact our team today to discuss your project requirements and receive expert guidance from concept to completion.</p>
+    </div>
+</section>
+
+<!-- Contact Cards Row (inspired by HireandBuild) -->
+<div class="container mt-4 mb-5">
+    <div class="row g-4">
+        <!-- Call Us -->
+        <div class="col-md-6 col-lg-3">
+            <div class="contact-card">
+                <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+                <h3>Call Us</h3>
+                <div class="contact-detail">+91 70924 18582</div>
+                <div class="contact-sub">Mon – Sat, 10 AM – 7 PM</div>
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="col-md-6 col-lg-3">
+            <div class="contact-card">
+                <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                <h3>Email</h3>
+                <div class="contact-detail">info@lkconstruction.com</div>
+                <div class="contact-sub">We reply within 24 hours</div>
+            </div>
+        </div>
+        <!-- Visit Office -->
+        <div class="col-md-6 col-lg-3">
+            <div class="contact-card">
+                <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <h3>Visit</h3>
+                <div class="contact-detail">Anna Nagar, Madurai</div>
+                <div class="contact-sub">2nd Floor, 87A, 2nd Main Rd, Tamil Nadu 625020</div>
+            </div>
+        </div>
+        <!-- WhatsApp -->
+        <div class="col-md-6 col-lg-3">
+            <div class="contact-card">
+                <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
+                <h3>WhatsApp</h3>
+                <div class="contact-detail">Chat with Us</div>
+                <div class="contact-sub">Quick responses, no calls needed</div>
+                <a href="https://wa.me/917092418582" class="whatsapp-link"><i class="fab fa-whatsapp me-1"></i> Start Chat →</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Working Hours & Follow Section (extra clarity) -->
+<div class="container mb-5">
+    <div class="row align-items-center bg-white p-4 rounded-4 border border-light-green shadow-sm">
+        <div class="col-md-6">
+            <i class="fas fa-clock text-primary-green me-2"></i>
+            <strong>Working Hours:</strong> Mon – Sat 10:00 AM – 7:00 PM <span class="badge bg-success ms-2">Open Now</span>
+        </div>
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+            <span class="me-3"><i class="fab fa-facebook me-1"></i> Facebook</span>
+            <span class="me-3"><i class="fab fa-instagram me-1"></i> Instagram</span>
+            <span><i class="fab fa-linkedin me-1"></i> LinkedIn</span>
+        </div>
+    </div>
+</div>
+
+<!-- Get a Free Estimate Form + Map View (Right Side) -->
+<section class="form-section">
+    <div class="container">
+        <div class="row g-5 align-items-stretch">
+            <!-- Left side: Form -->
+            <div class="col-lg-7">
+                <div class="form-wrapper">
+                    <div class="form-title">Get a Free Estimate</div>
+                    <div class="form-sub">No commitment · Response within 24 hours·</div>
+                    
+                    <form id="contactForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="fullName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Phone *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Gmail Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Plot Location (Area)</label>
+                                <input type="text" class="form-control" id="location" placeholder="e.g. Anna Nagar, ">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Plot Area (sq.ft)</label>
+                                <input type="number" class="form-control" id="plotArea" placeholder="1200">
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">About Your Requirement</label>
+                                <textarea class="form-control" rows="3" id="requirement" placeholder="Briefly describe your project..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Additional Notes (optional)</label>
+                                <textarea class="form-control" rows="2" id="notes"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Recaptcha</label>
+                               <div class="g-recaptcha" style="margin-bottom: 30px;" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"> </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-submit" id="submitBtn">Request Free Estimate <i class="fas fa-paper-plane ms-2"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="successMsg" class="success-message">
+                        <i class="fas fa-check-circle me-2"></i> Request Received! Our team will call you within 24 hours.
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right side: MAP VIEW + Stats -->
+            <div class="col-lg-5">
+                <div class="map-wrapper">
+                    <div class="map-title">
+                        <i class="fas fa-location-dot text-primary-green me-2"></i> Our Office Location
+                    </div>
+                    <div class="map-container">
+                        <!-- Google Maps Embed - Anna Nagar, Madurai (accurate location) -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.985129940401!2d78.124199!3d9.925201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c4f5e5e5e5e5%3A0x5e5e5e5e5e5e5e5e!2sAnna%20Nagar%2C%20Madurai%2C%20Tamil%20Nadu%20625020!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="address-details">
+                        <div class="mb-2"><i class="fas fa-building me-2"></i> <strong>LK Construction Head Office</strong></div>
+                        <div class="mb-1"><i class="fas fa-map-pin me-2"></i> 2nd floor, 87A, 2nd Main Road,</div>
+                        <div class="mb-1"><i class="fas fa-map-pin me-2"></i> Anna Nagar, Madurai - 625020,</div>
+                        <div class="mb-1"><i class="fas fa-map-pin me-2"></i> Tamil Nadu, India</div>
+                        <div class="mt-2"><i class="fas fa-phone me-2"></i> +91 70924 18582</div>
+                    </div>
+                </div>
+
+                <!-- Stats Badges (green theme) -->
+                <div class="stats-grid mt-4">
+                    <div class="row text-center">
+                        <div class="col-6 mb-4">
+                            <div class="stat-number">150<span style="font-size:1.5rem;">+</span></div>
+                            <div class="stat-label">Homes Delivered</div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="stat-number">15<span style="font-size:1.5rem;"> yr</span></div>
+                            <div class="stat-label">Structural Warranty</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-number">₹1,899</div>
+                            <div class="stat-label">Per sq.ft Onwards</div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-number">1.5L</div>
+                            <div class="stat-label">Sq.ft Completed</div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-3">
+                        <i class="fas fa-shield-alt text-primary-green"></i> <span class="small">RERA Approved | ISO Certified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- CTA BAND -->
+<div class="cta-band" id="contact">
+  <div class="container">
+    <h2>Ready to Build Your Dream Home<br></h2>
+    <p>Free site visit, detailed BOQ &amp; expert consultation within 24 hours. 180+ families trusted us — we'd love to build yours too.</p>
+    <div class="cta-btns">
+      <a href="tel:+919876543210" class="btn btn-green"><i class="fas fa-phone-alt"></i> Call +91 98765 43210</a>
+      <a href="#estimate" class="btn btn-white"><i class="fas fa-paper-plane"></i> Request Free Estimate</a>
+      <a href="#" class="btn btn-wa" id="waBtn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img"></div>
+        <p style="color: #fff;">Built with integrity, delivered with joy — 180+ happy families across . We build homes that stand the test of time with a 15-year written structural warranty.</p>
+        <div style="margin-top:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-youtube"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ser">
+        <h4>Services</h4>
+        <a href="#">Residential Construction</a>
+        <a href="#">Architectural Design</a>
+        <a href="#">Interior Design</a>
+        <a href="#">Renovation &amp; Remodelling</a>
+        <a href="#">Smart &amp; Eco Homes</a>
+        <a href="#">Plan Approval &amp; Legal</a>
+      </div>
+      <div class="loc"> 
+        <h4>Locations</h4>
+        <a href="#">Anna Nagar</a>
+        <a href="#">Palamedu</a>
+        <a href="#">Othakadai</a>
+        <a href="#">Paravai</a>
+        <a href="#">Peraiyur</a>
+        <a href="#">Vadipatti</a>
+        <a href="#">Vandiyur</a>
+        <a href="#">Sholavandan</a>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <p style="margin-bottom:.8rem"><i class="fa fa-phone" aria-hidden="true"></i>
+ <a href="tel:+919876543210" class="foot-contact" style="text-decoration:none">+91 98765 43210</a></p>
+        <p style="margin-bottom:.8rem"><i class="fa fa-envelope" aria-hidden="true"></i>
+ <a href="mailto:info@lkconstraction.com" class="foot-contact" style="text-decoration:none"> info@lkconstraction.com</a></p>
+        <p style="margin-bottom:1rem"><i class="fa fa-map-pin" aria-hidden="true"></i>
+ , Tamil Nadu, India</p>
+        <a href="#estimate" class="btn btn-greendr" style="font-size:.85rem;padding:10px 20px"><i class="fas fa-paper-plane"></i> Free Estimate</a>
+      </div>
+    </div>
+    <hr class="foot-divider">
+    <div class="foot-bottom">
+      <span>© 2026 LK Constraction — Premium Residential Construction Company </span>
+      <span>₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CALL BTN -->
+<a href="tel:+919876543210" class="sticky-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <div class="modal-ico"><i class="fas fa-check"></i></div>
+    <h3 id="modalTitle">Request Received!</h3>
+    <p id="modalMsg">Our team will call you within 24 hours.</p>
+    <button class="modal-close-btn" id="modalCloseBtn">Got it</button>
+  </div>
+</div>
+
+<!-- Site Scripts -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

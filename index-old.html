@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>LK Constraction | Best Construction Company in Madurai – ₹1899/sq.ft</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+:root{
+  --green:#2d8a06;
+  --green-d:#1e6204;
+  --green-l:#e6f5df;
+  --green-xl:#f3faf0;
+  --ink:#0f1f0d;
+  --ink2:#2a3d28;
+  --muted:#607060;
+  --border:#ddecd7;
+  --white:#fff;
+  --radius:16px;
+  --radius-lg:24px;
+  --radius-xl:36px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#fff;color:var(--ink);overflow-x:hidden;line-height:1.6}
+
+/* ── UTILS ── */
+.container{max-width:1240px;margin:0 auto;padding:0 28px}
+.tag{display:inline-flex;align-items:center;gap:6px;background:var(--green-l);color:var(--green-d);font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 14px;border-radius:30px;border:1px solid #c2e0b4}
+.section-eyebrow{margin-bottom:1.2rem}
+.section-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:800;line-height:1.15;color:var(--ink)}
+.section-sub{font-size:1.05rem;color:var(--muted);max-width:640px;margin:.8rem auto 0}
+.center{text-align:center}
+
+/* ── BUTTONS ── */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:.95rem;border:none;cursor:pointer;transition:.22s;text-decoration:none;white-space:nowrap}
+.btn-green{background:var(--green);color:#fff;padding:14px 30px;border-radius:50px;box-shadow:0 6px 20px rgba(45,138,6,.28)}
+.btn-green:hover{background:var(--green-d);transform:translateY(-2px);box-shadow:0 10px 28px rgba(45,138,6,.35)}
+.btn-outline{background:transparent;color:var(--green);border:2px solid var(--green);padding:12px 26px;border-radius:50px}
+.btn-outline:hover{background:var(--green);color:#fff}
+.btn-white{background:#fff;color:var(--green);padding:14px 30px;border-radius:50px;box-shadow:0 4px 18px rgba(0,0,0,.12)}
+.btn-white:hover{background:var(--green-l)}
+.btn-wa{background:#25D366;color:#fff;padding:14px 30px;border-radius:50px;box-shadow:0 6px 20px rgba(37,211,102,.3)}
+.btn-wa:hover{background:#1ebe5a;transform:translateY(-2px)}
+
+/* ── TOP BAR ── */
+.topbar{background:var(--green);color:#fff;font-size:.8rem;font-weight:600;padding:7px 0;text-align:center;letter-spacing:.03em}
+.topbar a{color:#fff;text-decoration:none}
+
+/* ── NAV ── */
+nav{position:sticky;top:0;z-index:900;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 2px 16px rgba(0,0,0,.06)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:1rem}
+.logo-wrap{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo-icon{width:42px;height:42px;background:var(--green);border-radius:12px;display:flex;align-items:center;justify-content:center}
+.logo-icon i{color:#fff;font-size:1.2rem}
+.logo-text{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:900;color:var(--ink);letter-spacing:-.5px}
+.logo-text span{color:var(--green)}
+.nav-menu{display:flex;align-items:center;gap:.3rem;list-style:none}
+.nav-menu>li{position:relative}
+.nav-menu>li>a,.nav-menu>li>button{display:flex;align-items:center;gap:5px;padding:8px 14px;font-family:'DM Sans',sans-serif;font-size:.9rem;font-weight:600;color:var(--ink2);background:none;border:none;cursor:pointer;border-radius:10px;transition:.18s;text-decoration:none;white-space:nowrap}
+.nav-menu>li>a:hover,.nav-menu>li>button:hover{background:var(--green-l);color:var(--green)}
+.nav-menu>li>a.active{color:var(--green)}
+.nav-cta{background:var(--green)!important;color:#fff!important;border-radius:50px!important;padding:9px 20px!important}
+.nav-cta:hover{background:var(--green-d)!important}
+
+/* Dropdown */
+.dd-menu{position:absolute;top:calc(100% + 10px);left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);box-shadow:0 20px 50px rgba(0,0,0,.12);padding:1rem;min-width:580px;opacity:0;visibility:hidden;transition:.2s;pointer-events:none}
+.dd-menu::before{content:'';position:absolute;top:-7px;left:50%;transform:translateX(-50%);border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid var(--border)}
+.dd-menu::after{content:'';position:absolute;top:-6px;left:50%;transform:translateX(-50%);border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:7px solid #fff}
+.nav-menu>li:hover .dd-menu,.nav-menu>li.open .dd-menu{opacity:1;visibility:visible;pointer-events:auto}
+.dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.dd-item{display:flex;align-items:flex-start;gap:12px;padding:12px 14px;border-radius:12px;text-decoration:none;transition:.18s;color:inherit}
+.dd-item:hover{background:var(--green-xl)}
+.dd-ico{width:40px;height:40px;min-width:40px;background:var(--green-l);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--green);font-size:1rem}
+.dd-title{font-weight:700;font-size:.875rem;color:var(--ink);display:block}
+.dd-desc{font-size:.775rem;color:var(--muted);margin-top:2px;display:block}
+.dd-foot{margin-top:8px;padding-top:8px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.dd-foot span{font-size:.78rem;color:var(--muted)}
+.dd-foot a{font-size:.82rem;font-weight:700;color:var(--green);text-decoration:none;display:flex;align-items:center;gap:5px}
+
+.hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;color:var(--ink);font-size:1.5rem}
+.mob-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:800;backdrop-filter:blur(3px)}
+.mob-overlay.on{display:block}
+.mob-menu{position:fixed;top:0;right:-100%;width:min(340px,90vw);height:100vh;background:#fff;z-index:850;transition:.3s cubic-bezier(.2,.9,.4,1);overflow-y:auto;display:flex;flex-direction:column;padding:1.5rem}
+.mob-menu.open{right:0}
+.mob-close{align-self:flex-end;background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--muted);margin-bottom:1rem}
+.mob-menu a,.mob-menu button{display:flex;align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid var(--border);font-size:.95rem;font-weight:600;color:var(--ink2);text-decoration:none;background:none;border-top:none;border-left:none;border-right:none;width:100%;cursor:pointer;font-family:'DM Sans',sans-serif}
+.mob-menu a:hover,.mob-menu button:hover{color:var(--green)}
+.mob-services{padding-left:1rem;background:var(--green-xl);border-radius:12px;margin:6px 0 8px;overflow:hidden;max-height:0;transition:.3s}
+.mob-services.open{max-height:400px}
+.mob-services a{font-size:.875rem;font-weight:500;border-bottom:1px solid var(--border);padding:10px 12px}
+.mob-services a:last-child{border-bottom:none}
+.mob-cta{background:var(--green);color:#fff!important;border-radius:50px;justify-content:center;padding:14px!important;margin-top:1.5rem;border:none!important}
+.mob-cta:hover{background:var(--green-d)!important}
+
+/* ── HERO ── */
+.hero{background:linear-gradient(145deg,var(--green-xl) 0%,#fff 55%);padding:60px 0 50px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:start}
+.hero-tag{margin-bottom:1.2rem}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4.5vw,3.5rem);font-weight:900;line-height:1.12;color:var(--ink);margin-bottom:1rem}
+.hero h1 span{color:var(--green)}
+.hero-sub{font-size:1.05rem;color:var(--muted);max-width:500px;margin-bottom:1.5rem}
+.hero-price{display:inline-flex;align-items:center;gap:10px;background:#fff;border:2px solid var(--green);border-radius:14px;padding:10px 20px;margin-bottom:1.5rem}
+.hero-price strong{font-size:1.6rem;color:var(--green);font-weight:800}
+.hero-price span{font-size:.85rem;color:var(--muted)}
+.hero-btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-bottom:1.8rem}
+.hero-stats{display:flex;gap:2rem;flex-wrap:wrap;padding-top:1.5rem;border-top:1px solid var(--border)}
+.hero-stat-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:800;color:var(--green);line-height:1}
+.hero-stat-lbl{font-size:.8rem;color:var(--muted);font-weight:500;margin-top:3px}
+
+/* FORM CARD */
+.form-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-xl);padding:2rem;box-shadow:0 24px 56px rgba(0,0,0,.1)}
+.form-card h3{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;margin-bottom:.3rem}
+.form-card p{font-size:.875rem;color:var(--muted);margin-bottom:1.4rem}
+.form-row{margin-bottom:1rem}
+.form-row input,.form-row select,.form-row textarea{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:12px;font-family:'DM Sans',sans-serif;font-size:.9rem;color:var(--ink);background:#fafdf8;outline:none;transition:.2s;resize:none}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(45,138,6,.1)}
+.form-row input::placeholder,.form-row textarea::placeholder{color:#a0b09a}
+.form-submit{width:100%;background:var(--green);color:#fff;padding:14px;border:none;border-radius:50px;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;transition:.22s;margin-top:.5rem;display:flex;align-items:center;justify-content:center;gap:8px}
+.form-submit:hover{background:var(--green-d)}
+.form-note{text-align:center;font-size:.75rem;color:#a0b09a;margin-top:.8rem}
+
+/* ── STATS BANNER ── */
+.stats-band{background:var(--green);padding:32px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.stat-num{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:800;color:#fff;line-height:1}
+.stat-lbl{font-size:.85rem;color:rgba(255,255,255,.8);margin-top:4px;font-weight:500}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about-img{position:relative;border-radius:var(--radius-xl);overflow:hidden;aspect-ratio:4/3;background:linear-gradient(135deg,#d4edc8,#a8d490);display:flex;align-items:center;justify-content:center}
+.about-img-inner{text-align:center;padding:2rem}
+.about-img-inner i{font-size:5rem;color:var(--green-d);opacity:.5}
+.about-img-inner p{color:var(--green-d);font-weight:600;margin-top:1rem;opacity:.7}
+.about-badge{position:absolute;bottom:20px;left:20px;background:#fff;border-radius:14px;padding:12px 18px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.about-badge strong{display:block;font-size:1.5rem;color:var(--green);font-weight:800;font-family:'Playfair Display',serif}
+.about-badge span{font-size:.8rem;color:var(--muted)}
+.about-text p{font-size:1rem;color:var(--muted);margin-bottom:1rem;line-height:1.75}
+.about-pillars{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.5rem}
+.pillar{background:var(--green-xl);border:1px solid var(--border);border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px}
+.pillar i{color:var(--green);font-size:1.1rem;width:20px;text-align:center}
+.pillar span{font-size:.875rem;font-weight:600;color:var(--ink2)}
+
+/* ── WHY CHOOSE US ── */
+.why-section{background:var(--green-xl)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.why-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.8rem;transition:.28s}
+.why-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(45,138,6,.1);border-color:#b8dcaa}
+.why-num{font-family:'Playfair Display',serif;font-size:2.5rem;font-weight:900;color:var(--border);line-height:1;margin-bottom:.8rem}
+.why-ico{width:52px;height:52px;background:var(--green-l);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--green);font-size:1.3rem;margin-bottom:1.2rem}
+.why-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+.why-card p{font-size:.875rem;color:var(--muted);line-height:1.65}
+
+/* ── SERVICES ── */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.svc-card{border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.8rem;transition:.28s;position:relative;overflow:hidden}
+.svc-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--green);transform:scaleX(0);transform-origin:left;transition:.3s}
+.svc-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.07);border-color:#c0ddb0}
+.svc-card:hover::before{transform:scaleX(1)}
+.svc-ico{width:52px;height:52px;background:var(--green-l);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--green);font-size:1.3rem;margin-bottom:1.2rem}
+.svc-card h3{font-size:1.05rem;font-weight:700;margin-bottom:.5rem}
+.svc-card p{font-size:.875rem;color:var(--muted);line-height:1.65}
+.svc-tag{display:inline-block;margin-top:1rem;padding:4px 12px;background:var(--green-l);color:var(--green);border-radius:20px;font-size:.75rem;font-weight:700}
+
+/* ── PROJECTS ── */
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.proj-card{border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);transition:.28s;background:#fff}
+.proj-card:hover{transform:translateY(-5px);box-shadow:0 20px 40px rgba(0,0,0,.1)}
+.proj-img{height:200px;background:linear-gradient(135deg,#c8e6b8,#90c870);display:flex;align-items:center;justify-content:center;position:relative}
+.proj-img i{font-size:3.5rem;color:#5a9e40;opacity:.5}
+.proj-status{position:absolute;top:14px;left:14px;background:var(--green);color:#fff;font-size:.7rem;font-weight:700;padding:4px 12px;border-radius:20px;letter-spacing:.05em}
+.proj-body{padding:1.2rem}
+.proj-name{font-family:'Playfair Display',serif;font-weight:800;font-size:1.1rem;margin-bottom:.2rem}
+.proj-loc{font-size:.82rem;color:var(--muted);margin-bottom:.8rem;display:flex;align-items:center;gap:5px}
+.proj-meta{display:flex;gap:1rem}
+.proj-meta-item{font-size:.8rem;color:var(--muted)}
+.proj-meta-item strong{display:block;font-weight:700;color:var(--ink);font-size:.875rem}
+
+/* ── PROCESS ── */
+.process-section{background:var(--green-xl)}
+.process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;position:relative}
+.process-grid::before{content:'';position:absolute;top:36px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--green),#90c870);z-index:0}
+.proc-step{text-align:center;position:relative;z-index:1}
+.proc-num{width:72px;height:72px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:900;margin:0 auto 1.2rem;border:4px solid #fff;box-shadow:0 6px 20px rgba(45,138,6,.3)}
+.proc-step h3{font-size:.95rem;font-weight:700;margin-bottom:.4rem}
+.proc-step p{font-size:.8rem;color:var(--muted)}
+
+/* ── TESTIMONIALS ── */
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.testi-card{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.8rem;transition:.28s}
+.testi-card:hover{box-shadow:0 12px 30px rgba(0,0,0,.08)}
+.testi-stars{color:#f5a623;font-size:.9rem;margin-bottom:1rem;letter-spacing:2px}
+.testi-text{font-size:.9rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem;font-style:italic}
+.testi-author{font-weight:700;font-size:.875rem;color:var(--ink)}
+.testi-loc{font-size:.8rem;color:var(--muted)}
+
+/* ── CHECKLIST ── */
+.check-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.2rem}
+.check-item{display:flex;gap:1rem;align-items:flex-start;background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem}
+.check-item:hover{border-color:#b8dba8;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.check-num{width:44px;height:44px;min-width:44px;background:var(--green);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:900}
+.check-item h4{font-size:.95rem;font-weight:700;margin-bottom:.3rem}
+.check-item p{font-size:.84rem;color:var(--muted);line-height:1.6}
+.check-badge{display:inline-block;margin-top:.5rem;padding:3px 10px;background:var(--green-l);color:var(--green);border-radius:20px;font-size:.72rem;font-weight:700}
+
+/* ── INTERIOR ── */
+.interior-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.interior-img{border-radius:var(--radius-xl);overflow:hidden;aspect-ratio:3/4;background:linear-gradient(160deg,#d8eec8,#a8cf90);display:flex;align-items:center;justify-content:center}
+.interior-img i{font-size:6rem;color:var(--green-d);opacity:.35}
+.interior-steps{display:flex;flex-direction:column;gap:1.2rem;margin-top:1.5rem}
+.int-step{display:flex;gap:1rem;align-items:flex-start}
+.int-step-num{width:36px;height:36px;min-width:36px;background:var(--green);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem}
+.int-step-num.outline{background:#fff;color:var(--green);border:2px solid var(--green)}
+.int-step h4{font-size:.95rem;font-weight:700;margin-bottom:.2rem}
+.int-step p{font-size:.85rem;color:var(--muted)}
+
+/* ── SOCIAL BAND ── */
+.social-band{background:var(--green-xl);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.social-row{display:flex;align-items:center;justify-content:center;gap:2rem;flex-wrap:wrap;padding:2rem 0}
+.soc-card{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);padding:1rem 1.8rem;transition:.22s;text-decoration:none;color:inherit}
+.soc-card:hover{box-shadow:0 8px 24px rgba(0,0,0,.08);border-color:#b8dba8}
+.soc-ico{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:#fff}
+.soc-ico.ig{background:linear-gradient(135deg,#e1306c,#fd1d1d,#fcb045)}
+.soc-ico.yt{background:#ff0000}
+.soc-ico.fb{background:#1877f2}
+.soc-num{font-family:'Playfair Display',serif;font-size:1.4rem;font-weight:800;color:var(--ink)}
+.soc-lbl{font-size:.8rem;color:var(--muted)}
+
+/* ── VENDORS ── */
+.vendor-track{overflow:hidden;padding:1.5rem 0}
+.vendor-row{display:flex;gap:2.5rem;align-items:center;animation:scroll-left 22s linear infinite}
+.vendor-row:hover{animation-play-state:paused}
+@keyframes scroll-left{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.vendor-logo{height:44px;opacity:.6;filter:grayscale(1);transition:.22s;white-space:nowrap;font-weight:800;font-size:1rem;color:var(--muted);display:flex;align-items:center}
+.vendor-logo:hover{opacity:1;filter:none;color:var(--green)}
+.vendor-logo i{font-size:2rem;margin-right:8px}
+
+/* ── BANKS ── */
+.bank-grid{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;align-items:center}
+.bank-chip{background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px 20px;font-weight:700;font-size:.9rem;color:var(--muted);transition:.2s}
+.bank-chip:hover{border-color:var(--green);color:var(--green);box-shadow:0 4px 14px rgba(45,138,6,.1)}
+
+/* ── FAQ ── */
+.faq-list{display:flex;flex-direction:column;gap:.8rem;max-width:860px;margin:0 auto}
+.faq-item{background:#fff;border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:.2s}
+.faq-item.open{border-color:var(--green);box-shadow:0 6px 20px rgba(45,138,6,.08)}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.5rem;cursor:pointer;gap:1rem}
+.faq-q span{font-weight:700;font-size:.95rem;color:var(--ink2)}
+.faq-q i{color:var(--green);transition:.25s;min-width:20px;text-align:center}
+.faq-item.open .faq-q i{transform:rotate(180deg)}
+.faq-a{padding:0 1.5rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease}
+.faq-a p{font-size:.9rem;color:var(--muted);line-height:1.7;padding-bottom:1.2rem}
+
+/* ── CTA BAND ── */
+.cta-band{background:linear-gradient(135deg,var(--ink) 0%,#1a3d14 100%);padding:60px 0;text-align:center}
+.cta-band h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:#fff;margin-bottom:.8rem}
+.cta-band p{color:rgba(255,255,255,.75);max-width:560px;margin:.5rem auto 2rem;font-size:1rem}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ── FOOTER ── */
+footer{background:#0c1a0a;color:#8aad82;padding:50px 0 24px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.foot-logo{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:900;color:#c8e8be;margin-bottom:.8rem;display:flex;align-items:center;gap:10px}
+.foot-logo i{font-size:1rem;color:var(--green)}
+.foot-col h4{color:#c8e8be;font-size:.9rem;font-weight:700;letter-spacing:.04em;margin-bottom:1rem}
+.foot-col a{display:block;color:#8aad82;text-decoration:none;font-size:.875rem;margin-bottom:.55rem;transition:.18s}
+.foot-col a:hover{color:#c8e8be}
+.foot-col p{font-size:.875rem;line-height:1.7}
+.foot-divider{border:none;border-top:1px solid #1d2f1a;margin:0 0 1.2rem}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:.8rem}
+.foot-contact a{color:var(--green);text-decoration:none}
+
+/* ── MODAL ── */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1000;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+.modal.on{display:flex}
+.modal-box{background:#fff;border-radius:var(--radius-xl);padding:2.5rem;max-width:440px;width:90%;text-align:center;animation:popUp .28s ease}
+@keyframes popUp{from{opacity:0;transform:scale(.92) translateY(20px)}to{opacity:1;transform:none}}
+.modal-ico{width:64px;height:64px;background:var(--green-l);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;color:var(--green);font-size:1.8rem}
+.modal-box h3{font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:.6rem}
+.modal-box p{font-size:.9rem;color:var(--muted);margin-bottom:1.5rem;line-height:1.6}
+.modal-close-btn{background:var(--green);color:#fff;border:none;padding:12px 32px;border-radius:50px;font-weight:700;cursor:pointer;font-size:.9rem;font-family:'DM Sans',sans-serif}
+
+/* ── STICKY PHONE BTN (mobile) ── */
+.sticky-call{display:none;position:fixed;bottom:20px;right:20px;z-index:700;background:var(--green);color:#fff;border-radius:50px;padding:13px 22px;font-weight:700;font-size:.9rem;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(45,138,6,.4);text-decoration:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .process-grid{grid-template-columns:repeat(3,1fr)}
+  .process-grid::before{display:none}
+  .projects-grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr}
+  .interior-grid{grid-template-columns:1fr}
+  .interior-img{aspect-ratio:16/7}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-menu,.nav-cta-wrap{display:none}
+  .hamburger{display:flex;align-items:center}
+  .hero-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .process-grid{grid-template-columns:1fr 1fr}
+  .projects-grid{grid-template-columns:1fr}
+  .testi-grid{grid-template-columns:1fr}
+  .check-grid{grid-template-columns:1fr}
+  .dd-menu{display:none!important}
+  .sticky-call{display:flex}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column;text-align:center}
+  section{padding:50px 0}
+  .hero{padding:36px 0 40px}
+}
+@media(max-width:480px){
+  .hero-btns{flex-direction:column}
+  .hero-btns a{justify-content:center}
+  .hero-stats{gap:1.2rem}
+  .cta-btns{flex-direction:column;align-items:center}
+  .process-grid{grid-template-columns:1fr}
+  .about-pillars{grid-template-columns:1fr}
+  .social-row{flex-direction:column;gap:1rem}
+}
+section{padding:70px 0};
+.ser a{
+color:var(--white);
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  📞 Call us: <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp; ₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built Across Madurai
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="logo-wrap">
+        <div class="logo-icon"><i class="fas fa-hard-hat"></i></div>
+        <span class="logo-text">LK<span>Constraction</span></span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#about">About Us</a></li>
+        <li>
+          <button>Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></button>
+          <div class="dd-menu">
+            <div class="dd-grid">
+              <a href="#services" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-home"></i></div>
+                <div><span class="dd-title">Residential Construction</span><span class="dd-desc">Custom villas, G+1 & G+2 homes in Madurai</span></div>
+              </a>
+              <a href="#services" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-drafting-compass"></i></div>
+                <div><span class="dd-title">Architectural Design</span><span class="dd-desc">3D renders, floor plans & vastu layouts</span></div>
+              </a>
+              <a href="#services" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-couch"></i></div>
+                <div><span class="dd-title">Interior Design</span><span class="dd-desc">Modular kitchen, wardrobes & full interiors</span></div>
+              </a>
+              <a href="#services" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-tools"></i></div>
+                <div><span class="dd-title">Renovation & Remodelling</span><span class="dd-desc">Extension, structural upgrades & painting</span></div>
+              </a>
+              <a href="#services" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-solar-panel"></i></div>
+                <div><span class="dd-title">Smart & Eco Homes</span><span class="dd-desc">Solar, rainwater harvesting & green builds</span></div>
+              </a>
+              <a href="#services" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-file-contract"></i></div>
+                <div><span class="dd-title">Plan Approval & Legal</span><span class="dd-desc">CMDA / DTCP approval & documentation</span></div>
+              </a>
+            </div>
+            <div class="dd-foot">
+              <span>All services · Dedicated engineer · 15-yr warranty</span>
+              <a href="#services">All services <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#estimate" class="btn nav-cta">Free Estimate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <a href="#about"><i class="fas fa-info-circle" style="color:var(--green);width:20px"></i> About Us</a>
+  <button id="mobServToggle"><i class="fas fa-building" style="color:var(--green);width:20px"></i> Services <i class="fas fa-chevron-down" style="margin-left:auto;font-size:.7rem"></i></button>
+  <div class="mob-services" id="mobServList">
+    <a href="#services"><i class="fas fa-home"></i> Residential Construction</a>
+    <a href="#services"><i class="fas fa-drafting-compass"></i> Architectural Design</a>
+    <a href="#services"><i class="fas fa-couch"></i> Interior Design</a>
+    <a href="#services"><i class="fas fa-tools"></i> Renovation & Remodelling</a>
+    <a href="#services"><i class="fas fa-solar-panel"></i> Smart & Eco Homes</a>
+    <a href="#services"><i class="fas fa-file-contract"></i> Plan Approval & Legal</a>
+  </div>
+  <a href="#projects"><i class="fas fa-images" style="color:var(--green);width:20px"></i> Projects</a>
+  <a href="#process"><i class="fas fa-list-ol" style="color:var(--green);width:20px"></i> Our Process</a>
+  <a href="#testimonials"><i class="fas fa-star" style="color:var(--green);width:20px"></i> Testimonials</a>
+  <a href="#contact"><i class="fas fa-envelope" style="color:var(--green);width:20px"></i> Contact</a>
+  <a href="#estimate" class="mob-cta"><i class="fas fa-paper-plane"></i> Get a Free Estimate</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-tag"><span class="tag"><i class="fas fa-leaf"></i> Eco-Friendly Certified Builder</span></div>
+        <h1>Best Construction Company in Madurai<br><span>Starting at ₹1899/Sq.Ft</span></h1>
+        <p class="hero-sub">180+ families trusted us for transparent pricing, dedicated site engineer, on-time delivery & 15-year structural warranty. We'd love to build yours too.</p>
+        <div class="hero-price">
+          <strong>₹1899/sq.ft*</strong>
+          <span>Flexible EMI · Milestone Payments</span>
+        </div>
+        <div class="hero-btns">
+          <a href="tel:+919876543210" class="btn btn-green"><i class="fas fa-phone-alt"></i> Call +91 98765 43210</a>
+          <a href="#projects" class="btn btn-outline"><i class="fas fa-images"></i> View Projects</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="hero-stat-num">180+</div><div class="hero-stat-lbl">Homes Built</div></div>
+          <div><div class="hero-stat-num">350+</div><div class="hero-stat-lbl">Quality Checks/Project</div></div>
+          <div><div class="hero-stat-num">4.9★</div><div class="hero-stat-lbl">Client Rating</div></div>
+          <div><div class="hero-stat-num">15 Yr</div><div class="hero-stat-lbl">Structural Warranty</div></div>
+        </div>
+      </div>
+
+      <!-- FORM CARD -->
+      <div class="form-card" id="estimate">
+        <h3>Get a Free Estimate</h3>
+        <p>No commitment · Our expert calls within 24 hours</p>
+        <form id="estimateForm">
+          <div class="form-row"><input type="text" placeholder="Full Name *" id="fName" required></div>
+          <div class="form-row"><input type="tel" placeholder="Phone Number *" id="fPhone" required></div>
+          <div class="form-row"><input type="email" placeholder="Email Address"></div>
+          <div class="form-row">
+            <select id="fLoc">
+              <option value="">Preferred Location (Madurai)</option>
+              <option>Anna Nagar</option><option>Palamedu</option><option>Karaiyippatti</option>
+              <option>Paravai</option><option>Vadipatti</option><option>Vandiyur</option>
+              <option>Usilampatti</option><option>Alanganallur</option><option>Melur</option><option>Other</option>
+            </select>
+          </div>
+          <div class="form-row"><input type="text" placeholder="Plot Area (sq.ft)"></div>
+          <div class="form-row"><textarea rows="2" placeholder="About your requirement"></textarea></div>
+          <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Request Free Estimate →</button>
+        </form>
+        <p class="form-note">No spam, no obligation. Just a detailed construction estimate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-grid">
+      <div><div class="stat-num">180+</div><div class="stat-lbl">Homes Built in Madurai</div></div>
+      <div><div class="stat-num">350+</div><div class="stat-lbl">Quality Checks Per Project</div></div>
+      <div><div class="stat-num">2.5L+</div><div class="stat-lbl">Sq.ft Completed</div></div>
+      <div><div class="stat-num">15 Yr</div><div class="stat-lbl">Written Structural Warranty</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="about-img-inner">
+          <i class="fas fa-city"></i>
+          <p>Building Madurai's Dream Homes</p>
+        </div>
+        <div class="about-badge"><strong>180+</strong><span>Happy Families in Madurai</span></div>
+      </div>
+      <div>
+        <div class="section-eyebrow"><span class="tag"><i class="fas fa-building"></i> About LK Constraction</span></div>
+        <h2 class="section-title">The Construction Company<br>Madurai Families Trust</h2>
+        <div class="about-text" style="margin-top:1.2rem">
+          <p>When we started LK Constraction, we kept hearing the same story from families across Madurai — contractors who went silent, bills that kept growing, and homes that took years longer than promised.</p>
+          <p>We built LK Constraction to fix exactly that. Every project gets a <strong>dedicated site engineer present every single day</strong>. Every payment is tied to a <strong>completed milestone</strong>. And every home we build comes with a <strong>written 15-year warranty</strong> that actually means something.</p>
+          <p>"We have built 180+ homes across Madurai — from compact independent houses in Usilampatti and Othakadai to multi-floor villas in Paravai and Alanganallur."</p>
+        </div>
+        <div class="about-pillars">
+          <div class="pillar"><i class="fas fa-check-circle"></i><span>Fixed Price Contract</span></div>
+          <div class="pillar"><i class="fas fa-check-circle"></i><span>Dedicated Site Engineer</span></div>
+          <div class="pillar"><i class="fas fa-check-circle"></i><span>15-Year Written Warranty</span></div>
+          <div class="pillar"><i class="fas fa-check-circle"></i><span>Milestone-Based Payments</span></div>
+        </div>
+        <div style="margin-top:1.5rem;display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#estimate" class="btn btn-green"><i class="fas fa-paper-plane"></i> Start Free Consultation</a>
+          <a href="#projects" class="btn btn-outline"><i class="fas fa-arrow-right"></i> View Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section" id="why">
+  <div class="container">
+    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-award"></i> Why Choose Us</span></div>
+    <div class="center" style="margin-bottom:2.5rem">
+      <h2 class="section-title">Why Madurai Homeowners<br>Choose LK Constraction</h2>
+      <p class="section-sub">Six pillars that make every LK Constraction project a guaranteed success</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <div class="why-ico"><i class="fas fa-user-graduate"></i></div>
+        <h3>Dedicated Site Engineer</h3>
+        <p>A qualified engineer is physically present on your plot every single day — monitoring material quality, workmanship, and every stage of construction. You are never left depending on a contractor's word.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <div class="why-ico"><i class="fas fa-clock"></i></div>
+        <h3>On-Time Delivery</h3>
+        <p>Structured project timeline with clear milestones and committed deadlines. You always know exactly what's happening next — no vague updates or silent delays.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <div class="why-ico"><i class="fas fa-rupee-sign"></i></div>
+        <h3>Zero Hidden Costs</h3>
+        <p>Transparent stage-wise payment model with a detailed Bill of Quantities shared before work starts. You pay only for completed milestones — never for work that isn't done.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">04</div>
+        <div class="why-ico"><i class="fas fa-layer-group"></i></div>
+        <h3>End-to-End Management</h3>
+        <p>Complete construction lifecycle management — from soil testing and architectural design to structural work, electricals, plumbing, finishing, and final handover under one roof.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">05</div>
+        <div class="why-ico"><i class="fas fa-cubes"></i></div>
+        <h3>Premium Material Quality</h3>
+        <p>Only ISI-certified, grade-approved materials across your entire home build. Strict quality checks at every stage with a 350+ point quality assurance checklist.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-num">06</div>
+        <div class="why-ico"><i class="fas fa-mobile-alt"></i></div>
+        <h3>Real-Time Project Updates</h3>
+        <p>Daily photos, videos, and progress reports sent straight to your phone. Monitor your home construction from anywhere — complete transparency at every stage.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-tools"></i> Our Services</span></div>
+    <div class="center" style="margin-bottom:2.5rem">
+      <h2 class="section-title">Building Construction Services<br>in Madurai</h2>
+      <p class="section-sub">End-to-end solutions — from architectural design to handover, all under one roof with a dedicated team</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-ico"><i class="fas fa-home"></i></div>
+        <h3>Residential Construction</h3>
+        <p>Custom villas, independent houses, G+1 and G+2 homes built to your vision using premium ISI-certified materials and dedicated site supervision across Madurai.</p>
+        <span class="svc-tag">Most Popular</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="fas fa-drafting-compass"></i></div>
+        <h3>Architectural Design</h3>
+        <p>3D elevation renders, vastu-compliant floor plans, structural drawings and CMDA-ready blueprints by our in-house certified architects for better coordination.</p>
+        <span class="svc-tag">In-House Team</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="fas fa-couch"></i></div>
+        <h3>Interior Design</h3>
+        <p>Modular kitchens, false ceilings, wardrobes, TV units and complete turnkey interiors tailored to your lifestyle — beautifully designed and expertly executed.</p>
+        <span class="svc-tag">Turnkey Available</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="fas fa-tools"></i></div>
+        <h3>Renovation & Remodelling</h3>
+        <p>Floor extension, structural upgrades, bathroom remodelling, exterior painting and full home renovation — delivered on time without the usual stress.</p>
+        <span class="svc-tag">Fast Turnaround</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="fas fa-solar-panel"></i></div>
+        <h3>Smart & Eco Homes</h3>
+        <p>Solar panel integration, rainwater harvesting, EV charging points and smart home automation for a modern, sustainable, and future-ready home.</p>
+        <span class="svc-tag">Eco Certified</span>
+      </div>
+      <div class="svc-card">
+        <div class="svc-ico"><i class="fas fa-file-contract"></i></div>
+        <h3>Plan Approval & Legal</h3>
+        <p>Hassle-free CMDA / DTCP plan approval, building permit filing, soil test reports and all legal documentation handled end-to-end so you can focus on your home.</p>
+        <span class="svc-tag">Full Support</span>
+      </div>
+    </div>
+    <div class="center" style="margin-top:2.5rem">
+      <a href="#estimate" class="btn btn-green"><i class="fas fa-phone-alt"></i> Discuss Your Requirements</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="background:var(--green-xl)">
+  <div class="container">
+    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-images"></i> Madurai · Portfolio</span></div>
+    <div class="center" style="margin-bottom:2.5rem">
+      <h2 class="section-title">Our Residential Construction<br>Projects in Madurai</h2>
+      <p class="section-sub">Trusted by homeowners across Usilampatti · Othakadai · Vandiyur · Anna Nagar · Sholavandan · Melur</p>
+    </div>
+    <div class="projects-grid">
+      <div class="proj-card">
+        <div class="proj-img"><i class="fas fa-home"></i><span class="proj-status">Completed</span></div>
+        <div class="proj-body">
+          <div class="proj-name">Sathish Kumar</div>
+          <div class="proj-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Villivakkam, Madurai</div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><strong>2,400 sq ft</strong>Built Up Area</div>
+            <div class="proj-meta-item"><strong>1,800 sq ft</strong>Plot Area</div>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img" style="background:linear-gradient(135deg,#c0dfa8,#88c060)"><i class="fas fa-building"></i><span class="proj-status">Completed</span></div>
+        <div class="proj-body">
+          <div class="proj-name">Meenakshi</div>
+          <div class="proj-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Thiruverkadu, Madurai</div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><strong>3,100 sq ft</strong>Built Up Area</div>
+            <div class="proj-meta-item"><strong>2,200 sq ft</strong>Plot Area</div>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img" style="background:linear-gradient(135deg,#d0eabe,#a0cc80)"><i class="fas fa-tree"></i><span class="proj-status">Completed</span></div>
+        <div class="proj-body">
+          <div class="proj-name">Rajendran</div>
+          <div class="proj-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Urapakkam, Madurai</div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><strong>2,750 sq ft</strong>Built Up Area</div>
+            <div class="proj-meta-item"><strong>2,000 sq ft</strong>Plot Area</div>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img" style="background:linear-gradient(135deg,#b8e0a0,#78b858)"><i class="fas fa-sun"></i><span class="proj-status">Completed</span></div>
+        <div class="proj-body">
+          <div class="proj-name">Deepak</div>
+          <div class="proj-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Thiruverkadu, Madurai</div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><strong>2,750 sq ft</strong>Built Up Area</div>
+            <div class="proj-meta-item"><strong>2,000 sq ft</strong>Plot Area</div>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img" style="background:linear-gradient(135deg,#cce8b0,#94c878)"><i class="fas fa-city"></i><span class="proj-status">Completed</span></div>
+        <div class="proj-body">
+          <div class="proj-name">Vignesh</div>
+          <div class="proj-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Thalumbur, Madurai</div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><strong>2,750 sq ft</strong>Built Up Area</div>
+            <div class="proj-meta-item"><strong>2,000 sq ft</strong>Plot Area</div>
+          </div>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="proj-img" style="background:linear-gradient(135deg,#d4ebc0,#9ccc70)"><i class="fas fa-warehouse"></i><span class="proj-status">Completed</span></div>
+        <div class="proj-body">
+          <div class="proj-name">Kumar Family</div>
+          <div class="proj-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Perungalathur, Madurai</div>
+          <div class="proj-meta">
+            <div class="proj-meta-item"><strong>2,400 sq ft</strong>Built Up Area</div>
+            <div class="proj-meta-item"><strong>1,800 sq ft</strong>Plot Area</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="center" style="margin-top:2.5rem">
+      <a href="#" class="btn btn-outline" id="viewAllBtn"><i class="fas fa-arrow-right"></i> See All 180+ Completed Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<div class="social-band">
+  <div class="container">
+    <div class="center" style="margin-bottom:1.2rem"><p style="color:var(--muted);font-size:.9rem;font-weight:600;">Follow Our Work & Client Stories</p></div>
+    <div class="social-row">
+      <a class="soc-card" href="#" onclick="return false">
+        <div class="soc-ico ig"><i class="fab fa-instagram"></i></div>
+        <div><div class="soc-num">115K</div><div class="soc-lbl">Instagram Followers</div></div>
+      </a>
+      <a class="soc-card" href="#" onclick="return false">
+        <div class="soc-ico yt"><i class="fab fa-youtube"></i></div>
+        <div><div class="soc-num">185K</div><div class="soc-lbl">YouTube Subscribers</div></div>
+      </a>
+      <a class="soc-card" href="#" onclick="return false">
+        <div class="soc-ico fb"><i class="fab fa-facebook-f"></i></div>
+        <div><div class="soc-num">128K</div><div class="soc-lbl">Facebook Followers</div></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- PROCESS -->
+<section class="process-section" id="process">
+  <div class="container">
+    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-list-ol"></i> Our Simple Process</span></div>
+    <div class="center" style="margin-bottom:3rem">
+      <h2 class="section-title">Build Your Home in 5 Simple Steps</h2>
+      <p class="section-sub">From your first dream conversation to the moment we hand you the keys — here's exactly how we make it happen</p>
+    </div>
+    <div class="process-grid">
+      <div class="proc-step">
+        <div class="proc-num">01</div>
+        <h3>Discuss Your Vision</h3>
+        <p>We understand your needs, budget & lifestyle to craft the perfect brief for your dream home.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">02</div>
+        <h3>Plan & Price</h3>
+        <p>Detailed 3D designs and a transparent, fixed-price BOQ — no hidden surprises anywhere.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">03</div>
+        <h3>Approve & Begin</h3>
+        <p>You review, approve the plan and contract. We break ground with a clear project timeline.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">04</div>
+        <h3>Build with Quality</h3>
+        <p>Skilled team constructs your home using premium materials with daily live updates to your phone.</p>
+      </div>
+      <div class="proc-step">
+        <div class="proc-num">05</div>
+        <h3>Celebrate Handover</h3>
+        <p>Thorough final inspection, founder-led key handover ceremony & 15-year written warranty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERIOR -->
+<section id="interior">
+  <div class="container">
+    <div class="interior-grid">
+      <div class="interior-img"><i class="fas fa-couch"></i></div>
+      <div>
+        <div class="section-eyebrow"><span class="tag"><i class="fas fa-palette"></i> Interior Solutions</span></div>
+        <h2 class="section-title">Integrated Interior Solutions Within Your Home Construction</h2>
+        <p style="color:var(--muted);margin-top:.8rem;font-size:1rem;line-height:1.7">Our expert interior designers work closely with you to create spaces that blend style, comfort, and functionality — all coordinated seamlessly with your construction.</p>
+        <div class="interior-steps">
+          <div class="int-step">
+            <div class="int-step-num">1</div>
+            <div><h4>Consultation & Planning</h4><p>We study your plot, budget & design goals before anything begins. Deep understanding first.</p></div>
+          </div>
+          <div class="int-step">
+            <div class="int-step-num">2</div>
+            <div><h4>3D Design & Architecture</h4><p>Realistic 3D layouts and structural drawings reviewed and approved before work starts.</p></div>
+          </div>
+          <div class="int-step">
+            <div class="int-step-num">3</div>
+            <div><h4>Materials & Clear BOQ</h4><p>Transparent bill of quantities — approved specs, zero hidden costs. What you see is what you pay.</p></div>
+          </div>
+          <div class="int-step">
+            <div class="int-step-num">4</div>
+            <div><h4>Handover & 15-Year Warranty</h4><p>Fully completed home delivered with documented warranty — every term in writing, nothing verbal.</p></div>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem">
+          <a href="#estimate" class="btn btn-green"><i class="fas fa-paper-plane"></i> Start Your Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:var(--green-xl)">
+  <div class="container">
+    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-star"></i> Client Stories</span></div>
+    <div class="center" style="margin-bottom:2.5rem">
+      <h2 class="section-title">Client Satisfaction Stories</h2>
+      <p class="section-sub">Real homeowners from Melur, Anna Nagar, Othakadai, Palamedu & across Madurai — no scripts, no actors</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Transparent pricing and a dedicated engineer made our Porur home absolutely perfect. They delivered two weeks early! The handover ceremony was a beautiful surprise we'll never forget."</p>
+        <div class="testi-author">Meena K.</div>
+        <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Porur, Madurai</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Milestone payments kept us completely stress-free. We always knew exactly what we were paying for and why. The quality of construction at our Palamedu home is absolutely unmatched."</p>
+        <div class="testi-author">Raghavan S.</div>
+        <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Palamedu, Madurai</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★½</div>
+        <p class="testi-text">"Our Anna Nagar villa is stunning. The real-time updates every single day gave us confidence throughout the build. The team's dedication and quality are truly unmatched in Madurai."</p>
+        <div class="testi-author">Priya & Vikram</div>
+        <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Anna Nagar, Madurai</div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap;color:var(--muted);font-size:.9rem;font-weight:600">
+      <span><i class="fas fa-star" style="color:#f5a623"></i> 4.9 Avg Rating</span>
+      <span><i class="fas fa-users" style="color:var(--green)"></i> 20+ Client Stories</span>
+      <span><i class="fas fa-check-circle" style="color:var(--green)"></i> 100% Real Clients</span>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section id="checklist">
+  <div class="container">
+    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-clipboard-check"></i> Due Diligence Guide</span></div>
+    <div class="center" style="margin-bottom:2.5rem">
+      <h2 class="section-title">6 Things to Verify Before<br>Choosing a Builder</h2>
+      <p class="section-sub">Before finalising your construction company, verify these critical factors to protect yourself from hidden costs, delays, and structural risks</p>
+    </div>
+    <div class="check-grid">
+      <div class="check-item">
+        <div class="check-num">01</div>
+        <div>
+          <h4>Avoid Large Advance Payments</h4>
+          <p>Never pay 3–5% of total project cost upfront. Payments should always be milestone-based. A design fee payment is acceptable, but nothing beyond that before work starts.</p>
+          <span class="check-badge">Financial Safety</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-num">02</div>
+        <div>
+          <h4>Check Final Billing History</h4>
+          <p>Speak to previous clients and confirm whether the final cost increased due to hidden or additional charges. Past clients are the most honest reference you have.</p>
+          <span class="check-badge">Due Diligence</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-num">03</div>
+        <div>
+          <h4>In-House Architectural Team</h4>
+          <p>Ensure the builder has an in-house architect for better coordination and fewer mistakes. External architects often lead to miscommunication and delays.</p>
+          <span class="check-badge">Team Structure</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-num">04</div>
+        <div>
+          <h4>Structural Design After Soil Testing</h4>
+          <p>Soil testing must be conducted before foundation design to ensure long-term safety. Foundation depth and column sizing should only be decided after proper soil analysis.</p>
+          <span class="check-badge">Technical Standards</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-num">05</div>
+        <div>
+          <h4>Detailed Material Specifications</h4>
+          <p>Avoid upfront structural promises without proper soil testing. Insist on detailed BOQ with specific brand and grade specifications for every material before signing.</p>
+          <span class="check-badge">Contract Clarity</span>
+        </div>
+      </div>
+      <div class="check-item">
+        <div class="check-num">06</div>
+        <div>
+          <h4>Written Warranty Agreement</h4>
+          <p>Make sure the warranty is real and documented in the contract — not promised verbally. The warranty must clearly state what is covered and for how long.</p>
+          <span class="check-badge">Legal Protection</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENDORS -->
+<section style="padding:50px 0;border-bottom:1px solid var(--border)">
+  <div class="container">
+    <div class="center" style="margin-bottom:1.5rem"><span class="tag"><i class="fas fa-handshake"></i> Trusted Brands</span></div>
+    <div class="center" style="margin-bottom:2rem"><h2 class="section-title" style="font-size:1.8rem">Our Material Vendors</h2></div>
+    <div class="vendor-track">
+      <div class="vendor-row">
+        <div class="vendor-logo"><i class="fas fa-certificate"></i>Kajaria</div>
+        <div class="vendor-logo"><i class="fas fa-cube"></i>Ramco Cement</div>
+        <div class="vendor-logo"><i class="fas fa-bath"></i>Parryware</div>
+        <div class="vendor-logo"><i class="fas fa-paint-roller"></i>Nippon Paint</div>
+        <div class="vendor-logo"><i class="fas fa-shower"></i>Jaquar</div>
+        <div class="vendor-logo"><i class="fas fa-grip-lines"></i>Tata Tiscon</div>
+        <div class="vendor-logo"><i class="fas fa-industry"></i>UltraTech</div>
+        <div class="vendor-logo"><i class="fas fa-certificate"></i>Kajaria</div>
+        <div class="vendor-logo"><i class="fas fa-cube"></i>Ramco Cement</div>
+        <div class="vendor-logo"><i class="fas fa-bath"></i>Parryware</div>
+        <div class="vendor-logo"><i class="fas fa-paint-roller"></i>Nippon Paint</div>
+        <div class="vendor-logo"><i class="fas fa-shower"></i>Jaquar</div>
+        <div class="vendor-logo"><i class="fas fa-grip-lines"></i>Tata Tiscon</div>
+        <div class="vendor-logo"><i class="fas fa-industry"></i>UltraTech</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANKS -->
+<section style="padding:50px 0">
+  <div class="container">
+    <div class="center" style="margin-bottom:1.5rem"><span class="tag"><i class="fas fa-university"></i> Finance & Loans</span></div>
+    <div class="center" style="margin-bottom:2rem"><h2 class="section-title" style="font-size:1.8rem">Our Banking Partners</h2></div>
+    <div class="bank-grid">
+      <div class="bank-chip"><i class="fas fa-university"></i> SBI Home Loans</div>
+      <div class="bank-chip"><i class="fas fa-university"></i> HDFC Bank</div>
+      <div class="bank-chip"><i class="fas fa-university"></i> ICICI Bank</div>
+      <div class="bank-chip"><i class="fas fa-university"></i> Axis Bank</div>
+      <div class="bank-chip"><i class="fas fa-university"></i> IDFC First Bank</div>
+      <div class="bank-chip"><i class="fas fa-university"></i> Indian Bank</div>
+      <div class="bank-chip"><i class="fas fa-university"></i> UCO Bank</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--green-xl)">
+  <div class="container">
+    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-question-circle"></i> FAQs</span></div>
+    <div class="center" style="margin-bottom:2.5rem">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <div class="faq-q"><span>What is the construction cost per sq ft in Madurai?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>LK Constraction offers house construction in Madurai starting at ₹1899/sq.ft. The final cost depends on your plot size, number of floors, and finish level. Contact us for a detailed BOQ and free estimate tailored to your requirements.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>How long does it take to build a house in Madurai?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>A typical residential project takes 12 to 18 months. We provide a written project timeline before work begins with clear milestones so you always know exactly what happens next and when.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you handle complete construction from start to finish?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes. We offer complete turnkey house construction covering soil testing, architectural design, structural work, electrical, plumbing, finishing, and final handover — all under one roof with a dedicated site engineer throughout.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>What areas in Madurai do you cover?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>We serve all major localities across Madurai including Anna Nagar, Peraiyur, Chinna Anuppanadi, Paravai, Melur, Othakadai, Palamedu, Alanganallur, Vadipatti, Tirumangalam, Alwarpuram, and surrounding areas.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Is your construction pricing transparent with no hidden costs?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes. We follow a milestone-based payment model with a detailed Bill of Quantities shared before work starts. You know exactly what you are paying for at every stage — no surprise charges, ever.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you assign a dedicated engineer to my project?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes. Every LK Constraction project gets a qualified, full-time site engineer assigned from day one. Your engineer is physically present on your plot every single day — monitoring material quality, workmanship, and progress at every stage.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>What warranty do you offer on house construction?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>LK Constraction provides a 15-year structural warranty on all residential construction projects. All warranty terms are documented in writing before the project begins — nothing is promised verbally.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you build G+1 and G+2 houses in Madurai?</span><i class="fas fa-chevron-down"></i></div>
+        <div class="faq-a"><p>Yes. We build single-floor independent houses, G+1, and G+2 residential homes across Madurai. Each project is structurally designed after soil testing — foundation depth and column sizing are always engineered, never assumed.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band" id="contact">
+  <div class="container">
+    <h2>Ready to Build Your Dream Home<br>in Madurai?</h2>
+    <p>Free site visit, detailed BOQ & expert consultation within 24 hours. 180+ families trusted us — we'd love to build yours too.</p>
+    <div class="cta-btns">
+      <a href="tel:+919876543210" class="btn btn-green"><i class="fas fa-phone-alt"></i> Call +91 98765 43210</a>
+      <a href="#estimate" class="btn btn-white"><i class="fas fa-paper-plane"></i> Request Free Estimate</a>
+      <a href="#" class="btn btn-wa" id="waBtn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><i class="fas fa-hard-hat"></i> LKConstraction</div>
+        <p>Built with integrity, delivered with joy — 180+ happy families across Madurai. We build homes that stand the test of time with a 15-year written structural warranty.</p>
+        <div style="margin-top:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-youtube"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ser">
+        <h4>Services</h4>
+        <a href="#services">Residential Construction</a>
+        <a href="#services">Architectural Design</a>
+        <a href="#services">Interior Design</a>
+        <a href="#services">Renovation & Remodelling</a>
+        <a href="#services">Smart & Eco Homes</a>
+        <a href="#services">Plan Approval & Legal</a>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <a href="#">Anna Nagar</a>
+        <a href="#">Palamedu</a>
+        <a href="#">Othakadai</a>
+        <a href="#">Paravai</a>
+        <a href="#">Peraiyur</a>
+        <a href="#">Vadipatti</a>
+        <a href="#">Vandiyur</a>
+        <a href="#">Sholavandan</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p style="margin-bottom:.8rem">📞 <a href="tel:+919876543210" class="foot-contact" style="color:var(--green);text-decoration:none">+91 98765 43210</a></p>
+        <p style="margin-bottom:.8rem">✉️ <a href="mailto:hello@lkconstraction.com" class="foot-contact" style="color:var(--green);text-decoration:none">hello@lkconstraction.com</a></p>
+        <p style="margin-bottom:1rem">📍 Madurai, Tamil Nadu, India</p>
+        <a href="#estimate" class="btn btn-green" style="font-size:.85rem;padding:10px 20px"><i class="fas fa-paper-plane"></i> Free Estimate</a>
+      </div>
+    </div>
+    <hr class="foot-divider">
+    <div class="foot-bottom">
+      <span>© 2025 LK Constraction — Premium Residential Construction Company in Madurai</span>
+      <span>₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CALL BTN -->
+<a href="tel:+919876543210" class="sticky-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <div class="modal-ico"><i class="fas fa-check"></i></div>
+    <h3 id="modalTitle">Request Received!</h3>
+    <p id="modalMsg">Our team will call you within 24 hours.</p>
+    <button class="modal-close-btn" id="modalCloseBtn">Got it</button>
+  </div>
+</div>
+
+<script>
+// ── HAMBURGER ──
+const ham=document.getElementById('hamburger'),mobMenu=document.getElementById('mobMenu'),mobOverlay=document.getElementById('mobOverlay');
+function openMob(){mobMenu.classList.add('open');mobOverlay.classList.add('on');document.body.style.overflow='hidden'}
+function closeMob(){mobMenu.classList.remove('open');mobOverlay.classList.remove('on');document.body.style.overflow=''}
+ham.addEventListener('click',openMob);
+document.getElementById('mobClose').addEventListener('click',closeMob);
+mobOverlay.addEventListener('click',closeMob);
+document.querySelectorAll('.mob-menu a').forEach(a=>a.addEventListener('click',closeMob));
+
+// ── MOBILE SERVICES ACCORDION ──
+const mobServToggle=document.getElementById('mobServToggle'),mobServList=document.getElementById('mobServList');
+mobServToggle.addEventListener('click',e=>{e.stopPropagation();mobServList.classList.toggle('open')});
+
+// ── FAQ ──
+document.querySelectorAll('.faq-q').forEach(q=>{
+  q.addEventListener('click',()=>{
+    const item=q.parentElement;
+    const wasOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight='0';i.querySelector('.faq-a').style.paddingBottom='0'});
+    if(!wasOpen){
+      item.classList.add('open');
+      const ans=item.querySelector('.faq-a');
+      ans.style.maxHeight=ans.scrollHeight+'px';
+    }
+  });
+});
+
+// ── MODAL ──
+const modal=document.getElementById('modal'),modalTitle=document.getElementById('modalTitle'),modalMsg=document.getElementById('modalMsg');
+function showModal(t,m){modalTitle.textContent=t;modalMsg.textContent=m;modal.classList.add('on');document.body.style.overflow='hidden'}
+function hideModal(){modal.classList.remove('on');document.body.style.overflow=''}
+document.getElementById('modalCloseBtn').addEventListener('click',hideModal);
+modal.addEventListener('click',e=>{if(e.target===modal)hideModal()});
+
+// ── FORM ──
+document.getElementById('estimateForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const n=document.getElementById('fName').value.trim(),p=document.getElementById('fPhone').value.trim();
+  if(!n||!p){showModal('Missing Info','Please enter at least your name and phone number to receive your free estimate.');return}
+  showModal('Estimate Request Received! 🎉',`Thank you ${n}! Our construction expert will call you within 24 hours at ${p}. No commitment, fully transparent pricing.`);
+  e.target.reset();
+});
+
+// ── BUTTONS ──
+document.getElementById('viewAllBtn')?.addEventListener('click',e=>{e.preventDefault();showModal('180+ Completed Projects','Visit our full gallery or schedule a site visit to see finished homes across Simmakkal, iyer bungalow, Anna Nagar, Karaiyippatti and more.')});
+document.getElementById('waBtn')?.addEventListener('click',e=>{e.preventDefault();showModal('WhatsApp LK Constraction','Send us a message at +91 98765 43210 on WhatsApp. Available 9 AM – 8 PM daily.')});
+
+// ── SMOOTH SCROLL ──
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){
+    const id=this.getAttribute('href');
+    if(id&&id!=='#'){
+      const el=document.querySelector(id);
+      if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'})}
+    }
+  });
+});
+
+// ── NAV ACTIVE ON SCROLL ──
+const secs=document.querySelectorAll('section[id],div[id="contact"]');
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{if(window.scrollY>=s.offsetTop-120)cur=s.id});
+  document.querySelectorAll('.nav-menu a').forEach(a=>{
+    a.classList.toggle('active',a.getAttribute('href')==='#'+cur);
+  });
+},{ passive:true });
+</script>
+</body>
+</html>

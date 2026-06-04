@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>LK Constraction | Best Construction Company  – ₹1899/sq.ft</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Bootstrap 5 CSS (full responsive) -->
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Site Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+ <style>
+       
+
+        /* Light Green Theme */
+        :root {
+              --primary-green: #1e6204;
+            --primary-light: #e6f5df;
+            --primary-soft: #c8e6d9;
+            --accent-green: #2d8a06;
+            --text-dark: #1e2f2b;
+            --text-muted: #5a6e69;
+            --border-light: #d4e6dd;
+        }
+        dl, ol, ul{
+          margin-top: auto;
+        margin-bottom: auto;
+        }
+       
+        /* Project Hero */
+        .project-hero {
+            background: linear-gradient(105deg, #ffffff 0%, #f2faf5 100%);
+            padding: 40px 0 20px;
+        }
+        .project-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+        }
+        .project-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 28px;
+            margin: 20px 0 10px;
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .meta-item i {
+            font-size: 1.2rem;
+            color: var(--primary-green);
+            width: 32px;
+        }
+        .category-badge {
+            background: var(--primary-green);
+            color: white;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Main Image */
+        .main-image-container {
+            margin: 30px 0;
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .main-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        /* Content Layout */
+        .detail-content {
+            padding: 40px 0 60px;
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 28px;
+            border-left: 5px solid var(--primary-green);
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-title i {
+            color: var(--primary-green);
+            font-size: 1.6rem;
+        }
+        .description-text {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .feature-list li i {
+            color: var(--primary-green);
+            font-size: 1.2rem;
+        }
+
+        /* Gallery Grid */
+        .gallery-section {
+            margin: 50px 0 40px;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            border-radius: 24px;
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 1/0.9;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 35px rgba(46, 125, 100, 0.2);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+            padding: 15px;
+            color: white;
+            font-size: 0.85rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+            text-align: center;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* Related Projects Section */
+        .related-section {
+            background: var(--primary-light);
+            border-radius: 48px;
+            padding: 50px 45px;
+            margin: 50px 0 30px;
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 32px;
+            margin-top: 35px;
+        }
+        .related-card {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+        }
+        .related-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 40px rgba(46, 125, 100, 0.15);
+            border-color: var(--primary-green);
+        }
+        .related-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .related-card:hover img {
+            transform: scale(1.03);
+        }
+        .related-info {
+            padding: 22px;
+        }
+        .related-info h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+        .related-location {
+            font-size: 0.9rem;
+            color: var(--primary-green);
+            margin-bottom: 10px;
+        }
+        .related-category {
+            display: inline-block;
+            background: var(--primary-light);
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            margin-top: 8px;
+        }
+        .view-detail {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            color: var(--primary-green);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: gap 0.2s;
+        }
+        .view-detail:hover {
+            gap: 12px;
+            color: var(--accent-green);
+        }
+
+        /* CTA Section */
+        .cta-card {
+            background: white;
+            border-radius: 32px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid var(--border-light);
+            margin: 40px 0;
+        }
+        .btn-cta {
+            background: var(--primary-green);
+            color: white;
+            padding: 14px 36px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.2s;
+        }
+        .btn-cta:hover {
+            background: var(--accent-green);
+            transform: translateY(-2px);
+            color: white;
+        }
+
+        /* ========== CUSTOM LIGHTBOX / POPUP GALLERY ========== */
+        .gallery-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 9999;
+            cursor: pointer;
+        }
+        .popup-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .popup-image {
+            max-width: 85%;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        .popup-close {
+            position: absolute;
+            top: 25px;
+            right: 35px;
+            color: white;
+            font-size: 2.5rem;
+            cursor: pointer;
+            transition: 0.2s;
+            z-index: 10001;
+            background: rgba(0,0,0,0.5);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .popup-close:hover {
+            background: var(--primary-green);
+            transform: scale(1.1);
+        }
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0,0,0,0.6);
+            color: white;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 1.8rem;
+            z-index: 10001;
+        }
+        .nav-btn:hover {
+            background: var(--primary-green);
+            transform: translateY(-50%) scale(1.05);
+        }
+        .prev-btn {
+            left: 30px;
+        }
+        .next-btn {
+            right: 30px;
+        }
+        .popup-counter {
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background: rgba(0,0,0,0.6);
+            padding: 8px 18px;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            z-index: 10001;
+        }
+        .popup-caption {
+            position: absolute;
+            bottom: 80px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 12px 20px;
+            font-size: 1rem;
+            z-index: 10001;
+        }
+        .gallery-tools {
+            position: absolute;
+            top: 25px;
+            left: 35px;
+            display: flex;
+            gap: 15px;
+            z-index: 10001;
+        }
+        .tool-btn {
+            background: rgba(0,0,0,0.5);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 1.2rem;
+        }
+        .tool-btn:hover {
+            background: var(--primary-green);
+            transform: scale(1.1);
+        }
+        @media (max-width: 768px) {
+            .nav-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+            .prev-btn { left: 10px; }
+            .next-btn { right: 10px; }
+            .popup-image { max-width: 95%; max-height: 70vh; }
+            .popup-caption { font-size: 0.8rem; bottom: 60px; }
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a2e28;
+            color: #cfe6df;
+            padding: 48px 0 24px;
+            margin-top: 40px;
+        }
+        .footer a {
+            color: #cfe6df;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+        }
+
+        @media (max-width: 992px) {
+            .project-title { font-size: 2rem; }
+            .related-section { padding: 35px 10px; }
+        }
+        @media (max-width: 768px) {
+            .project-title { font-size: 1.8rem; }
+            .section-title { font-size: 1.5rem; }
+            .related-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+        }
+        @media (max-width: 576px) {
+            .gallery-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <i class="fa fa-phone" aria-hidden="true"></i>
+ Call us: <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp; ₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built Across 
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap">
+        <!-- <div class="logo-icon"><i class="fas fa-hard-hat"></i></div>
+        <span class="logo-text">LK<span>Constraction</span></span> -->
+        <img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img">
+        
+      </a>
+      <ul class="nav-menu">
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li>
+          <button>Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></button>
+          <div class="dd-menu">
+            <div class="dd-grid">
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-home"></i></div>
+                <div><span class="dd-title">Residential Construction</span><span class="dd-desc">Custom villas, G+1 &amp; G+2 homes </span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-drafting-compass"></i></div>
+                <div><span class="dd-title">Architectural Design</span><span class="dd-desc">3D renders, floor plans &amp; vastu layouts</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-couch"></i></div>
+                <div><span class="dd-title">Interior Design</span><span class="dd-desc">Modular kitchen, wardrobes &amp; full interiors</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-tools"></i></div>
+                <div><span class="dd-title">Renovation &amp; Remodelling</span><span class="dd-desc">Extension, structural upgrades &amp; painting</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-solar-panel"></i></div>
+                <div><span class="dd-title">Smart &amp; Eco Homes</span><span class="dd-desc">Solar, rainwater harvesting &amp; green builds</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-file-contract"></i></div>
+                <div><span class="dd-title">Plan Approval &amp; Legal</span><span class="dd-desc">CMDA / DTCP approval &amp; documentation</span></div>
+              </a>
+            </div>
+            <div class="dd-foot">
+              <span>All services · Dedicated engineer · 15-yr warranty</span>
+              <a href="#">All services <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#" class="btn nav-cta">Free Estimate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <a href="about.html"><i class="fas fa-info-circle" style="color:var(--green);width:20px"></i> About Us</a>
+  <button id="mobServToggle"><i class="fas fa-building" style="color:var(--green);width:20px"></i> Services <i class="fas fa-chevron-down" style="margin-left:auto;font-size:.7rem"></i></button>
+  <div class="mob-services" id="mobServList">
+    <a href="#"><i class="fas fa-home"></i> Residential Construction</a>
+    <a href="#"><i class="fas fa-drafting-compass"></i> Architectural Design</a>
+    <a href="#"><i class="fas fa-couch"></i> Interior Design</a>
+    <a href="#"><i class="fas fa-tools"></i> Renovation &amp; Remodelling</a>
+    <a href="#"><i class="fas fa-solar-panel"></i> Smart &amp; Eco Homes</a>
+    <a href="#"><i class="fas fa-file-contract"></i> Plan Approval &amp; Legal</a>
+  </div>
+  <a href="projects.html"><i class="fas fa-images" style="color:var(--green);width:20px"></i> Projects</a>
+  <a href="#"><i class="fas fa-blog" style="color:var(--green);width:20px"></i> Blog</a>
+  <a href="contact.html"><i class="fas fa-envelope" style="color:var(--green);width:20px"></i> Contact Us</a>
+  <a href="#" class="mob-cta"><i class="fas fa-paper-plane"></i> Get a Free Estimate</a>
+</div>
+
+<section class="lk">
+  <div class="lkc">
+        <nav class="lkms-nav" aria-label="Breadcrumb navigation">
+      <a href="index.html" class="lkms-link">
+        <span class="lkms-icon">🏠</span> Home
+      </a>
+        
+      <span class="lkms-sep">•</span>
+        <a href="projects.html" class="lkms-link">Projects</a>
+      <span class="lkms-sep">•</span>
+      <span class="lkms-current">Sunset Grove Villas</span>
+    </nav>
+
+    <!-- centered heading & description (unchanged but all classes follow lk-*) -->
+    <h1 class="lk-heading">Sunset Grove Villas
+</h1>
+    <p class="lk-desc">
+      A premium villa community offering modern living, elegant design, and quality craftsmanship.
+    </p>
+    <div class="lk-accent"></div>
+  </div>
+</section>
+<!-- Project Hero -->
+<section class="project-hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <span class="category-badge"><i class="fas fa-home me-1"></i> Residential | Luxury Villa</span>
+                <h1 class="project-title mt-3">Sunset Grove Villas</h1>
+                <div class="project-meta">
+                    <div class="meta-item"><i class="fas fa-map-marker-alt"></i> <span>Anna Nagar, Madurai, Tamil Nadu</span></div>
+                    <div class="meta-item"><i class="fas fa-ruler-combined"></i> <span>2,400 sq.ft</span></div>
+                    <div class="meta-item"><i class="fas fa-calendar"></i> <span>Completed: 2025</span></div>
+                    <div class="meta-item"><i class="fas fa-shield-alt"></i> <span>15-Yr Warranty</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Image -->
+<div class="container">
+    <div class="main-image-container">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200" alt="Sunset Grove Villas Madurai" class="main-image">
+    </div>
+</div>
+
+<!-- Detail Content -->
+<div class="detail-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> Project Overview</h2>
+                <p class="description-text">Sunset Grove Villas is a premium gated community of 8 luxury villas located in the heart of Anna Nagar, Madurai. Designed with modern architecture, VASTU compliance, and sustainable landscaping, each villa features 4 spacious bedrooms, a private garden, terrace deck, and smart home automation.</p>
+                
+                <h2 class="section-title mt-4"><i class="fas fa-star-of-life"></i> Key Features</h2>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check-circle"></i> VASTU compliant design</li>
+                    <li><i class="fas fa-check-circle"></i> Smart home automation ready</li>
+                    <li><i class="fas fa-check-circle"></i> Premium vitrified tiles & wooden flooring</li>
+                    <li><i class="fas fa-check-circle"></i> Modular kitchen with chimney</li>
+                    <li><i class="fas fa-check-circle"></i> Rainwater harvesting & solar provision</li>
+                    <li><i class="fas fa-check-circle"></i> Landscaped garden & kids play area</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 security & CCTV surveillance</li>
+                    <li><i class="fas fa-check-circle"></i> 15-year structural warranty</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <div class="cta-card" style="margin-top: 0;">
+                    <i class="fas fa-file-signature fs-1" style="color: var(--primary-green);"></i>
+                    <h4 class="mt-3 fw-bold">Interested in similar project?</h4>
+                    <p class="text-muted mt-2">Get a free estimate for your dream home in Tamil Nadu.</p>
+                    <a href="#" class="btn-cta mt-2" id="quoteBtn"><i class="fas fa-calculator"></i> Request Quote</a>
+                    <hr class="my-4">
+                    <div class="text-start">
+                        <p><i class="fas fa-phone me-2 text-primary-green"></i> <strong>Call Us:</strong> +91 70924 18582</p>
+                        <p><i class="fas fa-envelope me-2 text-primary-green"></i> <strong>Email:</strong> info@lkconstruction.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT GALLERY SECTION -->
+        <div class="gallery-section">
+            <h2 class="section-title"><i class="fas fa-images"></i> Project Gallery</h2>
+            <p class="text-muted mb-4">Click on any image to open full-screen gallery with zoom, slideshow, and navigation.</p>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+
+        <!-- RELATED PROJECTS SECTION -->
+        <div class="related-section">
+            <h2 class="section-title" style="border-left-color: var(--primary-green); color: var(--text-dark);">
+                <i class="fas fa-layer-group"></i> Related Projects
+            </h2>
+            <p class="text-muted mb-2">Explore more of our exceptional work across Tamil Nadu.</p>
+            <div class="related-grid" id="relatedGrid"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Custom Gallery Popup -->
+<div id="galleryPopup" class="gallery-popup">
+    <div class="popup-container">
+        <div class="gallery-tools">
+            <div class="tool-btn" id="zoomInBtn"><i class="fas fa-search-plus"></i></div>
+            <div class="tool-btn" id="zoomOutBtn"><i class="fas fa-search-minus"></i></div>
+            <div class="tool-btn" id="fullscreenBtn"><i class="fas fa-expand"></i></div>
+            <div class="tool-btn" id="slideshowBtn"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="popup-close" id="closePopup"><i class="fas fa-times"></i></div>
+        <div class="nav-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></div>
+        <div class="nav-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></div>
+        <img id="popupImage" class="popup-image" src="" alt="Gallery Image">
+        <div id="popupCaption" class="popup-caption"></div>
+        <div id="popupCounter" class="popup-counter"></div>
+    </div>
+</div>
+
+
+
+<!-- CTA BAND -->
+<div class="cta-band" id="contact">
+  <div class="container">
+    <h2>Ready to Build Your Dream Home<br></h2>
+    <p>Free site visit, detailed BOQ &amp; expert consultation within 24 hours. 180+ families trusted us — we'd love to build yours too.</p>
+    <div class="cta-btns">
+      <a href="tel:+919876543210" class="btn btn-green"><i class="fas fa-phone-alt"></i> Call +91 98765 43210</a>
+      <a href="#estimate" class="btn btn-white"><i class="fas fa-paper-plane"></i> Request Free Estimate</a>
+      <a href="#" class="btn btn-wa" id="waBtn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img"></div>
+        <p style="color: #fff;">Built with integrity, delivered with joy — 180+ happy families across Tamil Nadu. We build homes that stand the test of time with a 15-year written structural warranty.</p>
+        <div style="margin-top:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-youtube"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ser">
+        <h4>Services</h4>
+        <a href="#">Residential Construction</a>
+        <a href="#">Architectural Design</a>
+        <a href="#">Interior Design</a>
+        <a href="#">Renovation &amp; Remodelling</a>
+        <a href="#">Smart &amp; Eco Homes</a>
+        <a href="#">Plan Approval &amp; Legal</a>
+      </div>
+      <div class="loc"> 
+        <h4>Locations</h4>
+        <a href="#">Anna Nagar</a>
+        <a href="#">Palamedu</a>
+        <a href="#">Othakadai</a>
+        <a href="#">Paravai</a>
+        <a href="#">Peraiyur</a>
+        <a href="#">Vadipatti</a>
+        <a href="#">Vandiyur</a>
+        <a href="#">Sholavandan</a>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <p style="margin-bottom:.8rem"><i class="fa fa-phone" aria-hidden="true"></i>
+ <a href="tel:+919876543210" class="foot-contact" style="text-decoration:none">+91 98765 43210</a></p>
+        <p style="margin-bottom:.8rem"><i class="fa fa-envelope" aria-hidden="true"></i>
+ <a href="mailto:info@lkconstraction.com" class="foot-contact" style="text-decoration:none"> info@lkconstraction.com</a></p>
+        <p style="margin-bottom:1rem"><i class="fa fa-map-pin" aria-hidden="true"></i>
+ , Tamil Nadu, India</p>
+        <a href="#estimate" class="btn btn-greendr" style="font-size:.85rem;padding:10px 20px"><i class="fas fa-paper-plane"></i> Free Estimate</a>
+      </div>
+    </div>
+    <hr class="foot-divider">
+    <div class="foot-bottom">
+      <span>© 2026 LK Constraction — Premium Residential Construction Company </span>
+      <span>₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CALL BTN -->
+<a href="tel:+919876543210" class="sticky-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <div class="modal-ico"><i class="fas fa-check"></i></div>
+    <h3 id="modalTitle">Request Received!</h3>
+    <p id="modalMsg">Our team will call you within 24 hours.</p>
+    <button class="modal-close-btn" id="modalCloseBtn">Got it</button>
+  </div>
+</div>
+
+<!-- Site Scripts -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Gallery Data
+    const galleryItems = [
+        { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200", caption: "Sunset Grove Villas - Front Elevation with Landscaping" },
+        { src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200", caption: "Modern Living Room Interior with Premium Finishes" },
+        { src: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200", caption: "Luxury Bedroom Design with Wooden Flooring" },
+        { src: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200", caption: "Modular Kitchen with Chimney and Granite Countertop" },
+        { src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200", caption: "Landscaped Garden and Outdoor Sitting Area" },
+        { src: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=1200", caption: "Terrace Deck View with City Skyline" },
+        { src: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=1200", caption: "Swimming Pool and Clubhouse Area" }
+    ];
+
+    let currentIndex = 0;
+    let currentZoom = 1;
+    let slideshowInterval = null;
+    let isFullscreen = false;
+
+    // Render Gallery Thumbnails
+    function renderGallery() {
+        const container = document.getElementById('galleryGrid');
+        container.innerHTML = galleryItems.map((item, idx) => `
+            <div class="gallery-item" data-index="${idx}">
+                <img src="${item.src}" alt="${item.caption}" loading="lazy">
+                <div class="gallery-overlay">
+                    <i class="fas fa-search-plus me-1"></i> Click to view
+                </div>
+            </div>
+        `).join('');
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const index = parseInt(item.dataset.index);
+                openPopup(index);
+            });
+        });
+    }
+
+    // Open Popup
+    function openPopup(index) {
+        currentIndex = index;
+        currentZoom = 1;
+        stopSlideshow();
+        updatePopupImage();
+        document.getElementById('galleryPopup').style.display = 'block';
+        document.body.style.overflow = 'hidden';
+        resetZoom();
+    }
+
+    // Update Popup Image and Caption
+    function updatePopupImage() {
+        const item = galleryItems[currentIndex];
+        const imgElement = document.getElementById('popupImage');
+        imgElement.src = item.src;
+        imgElement.style.transform = `scale(${currentZoom})`;
+        document.getElementById('popupCaption').textContent = item.caption;
+        document.getElementById('popupCounter').textContent = `${currentIndex + 1} / ${galleryItems.length}`;
+    }
+
+    // Navigation Functions
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % galleryItems.length;
+        currentZoom = 1;
+        resetZoom();
+        updatePopupImage();
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        currentZoom = 1;
+        resetZoom();
+        updatePopupImage();
+    }
+
+    // Zoom Functions
+    function zoomIn() {
+        currentZoom = Math.min(currentZoom + 0.2, 3);
+        document.getElementById('popupImage').style.transform = `scale(${currentZoom})`;
+    }
+
+    function zoomOut() {
+        currentZoom = Math.max(currentZoom - 0.2, 0.5);
+        document.getElementById('popupImage').style.transform = `scale(${currentZoom})`;
+    }
+
+    function resetZoom() {
+        currentZoom = 1;
+        document.getElementById('popupImage').style.transform = `scale(1)`;
+    }
+
+    // Slideshow
+    function startSlideshow() {
+        if (slideshowInterval) stopSlideshow();
+        slideshowInterval = setInterval(() => {
+            nextImage();
+        }, 3000);
+        document.getElementById('slideshowBtn').innerHTML = '<i class="fas fa-pause"></i>';
+    }
+
+    function stopSlideshow() {
+        if (slideshowInterval) {
+            clearInterval(slideshowInterval);
+            slideshowInterval = null;
+        }
+        document.getElementById('slideshowBtn').innerHTML = '<i class="fas fa-play"></i>';
+    }
+
+    function toggleSlideshow() {
+        if (slideshowInterval) {
+            stopSlideshow();
+        } else {
+            startSlideshow();
+        }
+    }
+
+    // Fullscreen
+    function toggleFullscreen() {
+        const popup = document.getElementById('galleryPopup');
+        if (!isFullscreen) {
+            if (popup.requestFullscreen) {
+                popup.requestFullscreen();
+            } else if (popup.webkitRequestFullscreen) {
+                popup.webkitRequestFullscreen();
+            }
+            isFullscreen = true;
+            document.getElementById('fullscreenBtn').innerHTML = '<i class="fas fa-compress"></i>';
+        } else {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+            isFullscreen = false;
+            document.getElementById('fullscreenBtn').innerHTML = '<i class="fas fa-expand"></i>';
+        }
+    }
+
+    // Close Popup
+    function closePopup() {
+        document.getElementById('galleryPopup').style.display = 'none';
+        document.body.style.overflow = 'auto';
+        stopSlideshow();
+        resetZoom();
+    }
+
+    // Render Related Projects
+    function renderRelatedProjects() {
+        const relatedProjects = [
+            { id: 2, title: "Greenfield Apartments", category: "Residential", location: "Gomathipuram, Madurai", image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600", desc: "Affordable luxury apartments with modern amenities." },
+            { id: 3, title: "Meenakshi Commercial Hub", category: "Commercial", location: "K.K. Nagar, Madurai", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600", desc: "Modern commercial complex with retail spaces." },
+            { id: 4, title: "Heritage Home Renovation", category: "Renovation", location: "Tallakulam, Madurai", image: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=600", desc: "Complete restoration of a 60-year-old home." },
+            // { id: 5, title: "Elite Corporate Tower", category: "Commercial", location: "Bye-Pass Road, Madurai", image: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600", desc: "Premium corporate office space." }
+        ];
+        const container = document.getElementById('relatedGrid');
+        container.innerHTML = relatedProjects.map(proj => `
+            <div class="related-card" data-id="${proj.id}">
+                <img src="${proj.image}" alt="${proj.title}" loading="lazy">
+                <div class="related-info">
+                    <h4>${proj.title}</h4>
+                    <div class="related-location"><i class="fas fa-map-marker-alt"></i> ${proj.location}</div>
+                    <span class="related-category"><i class="fas fa-tag me-1"></i> ${proj.category}</span>
+                    <p class="small text-muted mt-2">${proj.desc.substring(0, 80)}...</p>
+                    <a href="#" class="view-detail">View Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        `).join('');
+        
+        document.querySelectorAll('.related-card, .view-detail').forEach(el => {
+            el.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('📐 Project details would open here. In the full website, you would see complete project information.');
+            });
+        });
+    }
+
+    // Event Listeners
+    document.getElementById('closePopup').addEventListener('click', closePopup);
+    document.getElementById('prevBtn').addEventListener('click', prevImage);
+    document.getElementById('nextBtn').addEventListener('click', nextImage);
+    document.getElementById('zoomInBtn').addEventListener('click', zoomIn);
+    document.getElementById('zoomOutBtn').addEventListener('click', zoomOut);
+    document.getElementById('slideshowBtn').addEventListener('click', toggleSlideshow);
+    document.getElementById('fullscreenBtn').addEventListener('click', toggleFullscreen);
+    document.getElementById('galleryPopup').addEventListener('click', (e) => {
+        if (e.target === document.getElementById('galleryPopup')) closePopup();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (document.getElementById('galleryPopup').style.display === 'block') {
+            if (e.key === 'Escape') closePopup();
+            if (e.key === 'ArrowLeft') prevImage();
+            if (e.key === 'ArrowRight') nextImage();
+        }
+    });
+
+    document.getElementById('quoteBtn')?.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('📞 Thank you! Our Madurai team will contact you within 24 hours. Call +91 70924 18582');
+    });
+
+    // Initialize
+    renderGallery();
+    renderRelatedProjects();
+</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
