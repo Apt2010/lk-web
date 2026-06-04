@@ -175,7 +175,7 @@
       font-weight: 700;
       padding: 0.35rem 1rem;
       border-radius: 30px;
-      background: white;
+      /* background: white; */
       color: #1f2937;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       letter-spacing: 0.3px;
@@ -712,25 +712,25 @@
   // ---------- DATA from the provided HTML (Completed + Ongoing extracted)
   // Completed projects (original items)
   const completedRaw = [
-    { name: "Yuvaraj", location: "Villivakkam, Chennai", builtUp: "2,400 sq ft", plotArea: "1,800 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Yuvaraj-Villivakkam-300x225-1.jpeg", hasImg: true },
-    { name: "Boopesh", location: "Thiruverkadu, Chennai", builtUp: "3,100 sq ft", plotArea: "2,200 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Boopesh-Thiruverkadu-site-edited.jpeg", hasImg: true },
-    { name: "Daniel", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Perungalathur-project-compressed-300x235-1.png", hasImg: true },
-    { name: "Rajadurai", location: "Urapakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Rajadurai-Urapakkam-Site-4-edite-image-300x234-1.jpg", hasImg: true },
-    { name: "Vignesh", location: "Thalumbur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Vignesh-thalambur-site-edited-300x260-1.jpeg", hasImg: true },
-    { name: "Jagadish", location: "Vadaperukkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/KVT-Vadaperumbakkam-compressed-300x209-1.png", hasImg: true },
-    { name: "Mageshwaran", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/11/Mageshwaran-Perunagalathur-cropped-and-edited.jpeg", hasImg: true },
+    { name: "Yuvaraj", location: "Villivakkam, Chennai", builtUp: "2,400 sq ft", plotArea: "1,800 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Yuvaraj-Villivakkam-300x225-1.jpeg",link: "project-view.html", hasImg: true },
+    { name: "Boopesh", location: "Thiruverkadu, Chennai", builtUp: "3,100 sq ft", plotArea: "2,200 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Boopesh-Thiruverkadu-site-edited.jpeg",link: "project-view.html", hasImg: true },
+    { name: "Daniel", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Perungalathur-project-compressed-300x235-1.png",link: "project-view.html", hasImg: true },
+    { name: "Rajadurai", location: "Urapakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Rajadurai-Urapakkam-Site-4-edite-image-300x234-1.jpg",link: "project-view.html", hasImg: true },
+    { name: "Vignesh", location: "Thalumbur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/Vignesh-thalambur-site-edited-300x260-1.jpeg",link: "project-view.html", hasImg: true },
+    { name: "Jagadish", location: "Vadaperukkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2026/02/KVT-Vadaperumbakkam-compressed-300x209-1.png",link: "project-view.html", hasImg: true },
+    { name: "Mageshwaran", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/11/Mageshwaran-Perunagalathur-cropped-and-edited.jpeg", link: "project-view.html",hasImg: true },
     { name: "Senthil", location: "Thoraipakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Thoraipakkam-project-12.jpeg", hasImg: true },
-    { name: "Vadivel", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/11/Vadivel-Old-Perungalathur-Project-3-compressed-scaled.jpg", hasImg: true },
-    { name: "Selva", location: "Kundrathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Kundrathur-Project-001.jpeg", hasImg: true },
+    { name: "Vadivel", location: "Perungalathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/11/Vadivel-Old-Perungalathur-Project-3-compressed-scaled.jpg",link: "project-view.html", hasImg: true },
+    { name: "Selva", location: "Kundrathur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Kundrathur-Project-001.jpeg",link: "project-view.html", hasImg: true },
     { name: "Vivek", location: "Iyyapathangal, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Vivek-Iyappanthangal-Project-1.webp", hasImg: true },
-    { name: "Sai Nath", location: "Gerugambakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Gerugambakkam.webp", hasImg: true },
-    { name: "Bala", location: "Ambattur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/ambattur-live-image.png", hasImg: true },
-    { name: "Muthumurugan", location: "Kolapakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Muthumurugan-Kolapakkam-1024x768-1.webp", hasImg: true },
+    { name: "Sai Nath", location: "Gerugambakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Gerugambakkam.webp",link: "project-view.html", hasImg: true },
+    { name: "Bala", location: "Ambattur, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/ambattur-live-image.png",link: "project-view.html", hasImg: true },
+    { name: "Muthumurugan", location: "Kolapakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2023/10/Muthumurugan-Kolapakkam-1024x768-1.webp",link: "project-view.html", hasImg: true },
     { name: "Kasi Raja", location: "Virugambakkam, Chennai", builtUp: "2,750 sq ft", plotArea: "2,000 sq ft", img: "https://hireandbuild.com/wp-content/uploads/2022/11/Night-view-Virugambakkam-Project.webp", hasImg: true },
-    { name: "Dinesh", location: "Redhills, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
-    { name: "Vivek", location: "Thalambur, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
-    { name: "Suresh", location: "Noombal, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
-    { name: "Kathiravan", location: "Perungalathur, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
+    { name: "Dinesh", location: "Redhills, Chennai", builtUp: "—", plotArea: "—", img: null, link: "project-view.html",hasImg: false },
+    { name: "Vivek", location: "Thalambur, Chennai", builtUp: "—", plotArea: "—", img: null, link: "project-view.html",hasImg: false },
+    { name: "Suresh", location: "Noombal, Chennai", builtUp: "—", plotArea: "—", img: null, link: "project-view.html",hasImg: false },
+    { name: "Kathiravan", location: "Perungalathur, Chennai", builtUp: "—", plotArea: "—", img: null, link: "project-view.html",hasImg: false },
     { name: "Naveen", location: "Kandigai, Chennai", builtUp: "—", plotArea: "—", img: null, hasImg: false },
   ];
   
@@ -812,15 +812,17 @@
       : `<div class="card-img-placeholder"><svg width="42" height="42" viewBox="0 0 64 64" fill="none" stroke="#888"><path d="M8 28L32 8l24 20"/><rect x="14" y="28" width="36" height="28" rx="2"/><rect x="24" y="40" width="10" height="16" rx="1"/><path d="M22 28v-6h8v6"/></svg><span class="placeholder-text">${type === 'completed' ? 'Image Coming Soon' : 'In Progress'}</span></div>`;
     
     const ongoingExtra = type === 'ongoing' ? `<div class="ongoing-pulse"><span></span> Ongoing</div><div class="status-bar"><span class="status-dot"></span>Construction On Going</div>` : '';
-    const badgeClass = type === 'completed' ? 'badge-completed' : 'badge-ongoing';
-    const badgeText = type === 'completed' ? 'Completed' : 'Ongoing';
+    const badgeClass = type === 'completed' ? 'badge-completed' : '';
+    const badgeText = type === 'completed' ? 'Completed' : '';
     
     return `<div class="card" style="animation-delay: 0s;">
       <span class="card-badge ${badgeClass}">${badgeText}</span>
       ${ongoingExtra && type === 'ongoing' ? ongoingExtra : ''}
       ${imgHtml}
       <div class="card-body">
-        <h3 class="card-name">${escapeHtml(project.name)}</h3>
+        <h3 class="card-name"><a href="${project.link}">
+        ${escapeHtml(project.name)}
+    </a></h3>
         <div class="card-location"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> ${escapeHtml(project.location)}</div>
         <div class="card-divider"></div>
         <div class="card-specs">
