@@ -14,6 +14,48 @@
 
 <!-- Site Stylesheet -->
 <link rel="stylesheet" href="assets/css/style.css">
+<style> /* vision grid */
+  .vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  .vision-card {
+    background:#e6f5df;
+    padding: 2rem;
+    border-radius: 32px;
+    box-shadow: var(--shadow-sm);
+    transition: 0.2s;
+  }
+  .vision-card-label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green);
+    font-weight: 600;
+  }
+  .mission-list {
+    list-style: none;
+    margin-top: 1rem;
+  }
+  .mission-list li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .mission-list li::before {
+    content: "✓";
+    color: var(--green);
+    font-weight: bold;
+  }
+   @media (max-width: 992px) {
+    .about-grid, .vision-grid {
+        grid-template-columns: 1fr;
+    }
+}
+  </style>
 </head>
 <body>
 
@@ -158,43 +200,16 @@
 
 
  <!-- ============ VISION & MISSION ============ -->
-  <section class="section" id="vision" style="background: var(--clr-bg);">
-    <div class="container">
-      <div style="text-align:center">
-        <span class="tag anim">Purpose &amp; Direction</span>
-        <h2 class="section-title anim anim-delay-1">
-          Our <em>Vision</em> &amp; Mission
-        </h2>
-      </div>
-
-      <div class="vision-grid">
-        <!-- Vision -->
-        <div class="vision-card anim anim-delay-2">
-          <div class="vision-card-label">Our Vision</div>
-          <h3>Setting the Benchmark</h3>
-          <p>
-            To establish HireandBuild as the benchmark for the best construction company in Chennai — known for engineering precision, disciplined project execution, and transparent cost structures.
-          </p>
-          <p style="margin-top:14px">
-            We aim to eliminate uncertainty from house construction by implementing structured systems, documented quality inspections, and accountable supervision that protects client investments.
-          </p>
-        </div>
-
-        <!-- Mission -->
-        <div class="vision-card anim anim-delay-3">
-          <div class="vision-card-label">Our Mission</div>
-          <h3>How We Deliver It</h3>
-          <ul class="mission-list">
-            <li>Deliver durable and safe residential structures</li>
-            <li>Maintain strict stage-wise quality inspections</li>
-            <li>Provide transparent BOQ and milestone-based billing</li>
-            <li>Complete projects within committed timelines</li>
-            <li>Offer long-term structural warranty support</li>
-          </ul>
-        </div>
-      </div>
+  <!-- VISION & MISSION -->
+<section class="section" id="vision">
+  <div class="container">
+    <div style="text-align:center"><span class="tag">Purpose &amp; Direction</span><h2 class="section-title">Our <em>Vision</em> &amp; Mission</h2></div>
+    <div class="vision-grid">
+      <div class="vision-card"><div class="vision-card-label">Our Vision</div><h3>Setting the Benchmark</h3><p>To establish HireandBuild as the benchmark for the best construction company in Chennai — known for engineering precision, disciplined project execution, and transparent cost structures.</p><p style="margin-top:14px">We aim to eliminate uncertainty from house construction by implementing structured systems, documented quality inspections, and accountable supervision that protects client investments.</p></div>
+      <div class="vision-card"><div class="vision-card-label">Our Mission</div><h3>How We Deliver It</h3><ul class="mission-list"><li>Deliver durable and safe residential structures</li><li>Maintain strict stage-wise quality inspections</li><li>Provide transparent BOQ and milestone-based billing</li><li>Complete projects within committed timelines</li><li>Offer long-term structural warranty support</li></ul></div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- WHY CHOOSE US -->
 <section class="why-section" id="why">

@@ -707,7 +707,7 @@
 </div>
 
 <!-- Site Scripts -->
-<!-- <script src="assets/js/main.js"></script> -->
+
 <script>
   // ---------- DATA from the provided HTML (Completed + Ongoing extracted)
   // Completed projects (original items)
@@ -864,10 +864,10 @@
     function zoomHandler(e) {
       const imgSrc = this.getAttribute('data-img');
       if(imgSrc) {
-        const modal = document.getElementById('imageModal');
+        const modal1 = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImg');
         modalImg.src = imgSrc;
-        modal.style.display = 'flex';
+        modal1.style.display = 'flex';
       }
     }
   }
@@ -890,9 +890,9 @@
   });
   
   // modal close
-  const modal = document.getElementById('imageModal');
-  const closeModal = () => { modal.style.display = 'none'; };
-  modal.addEventListener('click', closeModal);
+  const modal2 = document.getElementById('imageModal');
+  const closeModal = () => { modal2.style.display = 'none'; };
+  modal2.addEventListener('click', closeModal);
   document.querySelector('.modal-close').addEventListener('click', closeModal);
   
   // initial renders
@@ -901,5 +901,6 @@
   document.getElementById('cnt-completed').innerText = completedRaw.length;
   document.getElementById('cnt-ongoing').innerText = ongoingRaw.length;
 </script>
+ <script src="assets/js/main.js"></script> 
 </body>
 </html>

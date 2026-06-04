@@ -25,13 +25,8 @@
   margin-top: 60px;
 }
 .vision-card {
-      background: #f3faf0;;
-  border: 1px solid #ddecd7;
-  border-radius: 4px;
-  padding: 48px;
-  position: relative;
-  overflow: hidden;
-  transition: var(--transition);
+  background: #f3faf0;;
+  
 }
 .vision-card:hover { border-color: #ddecd7; transform: translateY(-4px); }
 .vision-card::before {
@@ -44,15 +39,7 @@
   transition: var(--transition);
 }
 .vision-card:hover::before { opacity: 1; }
-.vision-card-label {
-  font-family:'DM Sans',sans-serif;
-      font-weight: 900;
-  font-size: 15px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #2d8a06;
-  margin-bottom: 16px;
-}
+
 .vision-card h3 {
   font-family: var(--ff-display);
   font-size: 1.6rem;
@@ -63,7 +50,7 @@
 .vision-card li {
   color: var(--clr-muted);
   font-size: 0.9rem;
-  line-height: 1.8;
+  
 }
 .mission-list { display: flex; flex-direction: column; gap: 12px; }
 .mission-list li {
@@ -71,13 +58,8 @@
   align-items: center;
   gap: 12px;
 }
-.mission-list li::before {
-  content: '';
-  flex-shrink: 0;
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: #000000;
-}
+
+
 
 .nav-link.active {
     
