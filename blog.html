@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>LK Constraction | Best Construction Company  – ₹1899/sq.ft</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Site Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+   /* Light Green Theme */
+        :root {
+            --primary-green: #1e6204;
+            --primary-light: #eafaf5;
+            --primary-soft: #c8e6d9;
+            --accent-green: #1e5a48;
+            --text-dark: #1e2f2b;
+            --text-muted: #5a6e69;
+            --border-light: #d4e6dd;
+        }
+  /* Loader Overlay */
+        .loader-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.96);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.4s ease;
+        }
+        .loader-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .loader {
+            text-align: center;
+        }
+        .loader-spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid var(--primary-soft);
+            border-top: 4px solid #1e6204;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loader p {
+            color: #1e6204;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+        /* Page Header */
+        .page-header {
+            
+            padding: 60px 0 40px;
+            text-align: center;
+           
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-dark);
+        }
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 16px auto 0;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 35px;
+            margin-bottom: 40px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
+            animation: fadeInUp 0.5s ease;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 40px rgba(46, 125, 100, 0.12);
+            border-color: var(--primary-soft);
+        }
+        .blog-image {
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+        .blog-card:hover .blog-image img {
+            transform: scale(1.05);
+        }
+        .blog-category {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: #1e6204;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            z-index: 2;
+        }
+        .blog-content {
+            padding: 26px;
+        }
+        .blog-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 14px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .blog-meta i {
+            color: #1e6204;
+            margin-right: 5px;
+        }
+        .blog-content h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 14px;
+            line-height: 1.4;
+        }
+        .blog-content h3 a {
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: color 0.2s;
+        }
+        .blog-content h3 a:hover {
+            color: #1e6204;
+        }
+        .blog-excerpt {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #1e6204;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: gap 0.2s;
+        }
+        .read-more:hover {
+            gap: 12px;
+            color: var(--accent-green);
+        }
+
+        /* No Results */
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 32px;
+            border: 1px solid var(--border-light);
+        }
+        .no-results i {
+            font-size: 3rem;
+            color: var(--primary-soft);
+            margin-bottom: 16px;
+        }
+        .reset-link {
+            color: #1e6204;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        /* Pagination - Page Navigation */
+        .pagination-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 40px;
+        }
+        .pagination {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .pagination li {
+            display: inline-block;
+        }
+        .pagination a, .pagination span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 46px;
+            height: 46px;
+            padding: 0 16px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.25s ease;
+            background: white;
+            border: 1.5px solid var(--border-light);
+            color: var(--text-dark);
+            cursor: pointer;
+        }
+        .pagination a:hover {
+            background: var(--primary-light);
+            border-color: #1e6204;
+            color: #1e6204;
+            transform: translateY(-2px);
+        }
+        .pagination .active a, .pagination .active span {
+            background: #1e6204;
+            border-color: #1e6204;
+            color: white;
+            box-shadow: 0 4px 12px rgba(46, 125, 100, 0.3);
+        }
+        .pagination .disabled a, .pagination .disabled span {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+        .pagination .page-arrow {
+            font-size: 0.9rem;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 30px;
+        }
+        .sidebar-card {
+            background: white;
+            border-radius: 28px;
+            padding: 28px;
+            margin-bottom: 32px;
+            border: 1px solid var(--border-light);
+        }
+        .sidebar-card h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-left: 4px solid #1e6204;
+            padding-left: 15px;
+        }
+        .popular-post {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .popular-post img {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+        .popular-post h5 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .popular-post p {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+        .category-list {
+            list-style: none;
+            padding: 0;
+        }
+        .category-list li {
+            margin-bottom: 12px;
+        }
+        .category-list a {
+            text-decoration: none;
+            color: var(--text-dark);
+            display: flex;
+            justify-content: space-between;
+            transition: 0.2s;
+            padding: 6px 0;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .category-list a:hover {
+            color: #1e6204;
+            transform: translateX(5px);
+        }
+        .category-list a.active-cat {
+            color: #1e6204;
+            font-weight: 700;
+            border-left: 3px solid #1e6204;
+            padding-left: 12px;
+        }
+        
+
+        /* Main Container */
+        /* .blog-main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        } */
+
+        /* Page Info */
+        .page-info {
+           
+            margin-bottom: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 992px) {
+            .page-header h1 { font-size: 2.2rem; }
+            .page-header { padding: 40px 0 30px; }
+            .blog-grid { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+            .sidebar { position: static; margin-top: 40px; }
+        }
+        @media (max-width: 768px) {
+            /* .blog-main-container { padding: 20px 16px 40px; } */
+            .blog-grid { grid-template-columns: 1fr; }
+            .page-header h1 { font-size: 1.8rem; }
+            .pagination a, .pagination span { min-width: 40px; height: 40px; padding: 0 12px; font-size: 0.85rem; }
+        }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <i class="fa fa-phone" aria-hidden="true"></i>
+ Call us: <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp; ₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built Across 
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap">
+        <!-- <div class="logo-icon"><i class="fas fa-hard-hat"></i></div>
+        <span class="logo-text">LK<span>Constraction</span></span> -->
+        <img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img">
+        
+      </a>
+      <ul class="nav-menu">
+        <li><a href="about.html" class="nav-link ">About Us</a></li>
+        <li>
+          <button>Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></button>
+          <div class="dd-menu">
+            <div class="dd-grid">
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-home"></i></div>
+                <div><span class="dd-title">Residential Construction</span><span class="dd-desc">Custom villas, G+1 &amp; G+2 homes </span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-drafting-compass"></i></div>
+                <div><span class="dd-title">Architectural Design</span><span class="dd-desc">3D renders, floor plans &amp; vastu layouts</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-couch"></i></div>
+                <div><span class="dd-title">Interior Design</span><span class="dd-desc">Modular kitchen, wardrobes &amp; full interiors</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-tools"></i></div>
+                <div><span class="dd-title">Renovation &amp; Remodelling</span><span class="dd-desc">Extension, structural upgrades &amp; painting</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-solar-panel"></i></div>
+                <div><span class="dd-title">Smart &amp; Eco Homes</span><span class="dd-desc">Solar, rainwater harvesting &amp; green builds</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-file-contract"></i></div>
+                <div><span class="dd-title">Plan Approval &amp; Legal</span><span class="dd-desc">CMDA / DTCP approval &amp; documentation</span></div>
+              </a>
+            </div>
+            <div class="dd-foot">
+              <span>All services · Dedicated engineer · 15-yr warranty</span>
+              <a href="services.html">All services <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#" class="btn nav-cta">Free Estimate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <a href="about.html"><i class="fas fa-info-circle" style="color:var(--green);width:20px"></i> About Us</a>
+  <button id="mobServToggle"><i class="fas fa-building" style="color:var(--green);width:20px"></i> Services <i class="fas fa-chevron-down" style="margin-left:auto;font-size:.7rem"></i></button>
+  <div class="mob-services" id="mobServList">
+    <a href="#"><i class="fas fa-home"></i> Residential Construction</a>
+    <a href="#"><i class="fas fa-drafting-compass"></i> Architectural Design</a>
+    <a href="#"><i class="fas fa-couch"></i> Interior Design</a>
+    <a href="#"><i class="fas fa-tools"></i> Renovation &amp; Remodelling</a>
+    <a href="#"><i class="fas fa-solar-panel"></i> Smart &amp; Eco Homes</a>
+    <a href="#"><i class="fas fa-file-contract"></i> Plan Approval &amp; Legal</a>
+  </div>
+  <a href="projects.html"><i class="fas fa-images" style="color:var(--green);width:20px"></i> Projects</a>
+  <a href="blog.html"><i class="fas fa-blog" style="color:var(--green);width:20px"></i> Blog</a>
+  <a href="contact.html"><i class="fas fa-envelope" style="color:var(--green);width:20px"></i> Contact Us</a>
+  <a href="#" class="mob-cta"><i class="fas fa-paper-plane"></i> Get a Free Estimate</a>
+</div>
+
+<section class="lk">
+  <div class="lkc">
+        <nav class="lkms-nav" aria-label="Breadcrumb navigation">
+      <a href="index.html" class="lkms-link">
+        <span class="lkms-icon">🏠</span> Home
+      </a>
+      
+      <span class="lkms-sep">•</span>
+      <span class="lkms-current">Our Blog</span>
+    </nav>
+
+    <!-- centered heading & description (unchanged but all classes follow lk-*) -->
+    <h1 class="lk-heading">Our Blog</h1>
+    <p class="lk-desc">
+      Stay updated with the latest construction trends, expert insights, project highlights, and industry news from LK Construction.
+    </p>
+    <div class="lk-accent"></div>
+  </div>
+</section>
+
+
+<!-- Page Header (No Navbar, No Footer) -->
+<section class="page-header">
+    <div class="container">
+        <h1>Latest Insights</h1>
+        <p>Explore expert tips, industry trends, and project updates from LK Construction.</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <!-- Main Blog Content -->
+        <div class="col-lg-8">
+            <div id="blogGridContainer">
+                <!-- Page Info -->
+                <div class="page-info" id="pageInfo"></div>
+                <!-- Blog Grid -->
+                <div class="blog-grid" id="blogGrid"></div>
+                <!-- Pagination Navigation -->
+                <div class="pagination-wrapper" id="paginationWrapper"></div>
+            </div>
+        </div>
+
+        <!-- Sidebar with Category Filter -->
+        <div class="col-lg-4">
+            <div class="sidebar">
+                <!-- Categories Card -->
+                <div class="sidebar-card">
+                    <h4><i class="fas fa-filter me-2 text-primary-green"></i> Filter by Category</h4>
+                    <ul class="category-list" id="categoryList">
+                        <li><a href="#" data-cat="all" class="active-cat">All Posts <span>(12)</span></a></li>
+                        <li><a href="#" data-cat="sustainability">Sustainability <span>(4)</span></a></li>
+                        <li><a href="#" data-cat="design">Design & VASTU <span>(3)</span></a></li>
+                        <li><a href="#" data-cat="tips">Construction Tips <span>(3)</span></a></li>
+                        <li><a href="#" data-cat="trends">Trends <span>(2)</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Posts -->
+                <div class="sidebar-card">
+                    <h4><i class="fas fa-fire me-2 text-primary-green"></i> Popular Posts</h4>
+                    <div class="popular-post">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=150" alt="post">
+                        <div>
+                            <h5>Sustainable Architecture in Madurai</h5>
+                            <p><i class="far fa-calendar"></i> Nov 15, 2025</p>
+                        </div>
+                    </div>
+                    <div class="popular-post">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=150" alt="post">
+                        <div>
+                            <h5>VASTU Tips for Your New Home</h5>
+                            <p><i class="far fa-calendar"></i> Oct 28, 2025</p>
+                        </div>
+                    </div>
+                    <div class="popular-post">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=150" alt="post">
+                        <div>
+                            <h5>Smart Home Trends 2025</h5>
+                            <p><i class="far fa-calendar"></i> Sep 10, 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- CTA BAND -->
+<div class="cta-band" id="contact">
+  <div class="container">
+    <h2>Ready to Build Your Dream Home<br></h2>
+    <p>Free site visit, detailed BOQ &amp; expert consultation within 24 hours. 180+ families trusted us — we'd love to build yours too.</p>
+    <div class="cta-btns">
+      <a href="tel:+919876543210" class="btn btn-green"><i class="fas fa-phone-alt"></i> Call +91 98765 43210</a>
+      <a href="#estimate" class="btn btn-white"><i class="fas fa-paper-plane"></i> Request Free Estimate</a>
+      <a href="#" class="btn btn-wa" id="waBtn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img"></div>
+        <p style="color: #fff;">Built with integrity, delivered with joy — 180+ happy families across Tamil Nadu. We build homes that stand the test of time with a 15-year written structural warranty.</p>
+        <div style="margin-top:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-youtube"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ser">
+        <h4>Services</h4>
+        <a href="#">Residential Construction</a>
+        <a href="#">Architectural Design</a>
+        <a href="#">Interior Design</a>
+        <a href="#">Renovation &amp; Remodelling</a>
+        <a href="#">Smart &amp; Eco Homes</a>
+        <a href="#">Plan Approval &amp; Legal</a>
+      </div>
+      <div class="loc"> 
+        <h4>Useful Links</h4>
+         <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <p style="margin-bottom:.8rem"><i class="fa fa-phone" aria-hidden="true"></i>
+ <a href="tel:+919876543210" class="foot-contact" style="text-decoration:none">+91 98765 43210</a></p>
+        <p style="margin-bottom:.8rem"><i class="fa fa-envelope" aria-hidden="true"></i>
+ <a href="mailto:info@lkconstraction.com" class="foot-contact" style="text-decoration:none"> info@lkconstraction.com</a></p>
+        <p style="margin-bottom:1rem"><i class="fa fa-map-pin" aria-hidden="true"></i>
+ , Tamil Nadu, India</p>
+        <a href="#estimate" class="btn btn-greendr" style="font-size:.85rem;padding:10px 20px"><i class="fas fa-paper-plane"></i> Free Estimate</a>
+      </div>
+    </div>
+    <hr class="foot-divider">
+    <div class="foot-bottom">
+      <span>© 2026 LK Constraction — Premium Residential Construction Company </span>
+      <span>₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CALL BTN -->
+<a href="tel:+919876543210" class="sticky-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <div class="modal-ico"><i class="fas fa-check"></i></div>
+    <h3 id="modalTitle">Request Received!</h3>
+    <p id="modalMsg">Our team will call you within 24 hours.</p>
+    <button class="modal-close-btn" id="modalCloseBtn">Got it</button>
+  </div>
+</div>
+
+<!-- Site Scripts -->
+ <script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Blog Posts Data (12 posts total)
+    const blogPosts = [
+        { id: 1, title: "Sustainable Architecture: Building Green for Tomorrow", category: "sustainability", date: "October 25, 2025", readTime: "5 min read", excerpt: "Discover how eco-friendly construction practices are transforming Tamil Nadu skyline. From rainwater harvesting to solar integration, learn about sustainable building methods.", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600", author: "Ar. Priya Sundaram" },
+        { id: 2, title: "Blending Modern Architecture with Traditional VASTU Principles", category: "design", date: "September 28, 2025", readTime: "7 min read", excerpt: "Learn how to harmonize contemporary design with ancient VASTU principles for a balanced, prosperous home. Tips for Tamil Nadu unique climate and culture.", image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600", author: "Ar. Ramesh Kumar" },
+        { id: 3, title: "Smart Home Innovations Transforming Tamil Nadu Residential Landscape", category: "trends", date: "November 02, 2025", readTime: "6 min read", excerpt: "Explore the latest smart home technologies that are making homes in Madurai more efficient, secure, and comfortable.", image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600", author: "Tech Expert" },
+        { id: 4, title: "10 Essential Tips Before Starting Your Home Construction", category: "tips", date: "August 15, 2025", readTime: "8 min read", excerpt: "A comprehensive guide for first-time home builders in Madurai. Learn about budgeting, material selection, and avoiding common pitfalls.", image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600", author: "S. Venkatesh" },
+        { id: 5, title: "The Rise of Eco-Friendly Construction Materials in Tamil Nadu", category: "sustainability", date: "October 10, 2025", readTime: "5 min read", excerpt: "From fly ash bricks to recycled materials, discover sustainable alternatives that reduce environmental impact.", image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600", author: "Environmental Expert" },
+        { id: 6, title: "How to Choose the Right Architect for Your Dream Home", category: "tips", date: "September 05, 2025", readTime: "6 min read", excerpt: "Key questions to ask when selecting an architect in Madurai. Portfolio review, credentials, and understanding of local building codes.", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600", author: "Ar. Lakshmi Narayan" },
+        { id: 7, title: "Commercial Construction Trends 2025: What's New?", category: "trends", date: "November 15, 2025", readTime: "4 min read", excerpt: "Stay ahead with the latest trends in commercial construction including flexible workspaces and biophilic design.", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600", author: "Industry Analyst" },
+        { id: 8, title: "VASTU for Apartments: Tips for Flat Owners in Madurai", category: "design", date: "October 02, 2025", readTime: "5 min read", excerpt: "Even in apartments, VASTU principles can enhance positivity. Learn simple adjustments for bedrooms and kitchen.", image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600", author: "VASTU Consultant" },
+        { id: 9, title: "Budgeting Tips for Home Renovation Projects", category: "tips", date: "August 28, 2025", readTime: "6 min read", excerpt: "Planning to renovate your home? Learn how to create a realistic budget and avoid unexpected costs.", image: "https://images.unsplash.com/photo-1600210491369-e753d80a41f3?w=600", author: "Finance Expert" },
+        { id: 10, title: "Water Conservation Techniques for Modern Homes", category: "sustainability", date: "September 18, 2025", readTime: "5 min read", excerpt: "Implement rainwater harvesting, greywater recycling, and efficient fixtures to reduce water consumption.", image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=600", author: "Environmental Consultant" },
+        { id: 11, title: "The Psychology of Space: How Design Affects Mood", category: "design", date: "November 08, 2025", readTime: "7 min read", excerpt: "Explore how colors, lighting, and spatial arrangement impact your well-being.", image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600", author: "Psychologist & Designer" },
+        { id: 12, title: "Future of Construction: 3D Printing and Robotics", category: "trends", date: "October 20, 2025", readTime: "6 min read", excerpt: "Discover how emerging technologies are revolutionizing the construction industry.", image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600", author: "Tech Futurist" }
+    ];
+
+    let currentFilter = "all";
+    let currentPage = 1;
+    const postsPerPage = 6;
+
+    // Get category display name
+    function getCategoryName(cat) {
+        const names = { sustainability: "Sustainability", design: "Design & VASTU", tips: "Construction Tips", trends: "Trends" };
+        return names[cat] || cat;
+    }
+
+    // Get filtered posts
+    function getFilteredPosts() {
+        return currentFilter === "all" ? blogPosts : blogPosts.filter(post => post.category === currentFilter);
+    }
+
+    // Get total pages
+    function getTotalPages() {
+        return Math.ceil(getFilteredPosts().length / postsPerPage);
+    }
+
+    // Get paginated posts
+    function getPaginatedPosts() {
+        const filtered = getFilteredPosts();
+        const start = (currentPage - 1) * postsPerPage;
+        const end = start + postsPerPage;
+        return filtered.slice(start, end);
+    }
+
+    // Show loader
+    function showLoader() {
+        const loader = document.getElementById('loaderOverlay');
+        if (loader) loader.classList.remove('hidden');
+    }
+
+    // Hide loader
+    function hideLoader() {
+        const loader = document.getElementById('loaderOverlay');
+        if (loader) loader.classList.add('hidden');
+    }
+
+    // Update page info text
+    function updatePageInfo() {
+        const filteredCount = getFilteredPosts().length;
+        const totalPages = getTotalPages();
+        const startItem = (currentPage - 1) * postsPerPage + 1;
+        const endItem = Math.min(currentPage * postsPerPage, filteredCount);
+        const infoDiv = document.getElementById('pageInfo');
+        if (filteredCount > 0) {
+            infoDiv.innerHTML = `Showing ${startItem} - ${endItem} of ${filteredCount} articles`;
+        } else {
+            infoDiv.innerHTML = '';
+        }
+    }
+
+    // Render Blog Posts
+    function renderBlogPosts() {
+        showLoader();
+        
+        setTimeout(() => {
+            const paginatedPosts = getPaginatedPosts();
+            const blogGrid = document.getElementById("blogGrid");
+            const totalPages = getTotalPages();
+            
+            if (paginatedPosts.length === 0) {
+                blogGrid.innerHTML = `
+                    <div class="no-results" style="grid-column: 1/-1;">
+                        <i class="fas fa-newspaper"></i>
+                        <h4>No posts found</h4>
+                        <p>No blog posts match the selected category. Try another filter.</p>
+                        <span class="reset-link" id="resetFilter">View all posts</span>
+                    </div>
+                `;
+                const resetBtn = document.getElementById("resetFilter");
+                if (resetBtn) {
+                    resetBtn.addEventListener("click", () => {
+                        const allLink = document.querySelector('.category-list a[data-cat="all"]');
+                        if (allLink) allLink.click();
+                    });
+                }
+            } else {
+                blogGrid.innerHTML = paginatedPosts.map(post => `
+                    <div class="blog-card" data-category="${post.category}">
+                        <div class="blog-image">
+                            <img src="${post.image}" alt="${post.title}" loading="lazy">
+                            <span class="blog-category">${getCategoryName(post.category)}</span>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="far fa-calendar-alt"></i> ${post.date}</span>
+                                <span><i class="far fa-clock"></i> ${post.readTime}</span>
+                            </div>
+                            <h3><a href="blog-view.html">${post.title}</a></h3>
+                            <p class="blog-excerpt">${post.excerpt.substring(0, 120)}...</p>
+                            <a href="blog-view.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                `).join("");
+            }
+            
+            // Update page info
+            updatePageInfo();
+            
+            // Render pagination
+            renderPagination(totalPages);
+            hideLoader();
+            
+            // Add click handlers for read more links
+            document.querySelectorAll('.read-more, .blog-card h3 a').forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const blogTitle = link.closest('.blog-card')?.querySelector('h3')?.innerText || 'this article';
+                    alert(`📖 Opening "${blogTitle}"\n\nIn the full website, this would open the complete blog article with detailed insights.`);
+                });
+            });
+        }, 350);
+    }
+
+    // Render Pagination Navigation
+    function renderPagination(totalPages) {
+        const wrapper = document.getElementById('paginationWrapper');
+        if (totalPages <= 1) {
+            wrapper.innerHTML = '';
+            return;
+        }
+        
+        let paginationHTML = '<ul class="pagination">';
+        
+        // Previous button
+        if (currentPage === 1) {
+            paginationHTML += `<li class="disabled"><span class="page-arrow"><i class="fas fa-chevron-left"></i> Prev</span></li>`;
+        } else {
+            paginationHTML += `<li><a href="#" data-page="${currentPage - 1}" class="page-arrow"><i class="fas fa-chevron-left"></i> Prev</a></li>`;
+        }
+        
+        // Page numbers - show limited pages for better UX
+        let startPage = Math.max(1, currentPage - 2);
+        let endPage = Math.min(totalPages, currentPage + 2);
+        
+        if (startPage > 1) {
+            paginationHTML += `<li><a href="#" data-page="1">1</a></li>`;
+            if (startPage > 2) paginationHTML += `<li class="disabled"><span>...</span></li>`;
+        }
+        
+        for (let i = startPage; i <= endPage; i++) {
+            if (i === currentPage) {
+                paginationHTML += `<li class="active"><span>${i}</span></li>`;
+            } else {
+                paginationHTML += `<li><a href="#" data-page="${i}">${i}</a></li>`;
+            }
+        }
+        
+        if (endPage < totalPages) {
+            if (endPage < totalPages - 1) paginationHTML += `<li class="disabled"><span>...</span></li>`;
+            paginationHTML += `<li><a href="#" data-page="${totalPages}">${totalPages}</a></li>`;
+        }
+        
+        // Next button
+        if (currentPage === totalPages) {
+            paginationHTML += `<li class="disabled"><span class="page-arrow">Next <i class="fas fa-chevron-right"></i></span></li>`;
+        } else {
+            paginationHTML += `<li><a href="#" data-page="${currentPage + 1}" class="page-arrow">Next <i class="fas fa-chevron-right"></i></a></li>`;
+        }
+        
+        paginationHTML += '</ul>';
+        wrapper.innerHTML = paginationHTML;
+        
+        // Add click handlers for pagination links
+        wrapper.querySelectorAll('a[data-page]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const page = parseInt(link.dataset.page);
+                if (!isNaN(page) && page !== currentPage) {
+                    currentPage = page;
+                    renderBlogPosts();
+                    updateActiveCategory();
+                    // Smooth scroll to top of blog section
+                    document.querySelector('.blog-grid')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    }
+
+    // Update active category in sidebar
+    function updateActiveCategory() {
+        const allLinks = document.querySelectorAll('.category-list a');
+        allLinks.forEach(link => {
+            const catValue = link.getAttribute('data-cat');
+            if (catValue === currentFilter) {
+                link.classList.add('active-cat');
+            } else {
+                link.classList.remove('active-cat');
+            }
+        });
+    }
+
+    // Setup category filter from sidebar
+    function setupCategoryFilters() {
+        const categoryLinks = document.querySelectorAll('.category-list a');
+        
+        categoryLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const catValue = link.getAttribute('data-cat');
+                if (catValue === currentFilter) return;
+                currentFilter = catValue;
+                currentPage = 1; // Reset to first page when filter changes
+                renderBlogPosts();
+                updateActiveCategory();
+            });
+        });
+    }
+
+    // Newsletter subscription
+    function setupNewsletter() {
+        const subscribeBtn = document.getElementById('subscribeBtn');
+        const emailInput = document.getElementById('newsletterEmail');
+        
+        if (subscribeBtn) {
+            subscribeBtn.addEventListener('click', () => {
+                if (emailInput.value && emailInput.value.includes('@') && emailInput.value.includes('.')) {
+                    alert('✅ Thank you for subscribing! You will receive the latest construction insights from LK Construction, Madurai.');
+                    emailInput.value = '';
+                } else {
+                    alert('❌ Please enter a valid email address.');
+                }
+            });
+        }
+        
+        if (emailInput) {
+            emailInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    subscribeBtn.click();
+                }
+            });
+        }
+    }
+    
+    // Update category counts dynamically
+    function updateCategoryCounts() {
+        const counts = {
+            all: blogPosts.length,
+            sustainability: blogPosts.filter(p => p.category === 'sustainability').length,
+            design: blogPosts.filter(p => p.category === 'design').length,
+            tips: blogPosts.filter(p => p.category === 'tips').length,
+            trends: blogPosts.filter(p => p.category === 'trends').length
+        };
+        
+        const categoryLinks = document.querySelectorAll('.category-list a');
+        categoryLinks.forEach(link => {
+            const cat = link.getAttribute('data-cat');
+            const span = link.querySelector('span');
+            if (span && counts[cat] !== undefined) {
+                span.innerHTML = `(${counts[cat]})`;
+            }
+        });
+    }
+    
+    // Hide loader after page fully loads
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            hideLoader();
+        }, 300);
+    });
+    
+    // Initialize all
+    updateCategoryCounts();
+    setupCategoryFilters();
+    setupNewsletter();
+    renderBlogPosts();
+</script>
+</body>
+</html>

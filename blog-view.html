@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>LK Constraction | Best Construction Company  – ₹1899/sq.ft</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Site Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+       
+
+        /* Light Green Theme */
+        :root {
+            --primary-green: #1e6204;
+            --primary-light: #eafaf5;
+            --primary-soft: #c8e6d9;
+            --accent-green: #1e5a48;
+            --text-dark: #1e2f2b;
+            --text-muted: #5a6e69;
+            --border-light: #d4e6dd;
+        }
+
+        /* Loader */
+        .loader-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.96);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.4s ease;
+        }
+        .loader-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .loader-spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid var(--primary-soft);
+            border-top: 4px solid var(--primary-green);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 20px;
+        }
+        dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: 0;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Main Container */
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+        }
+
+        
+
+        /* Featured Image */
+        .featured-image {
+            border-radius: 32px;
+            overflow: hidden;
+            margin-bottom: 32px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            max-height: 500px;
+        }
+
+        /* Blog Meta */
+        .blog-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        .meta-item i {
+            color: var(--primary-green);
+            width: 20px;
+        }
+        .category-badge {
+            background: var(--primary-green);
+            color: white;
+            padding: 5px 14px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        /* Blog Title */
+        .blog-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+
+        /* Blog Content */
+        .blog-content {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+        }
+        .blog-content h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 40px 0 20px;
+            color: var(--text-dark);
+            border-left: 4px solid var(--primary-green);
+            padding-left: 20px;
+        }
+        .blog-content h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 30px 0 15px;
+            color: var(--text-dark);
+        }
+        .blog-content p {
+            margin-bottom: 20px;
+            color: #3a4a44;
+        }
+        .blog-content img {
+            max-width: 100%;
+            border-radius: 24px;
+            margin: 30px 0;
+        }
+        .blog-content ul, .blog-content ol {
+            margin-bottom: 20px;
+            padding-left: 24px;
+        }
+        .blog-content li {
+            margin-bottom: 10px;
+        }
+        .blog-content blockquote {
+            background: var(--primary-light);
+            padding: 24px 32px;
+            border-radius: 24px;
+            margin: 30px 0;
+            font-style: italic;
+            border-left: 4px solid var(--primary-green);
+            font-weight: 500;
+        }
+
+        /* Author Box */
+        .author-box {
+            background: white;
+            border-radius: 28px;
+            padding: 32px;
+            margin: 48px 0;
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            border: 1px solid var(--border-light);
+        }
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--primary-green);
+        }
+        .author-info h4 {
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .author-info p {
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+        .author-social a {
+            color: var(--primary-green);
+            margin-right: 15px;
+            text-decoration: none;
+        }
+
+        /* Comments Section */
+        .comments-section {
+            margin: 50px 0 40px;
+            background: white;
+            border-radius: 32px;
+            padding: 32px;
+            border: 1px solid var(--border-light);
+        }
+        .comments-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 28px;
+            border-left: 4px solid var(--primary-green);
+            padding-left: 20px;
+        }
+        .comment-list {
+            margin-bottom: 40px;
+            max-height: 500px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+        .comment-item {
+            display: flex;
+            gap: 18px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .comment-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--primary-green);
+            flex-shrink: 0;
+        }
+        .comment-content {
+            flex: 1;
+        }
+        .comment-author {
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        .comment-date {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-left: 12px;
+            font-weight: normal;
+        }
+        .comment-text {
+            color: var(--text-dark);
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        .reply-btn {
+            background: none;
+            border: none;
+            color: var(--primary-green);
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .reply-btn:hover {
+            color: var(--accent-green);
+            transform: translateX(3px);
+        }
+        .reply-form {
+            margin-left: 68px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: var(--primary-light);
+            border-radius: 20px;
+            display: none;
+        }
+        .reply-form.active {
+            display: block;
+        }
+        .no-comments {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+        }
+
+        /* Comment Form */
+        .comment-form {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid var(--border-light);
+        }
+        .comment-form h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1.5px solid var(--border-light);
+            border-radius: 16px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            background: white;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(46, 125, 100, 0.1);
+        }
+        .submit-comment {
+            background: var(--primary-green);
+            color: white;
+            border: none;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .submit-comment:hover {
+            background: var(--accent-green);
+            transform: translateY(-2px);
+        }
+        @media (max-width: 576px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .comment-item {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .reply-form {
+                margin-left: 0;
+            }
+        }
+
+        /* Share Section */
+        .share-section {
+            margin: 40px 0;
+            padding: 24px;
+            background: var(--primary-light);
+            border-radius: 28px;
+            text-align: center;
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .share-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .share-btn:hover {
+            transform: translateY(-3px);
+        }
+        .share-fb { background: #1877f2; }
+        .share-twitter { background: #1da1f2; }
+        .share-linkedin { background: #0077b5; }
+        .share-wa { background: #25d366; }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 30px;
+        }
+        .sidebar-card {
+            background: white;
+            border-radius: 28px;
+            padding: 28px;
+            margin-bottom: 32px;
+            border: 1px solid var(--border-light);
+        }
+        .sidebar-card h4 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary-green);
+            padding-left: 15px;
+        }
+        .recent-post {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border-light);
+        }
+        .recent-post img {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            object-fit: cover;
+        }
+        .recent-post h5 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .recent-post p {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+        .category-list {
+            list-style: none;
+            padding: 0;
+        }
+        .category-list li {
+            margin-bottom: 12px;
+        }
+        .category-list a {
+            text-decoration: none;
+            color: var(--text-dark);
+            display: flex;
+            justify-content: space-between;
+            transition: 0.2s;
+            padding: 6px 0;
+        }
+        .category-list a:hover {
+            color: var(--primary-green);
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 992px) {
+            .blog-container { padding: 30px 20px; }
+            .blog-title { font-size: 2rem; }
+            .sidebar { position: static; margin-top: 40px; }
+        }
+        @media (max-width: 768px) {
+            .blog-title { font-size: 1.6rem; }
+            .blog-meta { gap: 16px; }
+            .author-box { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+<!-- Loader -->
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <i class="fa fa-phone" aria-hidden="true"></i>
+ Call us: <a href="tel:+919876543210">+91 98765 43210</a> &nbsp;|&nbsp; ₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built Across 
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap">
+        <!-- <div class="logo-icon"><i class="fas fa-hard-hat"></i></div>
+        <span class="logo-text">LK<span>Constraction</span></span> -->
+        <img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img">
+        
+      </a>
+      <ul class="nav-menu">
+        <li><a href="about.html" class="nav-link active">About Us</a></li>
+        <li>
+          <button>Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></button>
+          <div class="dd-menu">
+            <div class="dd-grid">
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-home"></i></div>
+                <div><span class="dd-title">Residential Construction</span><span class="dd-desc">Custom villas, G+1 &amp; G+2 homes </span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-drafting-compass"></i></div>
+                <div><span class="dd-title">Architectural Design</span><span class="dd-desc">3D renders, floor plans &amp; vastu layouts</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-couch"></i></div>
+                <div><span class="dd-title">Interior Design</span><span class="dd-desc">Modular kitchen, wardrobes &amp; full interiors</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-tools"></i></div>
+                <div><span class="dd-title">Renovation &amp; Remodelling</span><span class="dd-desc">Extension, structural upgrades &amp; painting</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-solar-panel"></i></div>
+                <div><span class="dd-title">Smart &amp; Eco Homes</span><span class="dd-desc">Solar, rainwater harvesting &amp; green builds</span></div>
+              </a>
+              <a href="#" class="dd-item">
+                <div class="dd-ico"><i class="fas fa-file-contract"></i></div>
+                <div><span class="dd-title">Plan Approval &amp; Legal</span><span class="dd-desc">CMDA / DTCP approval &amp; documentation</span></div>
+              </a>
+            </div>
+            <div class="dd-foot">
+              <span>All services · Dedicated engineer · 15-yr warranty</span>
+              <a href="services.html">All services <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="#" class="btn nav-cta">Free Estimate</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE OVERLAY + MENU -->
+<div class="mob-overlay" id="mobOverlay"></div>
+<div class="mob-menu" id="mobMenu">
+  <button class="mob-close" id="mobClose"><i class="fas fa-times"></i></button>
+  <a href="about.html"><i class="fas fa-info-circle" style="color:var(--green);width:20px"></i> About Us</a>
+  <button id="mobServToggle"><i class="fas fa-building" style="color:var(--green);width:20px"></i> Services <i class="fas fa-chevron-down" style="margin-left:auto;font-size:.7rem"></i></button>
+  <div class="mob-services" id="mobServList">
+    <a href="#"><i class="fas fa-home"></i> Residential Construction</a>
+    <a href="#"><i class="fas fa-drafting-compass"></i> Architectural Design</a>
+    <a href="#"><i class="fas fa-couch"></i> Interior Design</a>
+    <a href="#"><i class="fas fa-tools"></i> Renovation &amp; Remodelling</a>
+    <a href="#"><i class="fas fa-solar-panel"></i> Smart &amp; Eco Homes</a>
+    <a href="#"><i class="fas fa-file-contract"></i> Plan Approval &amp; Legal</a>
+  </div>
+  <a href="projects.html"><i class="fas fa-images" style="color:var(--green);width:20px"></i> Projects</a>
+  <a href="blog.html"><i class="fas fa-blog" style="color:var(--green);width:20px"></i> Blog</a>
+  <a href="contact.html"><i class="fas fa-envelope" style="color:var(--green);width:20px"></i> Contact Us</a>
+  <a href="#" class="mob-cta"><i class="fas fa-paper-plane"></i> Get a Free Estimate</a>
+</div>
+<section class="lk">
+  <div class="lkc">
+        <nav class="lkms-nav" aria-label="Breadcrumb navigation">
+      <a href="index.html" class="lkms-link">
+        <span class="lkms-icon">🏠</span> Home
+      </a>
+        
+      <span class="lkms-sep">•</span>
+        <a href="blog.html" class="lkms-link">Our Blog</a>
+      <span class="lkms-sep">•</span>
+      <span class="lkms-current">Sustainable Architecture: Building Green for Tomorrow</span>
+    </nav>
+
+    <!-- centered heading & description (unchanged but all classes follow lk-*) -->
+    <h1 class="lk-heading">Sustainable Design
+</h1>
+    <p class="lk-desc">
+      Explore how sustainable architecture uses eco-friendly materials and energy-efficient designs to create a greener future. 
+    </p>
+    <div class="lk-accent"></div>
+  </div>
+</section>
+
+
+
+<div class="blog-container">
+    <div class="row">
+        <!-- Main Content -->
+        <div class="col-lg-8">
+            <!-- Back Link -->
+            <a href="#" class="back-link" id="backLink">
+                
+            </a>
+
+           
+
+            <!-- Title -->
+            <h1 class="blog-title" id="postTitle">Sustainable Architecture: Building Green for Tomorrow</h1>
+
+            <!-- Meta Info -->
+            <div class="blog-meta" id="postMeta">
+                <div class="meta-item"><i class="far fa-calendar-alt"></i> <span id="postDate">October 25, 2025</span></div>
+                <div class="meta-item"><i class="far fa-clock"></i> <span id="postReadTime">5 min read</span></div>
+                <div class="meta-item"><i class="fas fa-user"></i> <span id="postAuthor">Ar. Priya Sundaram</span></div>
+            </div>
+
+            <!-- Featured Image -->
+            <div class="featured-image" id="featuredImage">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000" alt="Sustainable Architecture">
+            </div>
+
+            <!-- Blog Content -->
+            <div class="blog-content" id="blogContent">
+                <p>Sustainable architecture is no longer a trend — it's a necessity. At LK Construction, we believe that building responsibly is the only way forward. In this article, we explore how eco-friendly construction practices are transforming Tamil Nadu skyline and why green building matters for our future.</p>
+                
+                <h2>Why Sustainability Matters in Construction</h2>
+                <p>The construction industry accounts for nearly 40% of global carbon emissions. By adopting sustainable practices, we can significantly reduce environmental impact while creating healthier living spaces. In Madurai, where temperatures can soar, green building techniques offer natural cooling solutions that reduce energy consumption.</p>
+                
+                <h2>Key Sustainable Features We Implement</h2>
+                <p>At LK Construction, we integrate multiple eco-friendly features into every project:</p>
+                <ul>
+                    <li><strong>Rainwater Harvesting Systems</strong> - Every project includes rainwater collection and groundwater recharge.</li>
+                    <li><strong>Solar Panel Provision</strong> - Roof structures are designed for easy solar panel installation.</li>
+                    <li><strong>Energy-Efficient Lighting</strong> - LED fixtures and sensor-based lighting throughout.</li>
+                    <li><strong>Low-VOC Paints & Materials</strong> - Ensuring indoor air quality and health.</li>
+                    <li><strong>Cross Ventilation Design</strong> - Strategic window placement for natural cooling.</li>
+                    <li><strong>Waste Management</strong> - Construction debris recycling and responsible disposal.</li>
+                </ul>
+                
+                <h2>The VASTU Connection to Sustainability</h2>
+                <p>Interestingly, traditional VASTU principles align perfectly with modern sustainability. Orientation for optimal sunlight, placement of windows for cross-ventilation, and use of natural materials are central to both philosophies. By blending ancient wisdom with modern technology, we create homes that are both eco-friendly and harmonious.</p>
+                
+                <blockquote>
+                    "Building green isn't just about saving the planet — it's about creating healthier, more comfortable homes that cost less to maintain. Every sustainable feature is an investment in your family's future."
+                </blockquote>
+                
+                <h2>Materials That Make a Difference</h2>
+                <p>We source locally available materials to reduce transportation carbon footprint. Fly ash bricks, recycled steel, and sustainable wood alternatives are standard in our projects. For flooring, we offer terrazzo and vitrified tiles made from recycled content.</p>
+                
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800" alt="Green Building Materials">
+                
+                <h2>Cost Benefits of Green Construction</h2>
+                <p>While sustainable features may have slightly higher upfront costs, the long-term savings are substantial. Reduced electricity bills, lower water consumption, and minimal maintenance costs make green homes more economical over time. Many homeowners recoup the additional investment within 5-7 years.</p>
+                
+                <h2>Our Commitment to Madurai</h2>
+                <p>As a construction company rooted in Madurai, we take pride in contributing to a sustainable future for our city. Every villa, apartment, and commercial space we build incorporates eco-friendly principles. We also educate our clients about maintaining these features for maximum benefit.</p>
+                
+                <p>Ready to build your sustainable dream home in Madurai? Contact LK Construction for a free consultation and estimate.</p>
+            </div>
+
+            <!-- Author Box -->
+            <div class="author-box" id="authorBox">
+                <div class="author-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="author-info">
+                    <h4>Ar. Priya Sundaram</h4>
+                    <p>Senior Architect & Sustainability Expert at LK Construction, Madurai. With over 12 years of experience in green building design and VASTU-compliant architecture.</p>
+                    <div class="author-social">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="comments-section">
+                <h3 class="comments-title"><i class="fas fa-comments me-2 text-primary-green"></i> Comments <span id="commentCount">(0)</span></h3>
+                <div id="commentList" class="comment-list">
+                    <div class="no-comments" id="noCommentsMsg">
+                        <i class="fas fa-comment-dots fa-2x mb-3" style="color: var(--primary-soft);"></i>
+                        <p>No comments yet. Be the first to share your thoughts!</p>
+                    </div>
+                </div>
+
+                <!-- Comment Form -->
+                <div class="comment-form">
+                    <h4><i class="fas fa-edit me-2 text-primary-green"></i> Leave a Comment</h4>
+                    <form id="commentForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="commentName" placeholder="Your Name *" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="commentEmail" placeholder="Your Email *" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="commentText" rows="4" placeholder="Write your comment here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-comment"><i class="fas fa-paper-plane me-2"></i> Post Comment</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Share Section -->
+            <div class="share-section">
+                <h5 style="font-weight: 700;">Share this article</h5>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn share-fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="share-btn share-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="share-btn share-linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="share-btn share-wa"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+            <div class="sidebar">
+                <!-- About Card -->
+                <div class="sidebar-card">
+                    <h4><i class="fas fa-info-circle me-2 text-primary-green"></i> About LK Construction</h4>
+                    <p>We are Tamil Nadu trusted construction partner, specializing in sustainable, VASTU-compliant homes and commercial spaces since 2008.</p>
+                    <a href="#" style="color: var(--primary-green); font-weight: 600;">Learn more →</a>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="sidebar-card">
+                    <h4><i class="fas fa-newspaper me-2 text-primary-green"></i> Recent Posts</h4>
+                    <div class="recent-post">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=150" alt="post">
+                        <div>
+                            <h5>VASTU Tips for Your New Home</h5>
+                            <p><i class="far fa-calendar"></i> Sep 28, 2025</p>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=150" alt="post">
+                        <div>
+                            <h5>Smart Home Trends 2025</h5>
+                            <p><i class="far fa-calendar"></i> Nov 02, 2025</p>
+                        </div>
+                    </div>
+                    <div class="recent-post">
+                        <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=150" alt="post">
+                        <div>
+                            <h5>10 Tips Before Home Construction</h5>
+                            <p><i class="far fa-calendar"></i> Aug 15, 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="sidebar-card">
+                    <h4><i class="fas fa-tags me-2 text-primary-green"></i> Categories</h4>
+                    <ul class="category-list">
+                        <li><a href="#">Sustainability <span>(4)</span></a></li>
+                        <li><a href="#">Design & VASTU <span>(3)</span></a></li>
+                        <li><a href="#">Construction Tips <span>(3)</span></a></li>
+                        <li><a href="#">Trends <span>(2)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Posts Section -->
+    <div class="related-section" style="margin-top: 60px;">
+        <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 30px; border-left: 4px solid var(--primary-green); padding-left: 20px;">
+            <i class="fas fa-layer-group me-2 text-primary-green"></i> Related Articles
+        </h3>
+        <div class="row g-4" id="relatedGrid">
+            <!-- Related posts will be populated by JS -->
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- CTA BAND -->
+<div class="cta-band" id="contact">
+  <div class="container">
+    <h2>Ready to Build Your Dream Home<br></h2>
+    <p>Free site visit, detailed BOQ &amp; expert consultation within 24 hours. 180+ families trusted us — we'd love to build yours too.</p>
+    <div class="cta-btns">
+      <a href="tel:+919876543210" class="btn btn-green"><i class="fas fa-phone-alt"></i> Call +91 98765 43210</a>
+      <a href="#estimate" class="btn btn-white"><i class="fas fa-paper-plane"></i> Request Free Estimate</a>
+      <a href="#" class="btn btn-wa" id="waBtn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><img src="assets/images/logo.png" alt="LK Constraction Logo" class="logo-img"></div>
+        <p style="color: #fff;">Built with integrity, delivered with joy — 180+ happy families across Tamil Nadu. We build homes that stand the test of time with a 15-year written structural warranty.</p>
+        <div style="margin-top:1.2rem;display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-instagram"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-youtube"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-facebook"></i></a>
+          <a href="#" style="color:var(--green);font-size:1.3rem;text-decoration:none"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="ser">
+        <h4>Services</h4>
+        <a href="#">Residential Construction</a>
+        <a href="#">Architectural Design</a>
+        <a href="#">Interior Design</a>
+        <a href="#">Renovation &amp; Remodelling</a>
+        <a href="#">Smart &amp; Eco Homes</a>
+        <a href="#">Plan Approval &amp; Legal</a>
+      </div>
+      <div class="loc"> 
+        <h4>Useful Links</h4>
+         <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <p style="margin-bottom:.8rem"><i class="fa fa-phone" aria-hidden="true"></i>
+ <a href="tel:+919876543210" class="foot-contact" style="text-decoration:none">+91 98765 43210</a></p>
+        <p style="margin-bottom:.8rem"><i class="fa fa-envelope" aria-hidden="true"></i>
+ <a href="mailto:info@lkconstraction.com" class="foot-contact" style="text-decoration:none"> info@lkconstraction.com</a></p>
+        <p style="margin-bottom:1rem"><i class="fa fa-map-pin" aria-hidden="true"></i>
+ , Tamil Nadu, India</p>
+        <a href="#estimate" class="btn btn-greendr" style="font-size:.85rem;padding:10px 20px"><i class="fas fa-paper-plane"></i> Free Estimate</a>
+      </div>
+    </div>
+    <hr class="foot-divider">
+    <div class="foot-bottom">
+      <span>© 2026 LK Constraction — Premium Residential Construction Company </span>
+      <span>₹1899/sq.ft · 15-Year Warranty · 180+ Homes Built</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CALL BTN -->
+<a href="tel:+919876543210" class="sticky-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <div class="modal-ico"><i class="fas fa-check"></i></div>
+    <h3 id="modalTitle">Request Received!</h3>
+    <p id="modalMsg">Our team will call you within 24 hours.</p>
+    <button class="modal-close-btn" id="modalCloseBtn">Got it</button>
+  </div>
+</div>
+
+<!-- Site Scripts -->
+ <script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Comments data storage (using localStorage for persistence)
+    let comments = [];
+
+    // Load comments from localStorage
+    function loadComments() {
+        const stored = localStorage.getItem('blogComments');
+        if (stored) {
+            comments = JSON.parse(stored);
+        } else {
+            // Sample comments for demonstration
+            comments = [
+                {
+                    id: 1,
+                    name: "Ramesh Kumar",
+                    email: "ramesh@example.com",
+                    text: "Excellent article! I'm planning to build a sustainable home in Madurai. Can you share more about the cost difference between green and conventional construction?",
+                    date: "2025-10-26T10:30:00",
+                    replies: []
+                },
+                {
+                    id: 2,
+                    name: "Priya Srinivasan",
+                    email: "priya@example.com",
+                    text: "This is very informative. I particularly liked the section on VASTU and sustainability connection. We need more builders like LK Construction in Madurai!",
+                    date: "2025-10-27T15:45:00",
+                    replies: [
+                        {
+                            id: 201,
+                            name: "Ar. Priya Sundaram",
+                            email: "author@lkconstruction.com",
+                            text: "Thank you Priya! We're passionate about combining traditional wisdom with modern sustainability. Feel free to visit our office for a detailed consultation.",
+                            date: "2025-10-28T09:15:00"
+                        }
+                    ]
+                }
+            ];
+            saveComments();
+        }
+        renderComments();
+    }
+
+    // Save comments to localStorage
+    function saveComments() {
+        localStorage.setItem('blogComments', JSON.stringify(comments));
+    }
+
+    // Format date
+    function formatDate(dateString) {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' }) + ' at ' + date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    }
+
+    // Render comments
+    function renderComments() {
+        const commentList = document.getElementById('commentList');
+        const commentCountSpan = document.getElementById('commentCount');
+        const totalComments = comments.reduce((sum, c) => sum + 1 + c.replies.length, 0);
+        commentCountSpan.textContent = `(${totalComments})`;
+
+        if (comments.length === 0) {
+            commentList.innerHTML = `
+                <div class="no-comments" id="noCommentsMsg">
+                    <i class="fas fa-comment-dots fa-2x mb-3" style="color: var(--primary-soft);"></i>
+                    <p>No comments yet. Be the first to share your thoughts!</p>
+                </div>
+            `;
+            return;
+        }
+
+        commentList.innerHTML = comments.map(comment => `
+            <div class="comment-item" data-comment-id="${comment.id}">
+                <div class="comment-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="comment-content">
+                    <div class="comment-author">
+                        ${escapeHtml(comment.name)}
+                        <span class="comment-date">${formatDate(comment.date)}</span>
+                    </div>
+                    <div class="comment-text">${escapeHtml(comment.text)}</div>
+                    <button class="reply-btn" onclick="showReplyForm(${comment.id})"><i class="fas fa-reply"></i> Reply</button>
+                    
+                    <!-- Reply Form (hidden by default) -->
+                    <div id="reply-form-${comment.id}" class="reply-form">
+                        <input type="text" id="reply-name-${comment.id}" placeholder="Your Name" style="width:100%; padding:10px; margin-bottom:10px; border:1px solid var(--border-light); border-radius:12px;">
+                        <textarea id="reply-text-${comment.id}" rows="2" placeholder="Write your reply..." style="width:100%; padding:10px; margin-bottom:10px; border:1px solid var(--border-light); border-radius:12px;"></textarea>
+                        <button onclick="submitReply(${comment.id})" style="background:var(--primary-green); color:white; border:none; padding:8px 20px; border-radius:30px; cursor:pointer;">Post Reply</button>
+                        <button onclick="hideReplyForm(${comment.id})" style="background:#ccc; border:none; padding:8px 20px; border-radius:30px; cursor:pointer; margin-left:10px;">Cancel</button>
+                    </div>
+                    
+                    <!-- Replies -->
+                    ${comment.replies && comment.replies.length > 0 ? `
+                        <div style="margin-top: 20px; margin-left: 30px; padding-left: 20px; border-left: 2px solid var(--border-light);">
+                            ${comment.replies.map(reply => `
+                                <div style="margin-bottom: 15px;">
+                                    <div class="comment-author">
+                                        ${escapeHtml(reply.name)} <span style="font-weight:normal;">(Author)</span>
+                                        <span class="comment-date">${formatDate(reply.date)}</span>
+                                    </div>
+                                    <div class="comment-text">${escapeHtml(reply.text)}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Escape HTML to prevent XSS
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    // Show reply form
+    window.showReplyForm = function(commentId) {
+        // Hide all reply forms first
+        document.querySelectorAll('.reply-form').forEach(form => {
+            form.classList.remove('active');
+        });
+        const replyForm = document.getElementById(`reply-form-${commentId}`);
+        if (replyForm) {
+            replyForm.classList.add('active');
+        }
+    }
+
+    // Hide reply form
+    window.hideReplyForm = function(commentId) {
+        const replyForm = document.getElementById(`reply-form-${commentId}`);
+        if (replyForm) {
+            replyForm.classList.remove('active');
+            document.getElementById(`reply-name-${commentId}`).value = '';
+            document.getElementById(`reply-text-${commentId}`).value = '';
+        }
+    }
+
+    // Submit reply
+    window.submitReply = function(commentId) {
+        const nameInput = document.getElementById(`reply-name-${commentId}`);
+        const textInput = document.getElementById(`reply-text-${commentId}`);
+        const name = nameInput.value.trim();
+        const text = textInput.value.trim();
+        
+        if (!name) {
+            alert('Please enter your name.');
+            return;
+        }
+        if (!text) {
+            alert('Please enter your reply.');
+            return;
+        }
+        
+        const comment = comments.find(c => c.id === commentId);
+        if (comment) {
+            if (!comment.replies) comment.replies = [];
+            comment.replies.push({
+                id: Date.now(),
+                name: name,
+                email: '',
+                text: text,
+                date: new Date().toISOString()
+            });
+            saveComments();
+            renderComments();
+            hideReplyForm(commentId);
+        }
+    }
+
+    // Submit new comment
+    document.getElementById('commentForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const name = document.getElementById('commentName').value.trim();
+        const email = document.getElementById('commentEmail').value.trim();
+        const text = document.getElementById('commentText').value.trim();
+        
+        if (!name) {
+            alert('Please enter your name.');
+            return;
+        }
+        if (!email || !email.includes('@')) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+        if (!text) {
+            alert('Please enter your comment.');
+            return;
+        }
+        
+        const newComment = {
+            id: Date.now(),
+            name: name,
+            email: email,
+            text: text,
+            date: new Date().toISOString(),
+            replies: []
+        };
+        
+        comments.unshift(newComment);
+        saveComments();
+        renderComments();
+        
+        // Clear form
+        document.getElementById('commentForm').reset();
+        
+        // Show success message
+        alert('✅ Your comment has been posted successfully!');
+    });
+
+    // Related posts data
+    const relatedPosts = [
+        { title: "VASTU Tips for Your New Home", category: "Design & VASTU", date: "Sep 28, 2025", image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600", link: "#" },
+        { title: "Smart Home Trends 2025", category: "Trends", date: "Nov 02, 2025", image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600", link: "#" },
+        { title: "10 Tips Before Starting Home Construction", category: "Construction Tips", date: "Aug 15, 2025", image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600", link: "#" }
+    ];
+
+    // Render related posts
+    function renderRelatedPosts() {
+        const container = document.getElementById('relatedGrid');
+        container.innerHTML = relatedPosts.map(post => `
+            <div class="col-md-4 col-sm-6">
+                <div class="related-card" style="background:white; border-radius:24px; overflow:hidden; border:1px solid var(--border-light); transition:0.3s; cursor:pointer;">
+                    <img src="${post.image}" alt="${post.title}" style="width:100%; height:180px; object-fit:cover;">
+                    <div style="padding:20px;">
+                        <span style="font-size:0.7rem; color:var(--primary-green); font-weight:600;">${post.category}</span>
+                        <h4 style="font-size:1rem; font-weight:700; margin:8px 0;">${post.title}</h4>
+                        <p style="font-size:0.8rem; color:var(--text-muted);"><i class="far fa-calendar"></i> ${post.date}</p>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+        
+        document.querySelectorAll('.related-card').forEach(card => {
+            card.addEventListener('click', () => {
+                alert('📖 Opening related article...\n\nIn the full website, this would navigate to the selected blog post.');
+            });
+        });
+    }
+
+    // Back link functionality
+    document.getElementById('backLink').addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('← Returning to blog list page.\n\nIn the full website, this would navigate back to the blog listing.');
+    });
+
+    // Share buttons
+    document.querySelectorAll('.share-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const platform = btn.classList.contains('share-fb') ? 'Facebook' :
+                            btn.classList.contains('share-twitter') ? 'Twitter' :
+                            btn.classList.contains('share-linkedin') ? 'LinkedIn' : 'WhatsApp';
+            alert(`📤 Share this article on ${platform}\n\nIn the full website, this would open the share dialog.`);
+        });
+    });
+
+    // Hide loader after page load
+    window.addEventListener('load', () => {
+        const loader = document.getElementById('loaderOverlay');
+        setTimeout(() => {
+            loader.classList.add('hidden');
+        }, 400);
+    });
+
+    // Initialize
+    loadComments();
+    renderRelatedPosts();
+</script>
+</body>
+</html>
