@@ -500,6 +500,7 @@ footer{background:#0c1a0a;color:#fff;padding:50px 0 24px}
 .contact h4{ color: #fff;font-size: 20px; margin-bottom: 18px;}
 .contact a{color:var(--white);text-decoration: auto;line-height: 2.3;}
 .contact i {margin-right: 10px;}
+.contact  a:hover {background: green;}
 
 /* ── MODAL ── */
 .modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1000;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
