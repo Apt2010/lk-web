@@ -540,7 +540,7 @@ footer{background:#0c1a0a;color:#fff;padding:50px 0 24px}
   .projects-grid{grid-template-columns:repeat(2,1fr)}
   .about-grid{grid-template-columns:1fr}
   .interior-grid{grid-template-columns:1fr}
-  .interior-img{aspect-ratio:16/7}
+   .interior-img{/*aspect-ratio:16/7;*/display: none;} 
   .foot-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
