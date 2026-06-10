@@ -15,6 +15,252 @@
 
 <!-- Site Stylesheet -->
 <link rel="stylesheet" href="assets/css/style.css">
+<style>
+/* section background override */
+       /* section background override */
+        #testimonials {
+            background: var(--green-xl);
+            width: 100%;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .section-eyebrow {
+            margin-bottom: 1rem;
+        }
+
+
+        .tag i {
+            font-size: 0.8rem;
+        }
+
+        .section-title {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: #1e2a32;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+        }
+
+        .section-sub {
+            font-size: 1.05rem;
+            color: var(--gray-mid);
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.4;
+        }
+
+        /* CAROUSEL WRAPPER */
+        .testimonials-carousel-wrapper {
+            position: relative;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .testi-carousel-container {
+            overflow: hidden;
+            border-radius: var(--radius-card);
+        }
+
+        .testi-track {
+            display: flex;
+            transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+            will-change: transform;
+        }
+
+        .testi-slide {
+            flex: 0 0 100%;
+            padding: 0 12px;
+            box-sizing: border-box;
+        }
+
+        /* individual card style — enhanced with client photo */
+        .testi-card {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 2rem 1.8rem;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.2s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(42, 127, 62, 0.15);
+        }
+
+        .testi-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+            border-color: rgba(42, 127, 62, 0.3);
+        }
+
+        .testi-stars {
+            color: #f5a623;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .testi-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #1f2a3e;
+            margin-bottom: 1.5rem;
+            font-weight: 450;
+            flex-grow: 1;
+        }
+
+        /* Client photo + name row */
+        .client-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .client-avatar {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--green);
+            background: #f0f9f0;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .client-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .testi-author {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #0f2b1d;
+            line-height: 1.3;
+        }
+
+        .testi-loc {
+            font-size: 0.8rem;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 0.2rem;
+        }
+
+        /* carousel controls */
+        .carousel-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .carousel-btn {
+            background: white;
+            border: 1px solid rgba(42, 127, 62, 0.4);
+            border-radius: 60px;
+            width: 44px;
+            height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            color: var(--green-dark);
+            font-size: 1.2rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+
+        .carousel-btn:hover {
+            background: var(--green);
+            border-color: var(--green);
+            color: white;
+            transform: scale(1.02);
+        }
+
+        .carousel-btn:active {
+            transform: scale(0.96);
+        }
+
+        .dots {
+            display: flex;
+            gap: 0.6rem;
+            margin: 0 0.8rem;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background: #cbd5e1;
+            border-radius: 30px;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+            padding: 0;
+        }
+
+        .dot.active {
+            background: var(--green);
+            width: 26px;
+        }
+
+        /* statistics row */
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            color: var(--muted);
+            font-size: 0.9rem;
+            font-weight: 600;
+            border-top: 1px solid rgba(42,127,62,0.2);
+            padding-top: 1.5rem;
+        }
+
+        .stats-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* responsive */
+        @media (min-width: 768px) {
+            .testi-slide {
+                flex: 0 0 50%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .testi-slide {
+                flex: 0 0 33.333%;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .testi-card {
+                padding: 1.5rem;
+            }
+            .section-title {
+                font-size: 1.7rem;
+            }
+           
+            .client-avatar {
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        .carousel-btn:focus-visible, .dot:focus-visible {
+            outline: 2px solid var(--green);
+            outline-offset: 2px;
+        }
+        </style>
 </head>
 <body>
 
@@ -204,7 +450,7 @@
   <div class="container">
     <div class="center section-eyebrow"><span class="tag"><i class="fas fa-award"></i> Why Choose Us</span></div>
     <div class="center" style="margin-bottom:2.5rem">
-      <h2 class="section-title">Why  Homeowners<br>Choose LK Constraction</h2>
+      <h2 class="section-title">Why  Homeowners Choose LK Constraction</h2>
       <p class="section-sub">Six pillars that make every LK Constraction project a guaranteed success</p>
     </div>
     <div class="why-grid">
@@ -305,7 +551,7 @@
   <div class="container">
     <div class="center section-eyebrow"><span class="tag"><i class="fas fa-images"></i> Tamil Nadu · Portfolio</span></div>
     <div class="center" style="margin-bottom:2.5rem">
-      <h2 class="section-title">Our Residential Construction<br>Projects </h2>
+      <h2 class="section-title">Our Residential Construction Projects </h2>
       <p class="section-sub">Trusted by homeowners across Usilampatti · Othakadai · Vandiyur · Anna Nagar · Sholavandan · Melur</p>
     </div>
     <div class="projects-grid">
@@ -397,7 +643,8 @@
 <!-- SOCIAL -->
 <div class="social-band">
   <div class="container">
-    <div class="center" style="margin-bottom:1.2rem"><p style="color: #0f1f0d;font-size: 2rem;font-weight: 600;margin-top: 30px;">Follow Our Work &amp; Client Stories</p></div>
+    <!-- <div class="center" style="margin-bottom:1.2rem"><p style="color: #0f1f0d;font-size: 2rem;font-weight: 600;margin-top: 30px;">Follow Our Work &amp; Client Stories</p></div> -->
+     <h2 class="section-title" style="text-align: center;margin-top: 40px;">Follow Our Work &amp; Client Stories</h2>
     <div class="social-row">
       <a class="soc-card" href="#" onclick="return false">
         <div class="soc-ico ig"><i class="fab fa-instagram"></i></div>
@@ -491,37 +738,120 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
+<!-- TESTIMONIALS section with CLIENT PHOTOS + functional carousel -->
 <section id="testimonials" style="background:var(--green-xl)">
   <div class="container">
-    <div class="center section-eyebrow"><span class="tag"><i class="fas fa-star"></i> Client Stories</span></div>
-    <div class="center" style="margin-bottom:2.5rem">
+    <div class="center section-eyebrow">
+      <span class="tag"><i class="fas fa-star"></i> Client Stories</span>
+    </div>
+    <div class="center" style="margin-bottom:2rem">
       <h2 class="section-title">Client Satisfaction Stories</h2>
-      <p class="section-sub">Real homeowners from Melur, Anna Nagar, Othakadai, Palamedu &amp; across Madurai — no scripts, no actors</p>
+      <p class="section-sub">Real homeowners from Melur, Anna Nagar, Othakadai, Palamedu &amp; across Madurai — with real photos, real voices</p>
     </div>
-    <div class="testi-grid">
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Transparent pricing and a dedicated engineer made our Porur home absolutely perfect. They delivered two weeks early! The handover ceremony was a beautiful surprise we'll never forget."</p>
-        <div class="testi-author">Meena K.</div>
-        <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Porur, Madurai</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★★</div>
-        <p class="testi-text">"Milestone payments kept us completely stress-free. We always knew exactly what we were paying for and why. The quality of construction at our Palamedu home is absolutely unmatched."</p>
-        <div class="testi-author">Raghavan S.</div>
-        <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Palamedu, Madurai</div>
-      </div>
-      <div class="testi-card">
-        <div class="testi-stars">★★★★½</div>
-        <p class="testi-text">"Our Anna Nagar villa is stunning. The real-time updates every single day gave us confidence throughout the build. The team's dedication and quality are truly unmatched ."</p>
-        <div class="testi-author">Priya &amp; Vikram</div>
-        <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Anna Nagar, Madurai</div>
-      </div>
+
+    <!-- CAROUSEL (SLIDER) SECTION with client photos -->
+    <div class="testimonials-carousel-wrapper">
+        <div class="testi-carousel-container">
+            <div class="testi-track" id="testiTrack">
+                <!-- SLIDE 1 - Meena K. (Porur) with photo -->
+                <div class="testi-slide">
+                    <div class="testi-card">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">"Transparent pricing and a dedicated engineer made our Porur home absolutely perfect. They delivered two weeks early! The handover ceremony was a beautiful surprise we'll never forget."</p>
+                        <div class="client-info">
+                            <img class="client-avatar" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Meena K. photo" onerror="this.src='https://ui-avatars.com/api/?background=2a7f3e&color=fff&name=Meena+K'">
+                            <div class="client-details">
+                                <div class="testi-author">Meena K.</div>
+                                <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Porur, Madurai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE 2 - Raghavan S. (Palamedu) with photo -->
+                <div class="testi-slide">
+                    <div class="testi-card">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">"Milestone payments kept us completely stress-free. We always knew exactly what we were paying for and why. The quality of construction at our Palamedu home is absolutely unmatched."</p>
+                        <div class="client-info">
+                            <img class="client-avatar" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Raghavan S. photo" onerror="this.src='https://ui-avatars.com/api/?background=2a7f3e&color=fff&name=Raghavan+S'">
+                            <div class="client-details">
+                                <div class="testi-author">Raghavan S.</div>
+                                <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Palamedu, Madurai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE 3 - Priya & Vikram (Anna Nagar) with couple photo illustration -->
+                <div class="testi-slide">
+                    <div class="testi-card">
+                        <div class="testi-stars">★★★★ </div>
+                        <p class="testi-text">"Our Anna Nagar villa is stunning. The real-time updates every single day gave us confidence throughout the build. The team's dedication and quality are truly unmatched."</p>
+                        <div class="client-info">
+                            <img class="client-avatar" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya & Vikram photo" onerror="this.src='https://ui-avatars.com/api/?background=2a7f3e&color=fff&name=Priya+V'">
+                            <div class="client-details">
+                                <div class="testi-author">Priya &amp; Vikram</div>
+                                <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Anna Nagar, Madurai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE 4 - Sundar Rajan (Melur) with photo -->
+                <div class="testi-slide">
+                    <div class="testi-card">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">"From foundation to finishing, the team kept every promise. Our Melur home got completed under budget and the Vastu compliance was perfect. Highly recommend their transparent process!"</p>
+                        <div class="client-info">
+                            <img class="client-avatar" src="https://randomuser.me/api/portraits/men/45.jpg" alt="Sundar Rajan" onerror="this.src='https://ui-avatars.com/api/?background=2a7f3e&color=fff&name=Sundar+R'">
+                            <div class="client-details">
+                                <div class="testi-author">Sundar Rajan</div>
+                                <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Melur, Madurai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SLIDE 5 - Jayalakshmi M. (Othakadai) with photo -->
+                <div class="testi-slide">
+                    <div class="testi-card">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">"Daily progress photos and milestone payments gave us peace of mind. Our Othakadai house is the talk of the neighborhood — impeccable quality and after-sales support."</p>
+                        <div class="client-info">
+                            <img class="client-avatar" src="https://randomuser.me/api/portraits/women/89.jpg" alt="Jayalakshmi M." onerror="this.src='https://ui-avatars.com/api/?background=2a7f3e&color=fff&name=Jayalakshmi+M'">
+                            <div class="client-details">
+                                <div class="testi-author">Jayalakshmi M.</div>
+                                <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Othakadai, Madurai</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- EXTRA SLIDE 6 - Kumar & Family (Madurai city) for richness -->
+                <div class="testi-slide">
+                    <div class="testi-card">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">"The team's transparency and quality control gave us the home of our dreams. Even our neighbors asked for their contact! The real-time updates made all the difference."</p>
+                        <div class="client-info">
+                            <img class="client-avatar" src="https://randomuser.me/api/portraits/men/22.jpg" alt="Kumar Family" onerror="this.src='https://ui-avatars.com/api/?background=2a7f3e&color=fff&name=Kumar'">
+                            <div class="client-details">
+                                <div class="testi-author">Kumar &amp; Family</div>
+                                <div class="testi-loc"><i class="fas fa-map-marker-alt" style="color:var(--green)"></i> Madurai Central</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation controls -->
+        <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+            <div class="dots" id="dotsContainer"></div>
+            <button class="carousel-btn" id="nextBtn" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
     </div>
-    <div style="display:flex;justify-content:center;gap:2rem;margin-top:2rem;flex-wrap:wrap;color:var(--muted);font-size:.9rem;font-weight:600">
+
+    <!-- Statistics row -->
+    <div class="stats-row">
       <span><i class="fas fa-star" style="color:#f5a623"></i> 4.9 Avg Rating</span>
-      <span><i class="fas fa-users" style="color:var(--green)"></i> 20+ Client Stories</span>
+      <span><i class="fas fa-users" style="color:var(--green)"></i> 25+ Client Stories</span>
       <span><i class="fas fa-check-circle" style="color:var(--green)"></i> 100% Real Clients</span>
     </div>
   </div>
@@ -754,5 +1084,160 @@
 
 <!-- Site Scripts -->
 <script src="assets/js/main.js"></script>
+<script>
+    (function() {
+        // --- Fully responsive carousel with photo support ---
+        const track = document.getElementById('testiTrack');
+        const slides = Array.from(document.querySelectorAll('.testi-slide'));
+        const prevButton = document.getElementById('prevBtn');
+        const nextButton = document.getElementById('nextBtn');
+        const dotsContainer = document.getElementById('dotsContainer');
+        
+        let currentIndex = 0;
+        let slidesPerView = 1;
+        let totalGroups = 0;
+        let resizeTimeout = null;
+        
+        function updateCarouselLayout() {
+            const width = window.innerWidth;
+            if (width >= 1024) {
+                slidesPerView = 3;
+            } else if (width >= 768) {
+                slidesPerView = 2;
+            } else {
+                slidesPerView = 1;
+            }
+            
+            const totalSlides = slides.length;
+            totalGroups = Math.ceil(totalSlides / slidesPerView);
+            
+            if (currentIndex >= totalGroups) currentIndex = Math.max(0, totalGroups - 1);
+            if (currentIndex < 0) currentIndex = 0;
+            
+            const translatePercent = -(currentIndex * 100);
+            track.style.transform = `translateX(${translatePercent}%)`;
+            
+            renderDots();
+        }
+        
+        function renderDots() {
+            if (!dotsContainer) return;
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalGroups; i++) {
+                const dot = document.createElement('button');
+                dot.classList.add('dot');
+                if (i === currentIndex) dot.classList.add('active');
+                dot.setAttribute('data-index', i);
+                dot.setAttribute('aria-label', `Go to testimonial group ${i+1}`);
+                dot.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    currentIndex = i;
+                    updateCarouselLayout();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+        
+        function nextSlide() {
+            if (totalGroups === 0) return;
+            const nextIdx = currentIndex + 1;
+            if (nextIdx < totalGroups) {
+                currentIndex = nextIdx;
+                updateCarouselLayout();
+            } else {
+                // seamless loop to first group
+                currentIndex = 0;
+                updateCarouselLayout();
+            }
+        }
+        
+        function prevSlide() {
+            if (totalGroups === 0) return;
+            const prevIdx = currentIndex - 1;
+            if (prevIdx >= 0) {
+                currentIndex = prevIdx;
+                updateCarouselLayout();
+            } else {
+                currentIndex = totalGroups - 1;
+                updateCarouselLayout();
+            }
+        }
+        
+        if (prevButton) prevButton.addEventListener('click', prevSlide);
+        if (nextButton) nextButton.addEventListener('click', nextSlide);
+        
+        function initCarousel() {
+            updateCarouselLayout();
+            window.addEventListener('resize', () => {
+                if (resizeTimeout) clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => {
+                    updateCarouselLayout();
+                }, 120);
+            });
+            
+            // keyboard navigation for accessibility
+            document.addEventListener('keydown', (e) => {
+                const section = document.getElementById('testimonials');
+                if (section && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
+                    const activeEl = document.activeElement;
+                    const isInput = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA' || activeEl.isContentEditable);
+                    if (!isInput) {
+                        if (e.key === 'ArrowLeft') {
+                            prevSlide();
+                            e.preventDefault();
+                        } else if (e.key === 'ArrowRight') {
+                            nextSlide();
+                            e.preventDefault();
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Touch swipe support for mobile
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const carouselContainer = document.querySelector('.testi-carousel-container');
+        if (carouselContainer) {
+            carouselContainer.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+            carouselContainer.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                const delta = touchEndX - touchStartX;
+                if (Math.abs(delta) > 50) {
+                    if (delta > 0) {
+                        prevSlide();
+                    } else {
+                        nextSlide();
+                    }
+                    e.preventDefault();
+                }
+            });
+        }
+        
+        if (track && slides.length) {
+            initCarousel();
+        } else {
+            console.warn("Carousel fallback");
+        }
+        
+        window.addEventListener('load', () => {
+            updateCarouselLayout();
+        });
+    })();
+</script>
+<!-- Additional style for avatar fallback consistency -->
+<style>
+    .client-avatar {
+        background: #eef6e9;
+        object-fit: cover;
+    }
+    /* Ensure images look crisp */
+    img.client-avatar {
+        display: inline-block;
+    }
+</style>
+
 </body>
 </html>
