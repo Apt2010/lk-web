@@ -15,6 +15,7 @@
   --radius-lg:24px;
   --radius-xl:36px;
 }
+.mobimen{display:flex;}
 .serv button{
     align-items: center;
     display: content;
@@ -571,3 +572,4 @@ footer{background:#0c1a0a;color:#fff;padding:50px 0 24px}
   .social-row{flex-direction:column;gap:1rem}
 }
 section{padding:70px 0};
+
