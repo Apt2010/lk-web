@@ -308,7 +308,7 @@
       <ul class="nav-menu">
         <li><a href="about.html">About Us</a></li>
         <li>
-          <button>Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></button>
+          <a href="services.html" class="serv"><button>Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></button></a>
           <div class="dd-menu">
             <div class="dd-grid">
               <a href="#" class="dd-item">
@@ -657,7 +657,7 @@
     filterServices('all');
 
     // dynamic interaction for "explore details" links - just prevent default and show custom alert (no page reload)
-    const allLinks = document.querySelectorAll('.service-footer-link');
+    const allLinks = document.querySelectorAll('.service-footer-links');
     allLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
